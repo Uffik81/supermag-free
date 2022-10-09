@@ -1,0 +1,92 @@
+object FormSpDiscountCards: TFormSpDiscountCards
+  Left = 356
+  Height = 405
+  Top = 127
+  Width = 494
+  Caption = 'Справочник скидок'
+  ClientHeight = 405
+  ClientWidth = 494
+  OnShow = FormShow
+  LCLVersion = '1.8.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 494
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 494
+    TabOrder = 0
+    object BitBtn2: TBitBtn
+      Left = 8
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = '+'
+      OnClick = BitBtn2Click
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 318
+    Top = 50
+    Width = 494
+    Align = alClient
+    ClientHeight = 318
+    ClientWidth = 494
+    TabOrder = 1
+    object StringGrid1: TStringGrid
+      Left = 1
+      Height = 316
+      Top = 1
+      Width = 492
+      Align = alClient
+      ColCount = 6
+      Columns = <      
+        item
+          Title.Caption = 'Скидочная карта'
+          Width = 100
+        end      
+        item
+          Title.Caption = 'Скидка в процентах'
+          Width = 120
+        end      
+        item
+          Title.Caption = 'Имя'
+          Width = 120
+        end      
+        item
+          ReadOnly = False
+          Title.Caption = 'Контакты'
+          Width = 200
+        end      
+        item
+          Title.Caption = 'Дата создания'
+          Visible = False
+        end>
+      DefaultColWidth = 18
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goSmoothScroll]
+      TabOrder = 0
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 37
+    Top = 368
+    Width = 494
+    Align = alBottom
+    ClientHeight = 37
+    ClientWidth = 494
+    TabOrder = 2
+    object BitBtn1: TBitBtn
+      Left = 8
+      Height = 30
+      Top = 4
+      Width = 103
+      Caption = 'Сохранить'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+  end
+end

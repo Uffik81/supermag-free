@@ -1,0 +1,35 @@
+object FormViewCheck: TFormViewCheck
+  Left = -1382
+  Height = 388
+  Top = 247
+  Width = 262
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Просмотр чека'
+  ClientHeight = 388
+  ClientWidth = 262
+  LCLVersion = '2.0.8.0'
+  object MmCheck: TMemo
+    Left = 0
+    Height = 354
+    Top = 0
+    Width = 262
+    Align = alClient
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Courier'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 34
+    Top = 354
+    Width = 262
+    Align = alBottom
+    TabOrder = 1
+  end
+end
