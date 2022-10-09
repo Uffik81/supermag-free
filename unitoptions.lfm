@@ -1,0 +1,1142 @@
+object FormOptions: TFormOptions
+  Left = 555
+  Height = 523
+  Top = 138
+  Width = 840
+  Caption = 'Настройка программы'
+  ClientHeight = 523
+  ClientWidth = 840
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.2.0.4'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 489
+    Top = 0
+    Width = 840
+    ActivePage = TabSheet2
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Сведения об организации'
+      ClientHeight = 461
+      ClientWidth = 832
+      object ScrollBox1: TScrollBox
+        Left = 0
+        Height = 461
+        Top = 0
+        Width = 832
+        HorzScrollBar.Page = 576
+        VertScrollBar.Page = 440
+        Align = alClient
+        ClientHeight = 457
+        ClientWidth = 828
+        TabOrder = 0
+        object GroupBox1: TGroupBox
+          Left = 0
+          Height = 272
+          Top = 0
+          Width = 576
+          Caption = 'Сведения об организации'
+          ClientHeight = 252
+          ClientWidth = 572
+          TabOrder = 0
+          object Label7: TLabel
+            Left = 16
+            Height = 15
+            Top = 104
+            Width = 28
+            Caption = 'КПП:'
+          end
+          object Edit7: TEdit
+            Left = 160
+            Height = 23
+            Top = 96
+            Width = 168
+            TabOrder = 0
+            Text = '77701001'
+          end
+          object Edit6: TEdit
+            Left = 160
+            Height = 23
+            Top = 64
+            Width = 168
+            TabOrder = 1
+            Text = '7770001001'
+          end
+          object Label6: TLabel
+            Left = 16
+            Height = 15
+            Top = 72
+            Width = 30
+            Caption = 'ИНН:'
+          end
+          object Edit8: TEdit
+            Left = 160
+            Height = 23
+            Top = 128
+            Width = 392
+            TabOrder = 2
+            Text = 'Адрес'
+          end
+          object Label8: TLabel
+            Left = 16
+            Height = 15
+            Top = 136
+            Width = 36
+            Caption = 'Адрес:'
+          end
+          object Edit9: TEdit
+            Left = 160
+            Height = 23
+            Top = 32
+            Width = 288
+            TabOrder = 3
+            Text = 'Магазин'
+          end
+          object Label9: TLabel
+            Left = 16
+            Height = 15
+            Top = 40
+            Width = 130
+            Caption = 'Полное наименование:'
+          end
+          object Edit13: TEdit
+            Left = 160
+            Height = 23
+            Top = 0
+            Width = 288
+            TabOrder = 4
+          end
+          object Label13: TLabel
+            Left = 16
+            Height = 15
+            Top = 8
+            Width = 86
+            Caption = 'Наименование:'
+          end
+          object cbDisableutm: TCheckBox
+            Left = 16
+            Height = 19
+            Top = 210
+            Width = 287
+            Caption = 'Участник алкогольного рынка (поддержка УТМ)'
+            OnChange = cbDisableutmChange
+            TabOrder = 5
+          end
+          object CheckBox2: TCheckBox
+            Left = 16
+            Height = 19
+            Top = 228
+            Width = 362
+            Caption = 'Предприятие работает в режиме кафе, фастфуд или ресторан'
+            TabOrder = 6
+          end
+          object ed_zip: TEdit
+            Left = 66
+            Height = 23
+            Top = 157
+            Width = 80
+            TabOrder = 7
+            Text = '000000'
+            TextHint = 'Индекс'
+          end
+          object ed_region: TEdit
+            Left = 200
+            Height = 23
+            Top = 157
+            Width = 32
+            TabOrder = 8
+            Text = '61'
+          end
+          object StaticText21: TStaticText
+            Left = 150
+            Height = 17
+            Top = 160
+            Width = 45
+            Caption = 'Регион:'
+            TabOrder = 9
+          end
+          object StaticText22: TStaticText
+            Left = 16
+            Height = 17
+            Top = 160
+            Width = 49
+            Caption = 'Индекс:'
+            TabOrder = 10
+          end
+          object ed_city: TEdit
+            Left = 281
+            Height = 23
+            Top = 157
+            Width = 135
+            TabOrder = 11
+            Text = 'Город'
+          end
+          object StaticText23: TStaticText
+            Left = 237
+            Height = 17
+            Top = 160
+            Width = 41
+            Caption = 'Город:'
+            TabOrder = 12
+          end
+          object ed_street: TEdit
+            Left = 67
+            Height = 23
+            Top = 184
+            Width = 149
+            TabOrder = 13
+            Text = 'Улица'
+          end
+          object StaticText24: TStaticText
+            Left = 16
+            Height = 17
+            Top = 188
+            Width = 48
+            Caption = 'Улица:'
+            TabOrder = 14
+          end
+          object ed_home: TEdit
+            Left = 256
+            Height = 23
+            Top = 184
+            Width = 27
+            TabOrder = 15
+            Text = '1'
+          end
+          object StaticText25: TStaticText
+            Left = 223
+            Height = 17
+            Top = 188
+            Width = 33
+            Caption = 'Дом:'
+            TabOrder = 16
+          end
+        end
+        object GroupBox3: TGroupBox
+          Left = 0
+          Height = 96
+          Top = 275
+          Width = 576
+          Caption = 'Сведения о лицензиате (для формирования алкогольной декларации)'
+          ClientHeight = 76
+          ClientWidth = 572
+          TabOrder = 1
+          object edEmail: TEdit
+            Left = 112
+            Height = 23
+            Top = 8
+            Width = 448
+            TabOrder = 0
+          end
+          object StaticText1: TStaticText
+            Left = 16
+            Height = 17
+            Top = 8
+            Width = 65
+            Caption = 'E-MAIL:'
+            TabOrder = 1
+          end
+          object StaticText2: TStaticText
+            Left = 16
+            Height = 17
+            Top = 42
+            Width = 65
+            Caption = 'Телефон:'
+            TabOrder = 2
+          end
+          object edtelephone: TEdit
+            Left = 112
+            Height = 23
+            Top = 40
+            Width = 448
+            TabOrder = 3
+          end
+        end
+        object GroupBox6: TGroupBox
+          Left = 0
+          Height = 64
+          Top = 376
+          Width = 576
+          Caption = 'Сведения об рабочем месте'
+          ClientHeight = 44
+          ClientWidth = 572
+          TabOrder = 2
+          object Edit12: TEdit
+            Left = 160
+            Height = 23
+            Top = 8
+            Width = 168
+            TabOrder = 0
+          end
+          object Label12: TLabel
+            Left = 16
+            Height = 15
+            Top = 16
+            Width = 104
+            Caption = 'ID рабочего места:'
+          end
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Настройки подключения'
+      ClientHeight = 461
+      ClientWidth = 832
+      object GroupBox2: TGroupBox
+        Left = 0
+        Height = 232
+        Top = 8
+        Width = 576
+        Caption = 'Подключение к БД'
+        ClientHeight = 212
+        ClientWidth = 572
+        TabOrder = 0
+        object Edit2: TEdit
+          Left = 120
+          Height = 23
+          Top = 8
+          Width = 168
+          TabOrder = 0
+          Text = '127.0.0.1'
+        end
+        object Edit3: TEdit
+          Left = 120
+          Height = 23
+          Top = 40
+          Width = 168
+          TabOrder = 1
+          Text = 'root'
+        end
+        object Edit4: TEdit
+          Left = 120
+          Height = 23
+          Top = 72
+          Width = 168
+          TabOrder = 2
+        end
+        object Label2: TLabel
+          Left = 16
+          Height = 15
+          Top = 13
+          Width = 61
+          Caption = 'Сервер БД:'
+        end
+        object Label3: TLabel
+          Left = 16
+          Height = 15
+          Top = 45
+          Width = 80
+          Caption = 'Пользователь:'
+        end
+        object Label4: TLabel
+          Left = 16
+          Height = 15
+          Top = 77
+          Width = 45
+          Caption = 'Пароль:'
+        end
+        object Label11: TLabel
+          Left = 16
+          Height = 15
+          Top = 109
+          Width = 83
+          Caption = 'Префикс базы:'
+        end
+        object Edit11: TEdit
+          Left = 120
+          Height = 23
+          Top = 104
+          Width = 168
+          TabOrder = 3
+        end
+        object CheckBox1: TCheckBox
+          Left = 16
+          Height = 19
+          Top = 144
+          Width = 254
+          Caption = 'Медленная связь с БД  (не рекомендуется)'
+          TabOrder = 4
+        end
+        object cbEnableAuth: TCheckBox
+          Left = 16
+          Height = 19
+          Top = 168
+          Width = 329
+          Caption = 'При входе в "Управление-УКМ" требовать авторизацию'
+          TabOrder = 5
+        end
+        object ComboBox1: TComboBox
+          Left = 120
+          Height = 23
+          Top = 191
+          Width = 172
+          ItemHeight = 15
+          ItemIndex = 0
+          Items.Strings = (
+            'Рабочая версия'
+            'Бета версия'
+            'Версия для разработчиков'
+          )
+          TabOrder = 6
+          Text = 'Рабочая версия'
+        end
+        object StaticText19: TStaticText
+          Left = 16
+          Height = 17
+          Top = 195
+          Width = 104
+          Caption = 'Версия сборки'
+          TabOrder = 7
+        end
+      end
+      object GroupBox7: TGroupBox
+        Left = 12
+        Height = 120
+        Top = 256
+        Width = 564
+        Caption = 'Подключение к УТМ'
+        ClientHeight = 100
+        ClientWidth = 560
+        TabOrder = 1
+        object Label5: TLabel
+          Left = 24
+          Height = 15
+          Top = 8
+          Width = 70
+          Caption = 'Сервер УТМ:'
+        end
+        object Label10: TLabel
+          Left = 24
+          Height = 15
+          Top = 40
+          Width = 58
+          Caption = 'Порт УТМ:'
+        end
+        object Edit5: TEdit
+          Left = 128
+          Height = 23
+          Top = 0
+          Width = 168
+          TabOrder = 0
+          Text = '127.0.0.1'
+        end
+        object Edit10: TEdit
+          Left = 128
+          Height = 23
+          Top = 32
+          Width = 168
+          TabOrder = 1
+          Text = '8080'
+        end
+        object BitBtn4: TBitBtn
+          Left = 8
+          Height = 30
+          Top = 64
+          Width = 190
+          Caption = 'Перейти на УТМ v2'
+          OnClick = BitBtn4Click
+          TabOrder = 2
+        end
+        object BitBtn6: TBitBtn
+          Left = 205
+          Height = 30
+          Hint = 'Очистить историю загруженных документов,'#13#10' требуется при переустановке УТМ'
+          Top = 64
+          Width = 187
+          Caption = 'Очистить историю'
+          OnClick = BitBtn6Click
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 3
+        end
+        object leFSRAR: TLabeledEdit
+          Left = 384
+          Height = 23
+          Top = 0
+          Width = 140
+          EditLabel.Height = 15
+          EditLabel.Width = 60
+          EditLabel.Caption = 'Код ЕГАИС'
+          EditLabel.Layout = tlCenter
+          LabelPosition = lpLeft
+          TabOrder = 4
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Автообмен'
+      ClientHeight = 461
+      ClientWidth = 832
+      object CheckGroup1: TCheckGroup
+        Left = 12
+        Height = 128
+        Top = 328
+        Width = 648
+        AutoFill = True
+        Caption = 'Обновлять сведения о товаре из ЕГАИС'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 108
+        ClientWidth = 644
+        TabOrder = 0
+        object cbLoadTTN: TCheckBox
+          Left = 6
+          Height = 24
+          Top = 6
+          Width = 632
+          Caption = 'При получении ТТН'
+          TabOrder = 0
+        end
+        object cbLoadForm1: TCheckBox
+          Left = 6
+          Height = 24
+          Top = 30
+          Width = 632
+          Caption = 'При получении Формы А (форма 1)'
+          OnChange = cbLoadForm1Change
+          TabOrder = 1
+        end
+        object cbLoadRest: TCheckBox
+          Left = 6
+          Height = 24
+          Top = 54
+          Width = 632
+          Caption = 'При получении остатков основного склада из ЕГАИС'
+          TabOrder = 2
+        end
+        object cbLoadRestShop: TCheckBox
+          Left = 6
+          Height = 24
+          Top = 78
+          Width = 632
+          Caption = 'При получении остатков торгового зала из ЕГАИС'
+          TabOrder = 3
+        end
+      end
+      object GroupBox4: TGroupBox
+        Left = 8
+        Height = 137
+        Top = 184
+        Width = 652
+        Caption = 'Автообновление остатков из ЕГАИС'
+        ClientHeight = 117
+        ClientWidth = 648
+        TabOrder = 1
+        object cbUpdateRest: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 0
+          Width = 199
+          Caption = 'Проверять сведения об остатках'
+          TabOrder = 0
+        end
+        object StaticText17: TStaticText
+          Left = 8
+          Height = 17
+          Top = 24
+          Width = 201
+          Caption = 'Запрос остатков основного склада:'
+          TabOrder = 1
+        end
+        object DateTimePicker1: TDateTimePicker
+          Left = 216
+          Height = 23
+          Top = 18
+          Width = 65
+          CenturyFrom = 1941
+          MaxDate = 2958465
+          MinDate = -53780
+          TabOrder = 2
+          TrailingSeparator = False
+          TextForNullDate = 'NULL'
+          LeadingZeros = True
+          Kind = dtkTime
+          TimeFormat = tf24
+          TimeDisplay = tdHMS
+          DateMode = dmComboBox
+          Date = 43002
+          Time = 0.75
+          UseDefaultSeparators = True
+          HideDateTimeParts = []
+          MonthNames = 'Long'
+        end
+        object StaticText18: TStaticText
+          Left = 8
+          Height = 17
+          Top = 86
+          Width = 201
+          Caption = 'Запрос остатков торгового зала:'
+          TabOrder = 3
+        end
+        object DateTimePicker2: TDateTimePicker
+          Left = 216
+          Height = 23
+          Top = 80
+          Width = 65
+          CenturyFrom = 1941
+          MaxDate = 2958465
+          MinDate = -53780
+          TabOrder = 4
+          TrailingSeparator = False
+          TextForNullDate = 'NULL'
+          LeadingZeros = True
+          Kind = dtkTime
+          TimeFormat = tf24
+          TimeDisplay = tdHMS
+          DateMode = dmComboBox
+          Date = 43002
+          Time = 0.791666666664241
+          UseDefaultSeparators = True
+          HideDateTimeParts = []
+          MonthNames = 'Long'
+        end
+        object CheckBox6: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 48
+          Width = 561
+          Caption = 'При получении остатков сформировать документ перемещение (только пиво и пивные напитки)'
+          TabOrder = 5
+        end
+      end
+      object cbRefresh: TCheckBox
+        Left = 12
+        Height = 19
+        Top = 16
+        Width = 169
+        Caption = 'Включить автообновление'
+        OnChange = cbRefreshChange
+        TabOrder = 2
+      end
+      object GroupBox9: TGroupBox
+        Left = 12
+        Height = 122
+        Top = 46
+        Width = 648
+        Caption = 'Настройки автообновления'
+        ClientHeight = 102
+        ClientWidth = 644
+        TabOrder = 3
+        object StaticText4: TStaticText
+          Left = 16
+          Height = 17
+          Top = 6
+          Width = 224
+          Caption = 'Интервал проверки данных в секундах:'
+          TabOrder = 0
+        end
+        object Edit14: TEdit
+          Left = 248
+          Height = 23
+          Top = 0
+          Width = 64
+          OnChange = Edit14Change
+          TabOrder = 1
+          Text = '15'
+        end
+        object cbExtExch: TCheckBox
+          Left = 16
+          Height = 19
+          Top = 56
+          Width = 368
+          Caption = 'использовать внешнию обработку для загрузки (в среде WINE)'
+          TabOrder = 2
+        end
+        object cbLoadFoneGoods: TCheckBox
+          Left = 16
+          Height = 19
+          Top = 32
+          Width = 294
+          Caption = 'Включить фоновую загрузку справочника товара'
+          TabOrder = 3
+        end
+        object cbExchMod: TCheckBox
+          Left = 16
+          Height = 19
+          Top = 80
+          Width = 247
+          Caption = 'Использовать сервер обмена "Exchenge"'
+          OnChange = cbExchModChange
+          OnChangeBounds = cbExchModChangeBounds
+          TabOrder = 4
+        end
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Оформление'
+      ClientHeight = 461
+      ClientWidth = 832
+      object cbHideLog: TCheckBox
+        Left = 15
+        Height = 19
+        Top = 10
+        Width = 278
+        Caption = 'Скрывать окно со служебными сообщениями'
+        TabOrder = 0
+      end
+      object GroupBox5: TGroupBox
+        Left = 8
+        Height = 137
+        Top = 33
+        Width = 568
+        Caption = 'Подсветка статусов'
+        ClientHeight = 117
+        ClientWidth = 564
+        TabOrder = 1
+        object cbNowDocum: TColorBox
+          Left = 120
+          Height = 22
+          Top = 1
+          Width = 100
+          DefaultColorColor = clGreen
+          ItemHeight = 16
+          TabOrder = 0
+        end
+        object StaticText5: TStaticText
+          Left = 8
+          Height = 23
+          Top = 2
+          Width = 108
+          Caption = 'Новый документ:'
+          TabOrder = 1
+        end
+      end
+      object cbAlcDateControl: TCheckBox
+        Left = 15
+        Height = 19
+        Top = 186
+        Width = 240
+        Caption = 'Проверять корректность введеной даты'
+        TabOrder = 2
+      end
+      object StaticText11: TStaticText
+        Left = 8
+        Height = 17
+        Top = 236
+        Width = 174
+        Caption = 'Количество банковских чеков:'
+        TabOrder = 3
+      end
+      object Edit20: TEdit
+        Left = 192
+        Height = 23
+        Top = 232
+        Width = 73
+        TabOrder = 4
+        Text = '1'
+      end
+      object unLockScreen: TEdit
+        Left = 192
+        Height = 23
+        Top = 264
+        Width = 197
+        TabOrder = 5
+      end
+      object StaticText12: TStaticText
+        Left = 8
+        Height = 17
+        Top = 267
+        Width = 180
+        Caption = 'Пароль для блокировки кассы:'
+        TabOrder = 6
+      end
+      object CheckBox3: TCheckBox
+        Left = 15
+        Height = 19
+        Top = 296
+        Width = 167
+        Caption = 'Разделять заказы на столы'
+        TabOrder = 7
+      end
+      object GroupBox11: TGroupBox
+        Left = 8
+        Height = 120
+        Top = 320
+        Width = 352
+        Caption = 'Цветовая схема залов и количество столов (всего 15)'
+        ClientHeight = 100
+        ClientWidth = 348
+        TabOrder = 8
+        object StaticText14: TStaticText
+          Left = 15
+          Height = 24
+          Top = 8
+          Width = 145
+          Alignment = taCenter
+          BorderStyle = sbsSingle
+          Caption = 'Зал 1 (зеленый)'
+          Color = clGreen
+          ParentColor = False
+          TabOrder = 0
+          Transparent = False
+        end
+        object edTable1Qual: TEdit
+          Left = 171
+          Height = 23
+          Top = 9
+          Width = 80
+          Alignment = taRightJustify
+          NumbersOnly = True
+          TabOrder = 1
+          Text = '0'
+        end
+        object edTable2Qual: TEdit
+          Left = 171
+          Height = 23
+          Top = 37
+          Width = 80
+          Alignment = taRightJustify
+          NumbersOnly = True
+          TabOrder = 2
+          Text = '0'
+        end
+        object StaticText15: TStaticText
+          Left = 15
+          Height = 24
+          Top = 36
+          Width = 145
+          Alignment = taCenter
+          BorderStyle = sbsSingle
+          Caption = 'Зал 2 (красный)'
+          Color = clRed
+          ParentColor = False
+          TabOrder = 3
+          Transparent = False
+        end
+        object edTable3Qual: TEdit
+          Left = 171
+          Height = 23
+          Top = 64
+          Width = 80
+          Alignment = taRightJustify
+          NumbersOnly = True
+          TabOrder = 4
+          Text = '0'
+        end
+        object StaticText16: TStaticText
+          Left = 15
+          Height = 24
+          Top = 64
+          Width = 145
+          Alignment = taCenter
+          BorderStyle = sbsSingle
+          Caption = 'Зал 3 (желтый)'
+          Color = clYellow
+          ParentColor = False
+          TabOrder = 5
+          Transparent = False
+        end
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Обмен данными'
+      ClientHeight = 461
+      ClientWidth = 832
+      object GroupBox8: TGroupBox
+        Left = 8
+        Height = 96
+        Top = 208
+        Width = 619
+        Caption = 'Обмен с УТМ'
+        ClientHeight = 76
+        ClientWidth = 615
+        TabOrder = 0
+        object StaticText3: TStaticText
+          Left = 0
+          Height = 23
+          Top = 8
+          Width = 176
+          Caption = 'Путь для загрузки реализации:'
+          TabOrder = 0
+        end
+        object edDirRetailOpt: TEdit
+          Left = 192
+          Height = 23
+          Top = 8
+          Width = 362
+          TabOrder = 1
+        end
+        object Edit1: TEdit
+          Left = 192
+          Height = 23
+          Top = 40
+          Width = 293
+          TabOrder = 2
+          Text = 'Папка для обмена'
+        end
+        object StaticText13: TStaticText
+          Left = 0
+          Height = 24
+          Top = 40
+          Width = 184
+          Caption = 'Путь для файлов обмена с УТМ:'
+          TabOrder = 3
+        end
+      end
+      object GroupBox10: TGroupBox
+        Left = 8
+        Height = 192
+        Top = 8
+        Width = 619
+        Caption = 'Обмен с внешней учетной системой'
+        ClientHeight = 172
+        ClientWidth = 615
+        TabOrder = 1
+        object Edit15: TEdit
+          Left = 56
+          Height = 23
+          Top = 24
+          Width = 498
+          TabOrder = 0
+        end
+        object StaticText6: TStaticText
+          Left = 16
+          Height = 23
+          Top = 24
+          Width = 37
+          Alignment = taCenter
+          Caption = 'Путь'
+          TabOrder = 1
+        end
+        object BitBtn5: TBitBtn
+          Left = 552
+          Height = 23
+          Top = 24
+          Width = 24
+          Caption = '...'
+          OnClick = BitBtn5Click
+          TabOrder = 2
+        end
+        object Edit17: TEdit
+          Left = 384
+          Height = 23
+          Top = 56
+          Width = 168
+          TabOrder = 3
+        end
+        object StaticText8: TStaticText
+          Left = 272
+          Height = 17
+          Top = 62
+          Width = 112
+          Caption = 'Флаг автозагрузки'
+          TabOrder = 4
+        end
+        object Edit16: TEdit
+          Left = 120
+          Height = 23
+          Top = 56
+          Width = 137
+          TabOrder = 5
+        end
+        object StaticText7: TStaticText
+          Left = 8
+          Height = 17
+          Top = 62
+          Width = 105
+          Caption = 'Файл справочник'
+          TabOrder = 6
+        end
+        object StaticText9: TStaticText
+          Left = 8
+          Height = 17
+          Top = 94
+          Width = 65
+          Caption = 'Файл отчет'
+          TabOrder = 7
+        end
+        object Edit18: TEdit
+          Left = 120
+          Height = 23
+          Top = 88
+          Width = 137
+          TabOrder = 8
+        end
+        object Edit19: TEdit
+          Left = 384
+          Height = 23
+          Top = 88
+          Width = 168
+          TabOrder = 9
+        end
+        object StaticText10: TStaticText
+          Left = 272
+          Height = 17
+          Top = 94
+          Width = 112
+          Caption = 'Флаг автовыгрузки'
+          TabOrder = 10
+        end
+        object cbAddReportFileZ: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 120
+          Width = 223
+          Caption = 'В файл отчет добавлять новый отчет'
+          TabOrder = 11
+        end
+        object CheckBox4: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 1
+          Width = 263
+          Caption = 'Загружать товар из товароучетной системы'
+          TabOrder = 12
+        end
+        object CheckBox5: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 144
+          Width = 332
+          Caption = 'Списывать пиво и пивные напитки при закрытии смены'
+          TabOrder = 13
+        end
+      end
+      object gbExchMod: TGroupBox
+        Left = 8
+        Height = 73
+        Top = 312
+        Width = 619
+        Caption = 'Сервер обмена данными "Exchenge"'
+        ClientHeight = 53
+        ClientWidth = 615
+        TabOrder = 2
+        object edHostExchMod: TEdit
+          Left = 118
+          Height = 23
+          Top = 0
+          Width = 440
+          TabOrder = 0
+        end
+        object StaticText20: TStaticText
+          Left = 9
+          Height = 17
+          Top = 3
+          Width = 103
+          Caption = 'Адрес сервера:'
+          TabOrder = 1
+        end
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 489
+    Width = 840
+    Align = alBottom
+    ButtonHeight = 32
+    ButtonWidth = 23
+    Caption = 'ToolBar1'
+    TabOrder = 1
+    object Button1: TButton
+      Left = 137
+      Height = 32
+      Top = 2
+      Width = 188
+      Caption = 'Задать пароль администратора'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object BitBtn1: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 136
+      Caption = 'Доп настройки'
+      OnClick = BitBtn1Click
+      TabOrder = 1
+    end
+    object BitBtn2: TBitBtn
+      Left = 720
+      Height = 32
+      Top = 2
+      Width = 120
+      Align = alRight
+      Caption = 'Сохранить'
+      Glyph.Data = {
+        F6060000424DF606000000000000360000002800000018000000180000000100
+        180000000000C006000064000000640000000000000000000000AF611CAC5A17
+        AC5A17AF611CB26E2DB06B2AB06B2AB06B2AB06B2AB06B2AB06B2AB06B2AB06B
+        2AB06B2AB06B2AB06B2AB06B2AB06B2AB06B2AB26E2DAF611CAC5A17AC5A17AC
+        5A17AF611CEEC86DE49A157F8495DCE0E4D6D9DED6D9DED6D9DED6D9DED6D9DE
+        D6D9DED6D9DED6D9DED6D9DED6D9DED6D9DED6D9DED6D9DED6D9DEDCE0E47F84
+        95E59C1CDE9A22AC5A17BC7228ECC979E49A15908F9CDEDEDCDBDAD8DDDCDBDE
+        DEDCDEDEDCE0DFDDE1E0DFE1E0DFE2E1DFE3E2E1E3E2E1E5E3E2E5E3E2E5E3E2
+        E1E0DFE0DFDD908F9CE59C1CE0A028B6681CBE772FEECD80E59C1C9594A1E5E4
+        E3AFA4A69A898E91818786767E7C717673666C6D5E6563565E5C4E5554474D4D
+        41484639423B31385F555BE9E9E89594A1E59E25E2A231BB6C21BE772FEFCF85
+        E59E259999A5E5E6E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8
+        E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E69999A5E7A22BE4A738BB
+        6C21C47D33F0D18CE7A22B9F9DAAECEAE9DCDADAD9D8D7DAD6D7D8D7D6D8D5D6
+        D7D4D4D7D4D4D4D2D1D4D2D1D3D1D0D3D1D0D2D0D0D0CDCED4D2D1EDECEB9F9D
+        AAE7A732E5AB3EBE7026C47D33F1D392E7A732A4A2AFF0F0EFB3A9AB97878B8F
+        7F8486767E7D6F7373666C6D5E655F555B5C4E5554474D4D41484639423B3138
+        5F555BF4F5F3A4A2AFE9AB39E6AD48C07327C78335F1D392E9AB39A8A7B4F1F1
+        F0F1F1F0F4F5F3F6F6F5F7F8F6F8F9F8F8F9F8F9FBF8FAFBFAFBFDFAFDFEFCFE
+        FEFDFEFEFDFEFEFDF8F9F8F2F2F1A8A7B4EBAE3EE8B34BC37729C98539F2D598
+        EBAE3EACAAB8F6F6F5F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7
+        F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7ACAAB8ECB244EAB650C6
+        7B2CCC8B3BF3D79DECB244B2AFBCF9FBF8C7C0C2B3A9ABAFA4A6A79D9FA0999B
+        9B9194928B8E8F858B898185847A8080737B7C717673666C928B8EFDFEFCB2AF
+        BCEEB549EBBA56C87D2ECC8B3BF4D8A0EEB549B6B7C2FAF9F9F6F6F5FAF9F9FA
+        F9F9FAFAFAFBFBFBFCFBFBFCFBFBFCFCFCFEFDFDFEFDFDFEFDFDFEFEFDFEFEFD
+        FBFBFBFAFAFAB6B7C2EEB74FECBB5CCA8531D09040F3DAA5EEBA50A6A6B5FFFF
+        FFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFE
+        FFFFFEFFFFFEFFFFFEFFFFFFFFFFA6A6B5EFBC56EEBF62CE8934D29442F6DDAB
+        F0BF5CB8926991796B977B67977B65977B65977B65977B65977B65977B65977B
+        65977B65977B65977B65977B65977B65977B6791796BB89269F0C163F0C268CE
+        8934D49644F6DDABEEBF62F2C367FAC864A58973B8A28AB6A088B6A088B6A088
+        B6A088B6A088B6A088B6A088B6A088B6A088B6A088B8A28AA58973FAC864F2C3
+        67EFC068F0C56CD28F37D69A47F7E0AFEFC367F0C56CF6C867A29EABD8D8D9D4
+        D3D5D4D3D5D4D3D5D4D3D5D4D3D5D4D3D5D5D4D5D7D6D7D7D7D8D7D7D8D8D9DA
+        A29EABF6C867F0C56CF0C56CF2C970D4933AD99D49F7E1B3F0C56CF0C771F7CA
+        6BAEABB5DBD9D9D8D6D5D8D6D5D8D6D5D8D6D5D8D6D5D8D6D5DBD9D9BAB7BABA
+        B8BCBAB7BAD3D1D0AEABB5F7CA6BF0C771F0C771F1CA75D8973CDBA04CF8E4B5
+        F2C970F1CA75F7CC6FB2AFBCE0DFDDDDDCDBDDDCDBDDDCDBDDDCDBDDDCDBDDDC
+        DBE5E6E6654F3DA48257A57F51958D93B8B5BFF7CC6FF1CA75F1CA75F2CD79DA
+        9B3FE0A950FAE5B9F1CA75F2CD79F7CE73B8B5BFE5E3E2E1E0DFE1E0DFE1E0DF
+        E1E0DFE1E0DFE1E0DFE7E9EBA38052FFDA82FED57A908F9CC1BEC7F7CE73F2CD
+        79F2CD79F4D27DDC9F42E0A950FAE5B9F2CD79F4CE7DF9D077BCB9C4E7E8E6E5
+        E4E3E5E4E3E5E4E3E5E4E3E5E4E3E5E4E3EBECF09F7E54FBD580FED57A96949C
+        C3C0CBF9D077F4CE7DF4CE7DF5D282DFA144E4AB51FBE7BCF4D27DF5D282F9D3
+        7BC1BEC7EDECEBE9E9E8E9E9E8E9E9E8E9E9E8E9E9E8E9E9E8EFF2F5A48257FF
+        DA82FFDA829996A0C9C5D0F9D37BF5D282F5D282F8D98CE0A243E4AF54F9E8BE
+        F4D27DF5D584F9D57DC8C5CDF0F0EFEDEDECEDEDECEDEDECEDEDECEDEDECEDED
+        ECF5F7F983694ADCB871DAB36A9D9AA1CCCAD4F9D57DF5D584F8D98CE8B555E2
+        AD5CE6B359FCEED2F6D98DF5D480F9D57DCBC8D0F4F5F3F1F1F0F1F1F0F1F1F0
+        F1F1F0F1F1F0F1F1F0F7F8F69D9AA1A09EA59D9AA1D4D3D5CECBD3F9D57DF8D9
+        8CE8B555E4AB51000000E6AD48FBEDCCFCEED2FBE9C0FFEBBDDBDEECFBFFFFF9
+        FDFFF9FDFFF9FDFFF9FDFFF9FDFFF9FDFFFBFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        DBDEECFFEDC5ECBE66E6AD52000000000000E5A942E7B14CECBB5CECBB5CECBB
+        5CE7BB69E7BB69EABE6BEABE6BEABE6BEABE6BEABE6BEABE6BEABE6BEABE6BEA
+        BE6BEABE6BE7BB69E2AD5CEAB853EAB65D000000000000000000
+      }
+      OnClick = BitBtn2Click
+      TabOrder = 2
+    end
+    object BitBtn3: TBitBtn
+      Left = 325
+      Height = 32
+      Top = 2
+      Width = 147
+      Caption = 'Обслуживание БД'
+      OnClick = BitBtn3Click
+      TabOrder = 3
+    end
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    Left = 712
+    Top = 56
+  end
+end

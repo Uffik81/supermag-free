@@ -1,0 +1,39 @@
+object FormLogging: TFormLogging
+  Left = -1051
+  Height = 78
+  Top = 540
+  Width = 629
+  Anchors = [akTop, akRight, akBottom]
+  BorderIcons = [biSystemMenu]
+  Caption = 'Служебные сообщения'
+  ClientHeight = 78
+  ClientWidth = 629
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnResize = FormResize
+  Position = poDefaultPosOnly
+  LCLVersion = '2.0.8.0'
+  object sgLogging: TStringGrid
+    Left = 0
+    Height = 78
+    Top = 0
+    Width = 629
+    Align = alClient
+    ColCount = 2
+    Columns = <    
+      item
+        Title.Caption = 'Сообщение'
+        Width = 600
+      end>
+    DefaultColWidth = 22
+    RowCount = 2
+    TabOrder = 0
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 30000
+    OnTimer = Timer1Timer
+    left = 228
+    top = 24
+  end
+end

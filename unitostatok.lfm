@@ -1,0 +1,188 @@
+object FormOstatok: TFormOstatok
+  Left = 407
+  Height = 460
+  Top = 313
+  Width = 773
+  Caption = 'Текущие остатки'
+  ClientHeight = 460
+  ClientWidth = 773
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.8.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 48
+    Top = 412
+    Width = 773
+    Align = alBottom
+    ClientHeight = 48
+    ClientWidth = 773
+    TabOrder = 0
+    object StaticText1: TStaticText
+      Left = 1
+      Height = 17
+      Top = 1
+      Width = 771
+      Align = alTop
+      TabOrder = 0
+    end
+    object StaticText2: TStaticText
+      Left = 8
+      Height = 17
+      Top = 24
+      Width = 65
+      Caption = 'Код ЕГАИС:'
+      TabOrder = 1
+    end
+    object Edit2: TEdit
+      Left = 79
+      Height = 15
+      Top = 25
+      Width = 281
+      BorderStyle = bsNone
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object stTTN: TStaticText
+      Left = 464
+      Height = 17
+      Top = 25
+      Width = 256
+      TabOrder = 3
+    end
+    object StaticText4: TStaticText
+      Left = 373
+      Height = 17
+      Top = 25
+      Width = 65
+      Caption = 'Документ:'
+      TabOrder = 4
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 42
+    Top = 0
+    Width = 773
+    Align = alTop
+    ClientHeight = 42
+    ClientWidth = 773
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 127
+      Caption = 'Обновить из ЕГАИС'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object ToggleBox1: TToggleBox
+      Left = 134
+      Height = 32
+      Top = 2
+      Width = 90
+      Caption = 'Фильтр'
+      OnChange = ToggleBox1Change
+      OnClick = ToggleBox1Click
+      TabOrder = 1
+    end
+    object Edit1: TEdit
+      Left = 232
+      Height = 23
+      Top = 11
+      Width = 184
+      TabOrder = 2
+    end
+    object BitBtn2: TBitBtn
+      Left = 424
+      Height = 32
+      Top = 2
+      Width = 184
+      Caption = 'Переместить в торговый зал'
+      OnClick = BitBtn2Click
+      TabOrder = 3
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 370
+    Top = 42
+    Width = 773
+    Align = alClient
+    ColCount = 11
+    ColumnClickSorts = True
+    Columns = <    
+      item
+        Title.Caption = 'Код ЕГАИС'
+        Width = 175
+      end    
+      item
+        Title.Caption = 'Наименование'
+        Width = 320
+      end    
+      item
+        Title.Caption = 'Форма А'
+        Width = 120
+      end    
+      item
+        Title.Caption = 'Форма Б'
+        Width = 120
+      end    
+      item
+        Title.Caption = 'Остаток'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Title'
+        Visible = False
+      end    
+      item
+        Title.Caption = 'Title'
+        Visible = False
+      end    
+      item
+        Title.Caption = 'Title'
+        Visible = False
+      end    
+      item
+        Title.Caption = 'Дата розлива'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Номер фиксации'
+        Width = 120
+      end>
+    DefaultColWidth = 17
+    DefaultRowHeight = 19
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll, goCellHints]
+    PopupMenu = PopupMenu1
+    TabOrder = 2
+    OnSelectCell = StringGrid1SelectCell
+  end
+  object PopupMenu1: TPopupMenu
+    left = 395
+    top = 86
+    object MenuItem1: TMenuItem
+      Caption = 'Редактировать Справку А'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Получить Справку А из ЕГАИС'
+      OnClick = MenuItem2Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Получить Справку Б из ЕГАИС'
+      OnClick = MenuItem3Click
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Запрос оборота по Справке Б'
+      OnClick = MenuItem4Click
+    end
+    object miAlcItem: TMenuItem
+      Caption = 'Свойство Товара'
+      OnClick = miAlcItemClick
+    end
+  end
+end

@@ -1,0 +1,291 @@
+object FormJurnaleTS: TFormJurnaleTS
+  Left = 311
+  Height = 718
+  Top = 182
+  Width = 843
+  BorderStyle = bsNone
+  Caption = 'Журнал операций'
+  ClientHeight = 718
+  ClientWidth = 843
+  OnResize = FormResize
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.4.4.0'
+  WindowState = wsMaximized
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 64
+    Top = 0
+    Width = 843
+    ButtonHeight = 62
+    ButtonWidth = 48
+    Caption = 'ToolBar1'
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 692
+      Height = 62
+      Top = 2
+      Width = 151
+      Align = alRight
+      Caption = 'Блокировать'
+      Font.Height = -19
+      OnClick = BitBtn1Click
+      ParentFont = False
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 177
+      Height = 62
+      Top = 2
+      Width = 167
+      Caption = 'Работа с ЕГАИС'
+      Font.Height = -19
+      OnClick = BitBtn2Click
+      ParentFont = False
+      TabOrder = 1
+    end
+    object BitBtn3: TBitBtn
+      Left = 1
+      Height = 62
+      Top = 2
+      Width = 176
+      Caption = 'Настройки'
+      Font.Height = -19
+      OnClick = BitBtn3Click
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object pngoods: TPanel
+    Left = 224
+    Height = 654
+    Top = 64
+    Width = 619
+    Align = alClient
+    Caption = 'pngoods'
+    ClientHeight = 654
+    ClientWidth = 619
+    TabOrder = 1
+    OnClick = pngoodsClick
+    object ToolBar6: TToolBar
+      Left = 1
+      Height = 64
+      Top = 1
+      Width = 617
+      ButtonHeight = 62
+      Caption = 'ToolBar6'
+      TabOrder = 0
+      object bbRefGoods: TBitBtn
+        Left = 1
+        Height = 62
+        Top = 2
+        Width = 63
+        Glyph.Data = {
+          F6060000424DF606000000000000360000002800000018000000180000000100
+          180000000000C006000064000000640000000000000000000000000000000000
+          000000000000000000000000000000D26507D26507BC5A00BC5A00BC5A00BC5A
+          00D26507D26507D2650700000000000000000000000000000000000000000000
+          0000000000000000000000000000000000CD6005D26507D78000D47B00E59700
+          E59700E29300EA9900F19B00ED8E01ED8E01BC5A00CD60050000000000000000
+          00000000DF7B11DF7B11000000000000000000000000BC5A00D27800E18E00E2
+          9200E29200E09000E29200EA9900F49E00F7A305F9AA0DFCB116FAAD1EF6AD2B
+          D26507000000000000DB750DF6AF30EA911B000000000000000000BC5A00D278
+          00E39400E29200E19100E09000E49100EC9A00F7A100F7A508F9AA11F9AF19FC
+          B322FCB829FFC033F4A828DB750DDA730CF3AA2CFFD664EE9822000000000000
+          BC5A00D27800E39400E19100E19100E18E00E79400F29D00F8A504FAAA0CFBAE
+          15FBB21FFBB626FDB82CFEBE33FFC33DFFCA46FDC03EFBBE41FFD360FFD667F1
+          9D23000000BC5A00D27800E39400E19100E09000E49200EA9900F7A100ED8D04
+          ED8D04ED8D04EC8900FEB71FFFB925FEBE30FFC138FFC744FFCB4EFFD057FFD2
+          5EFFD464FFDB70F4A528A74600E29300DD8A00E29200E09000E49200EC9A00EF
+          9200EF9105C65803D36909D36909D36909D36909D87311F4BE6AFFE6A7FFCA49
+          FFD059FFD25EFFD667FFD86CFFDD7BF5AA2EA74600D07600E29300E19100E794
+          00F49E00F19303F19303C75B04000000000000000000000000000000DC7309EC
+          A23BFEDB82FFD057FFD360FFD668FFDB6EFFDC76FFE182F6AF30AC4900D78000
+          E59400EA9900F49E00F9A706EF9105C85D070000000000000000000000000000
+          00DC760AEFA63FFFDE8BFFCE50FFD25EFFD667FFDB70FFDD77FFDF7EFFE48CF9
+          B233B55300CB6700DF8400DC7F00FAAC0AF6A10FC85D07000000000000000000
+          000000000000DF790DF0AE48FCDE9DFFEFD0FFEECFFFEBB3FFE499FFDD77FFDD
+          7BFFE182FFE58EFCB936000000000000000000000000CE6407DA730CD2650700
+          0000000000000000000000000000000000E38211E6830EE6830EF4AB3BFBCF75
+          FFE6AFFFF5DFFFF1D1FFEDBCFFECADFDBF36A74600A341009E3C000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000EE9519F19819F5A520FCC452FFDE8EFFEECCFECA54D17112FCDD8F
+          FBD988DA7E1CC05700BC5300C85C000000000000000000000000000000000000
+          00000000000000000000000000000000000000000000000000FCB322FDB123FF
+          BB30B55300FCB916FECB51FFE297FFECC7FAD68BF0B058E38A26CD6000D56B06
+          DB750D000000000000000000000000000000000000F19D1EF7AF2FF8AC2B0000
+          00000000000000000000BC5A00E29200E79400F19B00F8A409FDCA4CFFDC86FF
+          EABCFFECC7FAD696FFC330E27E10000000000000000000000000000000F19819
+          FFDF79FFDB70FFB929FFBA2AFFBA2CFEBE30C05C00EA9900F19B00F7A305F9A9
+          0FFBAE15FAAD1EFDB523FDB523FFBE2BDD750E00000000000000000000000000
+          0000F29619FFDF7AFFE388FFE68FFFE796FFEBB3FFEEB8FFBA2AC46000EB9C00
+          F49E00F7A305F9AA11FBB01CFBB626FEBE33FFBD2DDA730C0000000000000000
+          00000000000000EE9519FFE17EFFD86CFFE388FFE58CFFE58CFFF1CCFFF1D3FF
+          BA29C96100EC9A00F7A100F8A409FAAC14FBB21FFBB626FEBE33FFC744E27F16
+          E27E10E68712EF991CEF991CEE9519FFD057FFD667FFE388FFE388FFE58CFFE9
+          A8FFEFD0FFD670FFBD2DCD6400F29D00F7A305F9A90FFAAF17FCB322FDB72AFE
+          BE33FFC43EFFCD4AFFD059FFD057FFCF55FFCF55FECB51FFDD7BFFE17EFFE286
+          FFE388FFE796FFF4DCFFD25EFFBA2C000000D06600F49E00F9A706F39C0BF6AB
+          20FDB824FDB82BFDBF36FFC43EFFCA46FFCD50FFD05CFFD464FFD86BFFDB73FF
+          DD77FFDF80FFE182FFE796FFF2D3FFE5A4FFB929000000000000D36900F6A300
+          F6A10FCE6407D87311F5AA2EFEBE30FDC136FFC43EFFCA49FFCF53FFD25CFFD6
+          64FFD86CFFDB75FFDD76FFE07AFFE7A1FFF4DBFFE5A4FFB82600000000000000
+          0000D46901F6A50FCE6407000000000000DA730CED9E30FFCE5BFFC94CFFCD4A
+          FFCF53FFD059FFD763FFD968FFDB6EFFE393FFEFCBFFEFD2FFD360FFB9290000
+          00000000000000000000CE6407CE6407000000000000000000000000E27E0EED
+          9E2DF4BB59FCD478FFE393FFE6A5FFE6A7FFEBBAFFF2D5FFE4AAFFD369FFB826
+          FFBD2D0000000000000000000000000000000000000000000000000000000000
+          00000000000000000000EC8F16EC8F16EE9319F19819F8AC2BF8AA27F9A820FD
+          B123FDB82B000000000000000000000000000000000000000000
+        }
+        OnClick = bbRefGoodsClick
+        TabOrder = 0
+      end
+      object bbAddGroupGoods: TBitBtn
+        Left = 64
+        Height = 62
+        Top = 2
+        Width = 168
+        Caption = 'Добавить группу'
+        Font.Height = -19
+        OnClick = bbAddGroupGoodsClick
+        ParentFont = False
+        TabOrder = 1
+      end
+      object bbAddGoods: TBitBtn
+        Left = 232
+        Height = 62
+        Top = 2
+        Width = 224
+        Caption = 'Добавить товар'
+        Font.Height = -19
+        ParentFont = False
+        TabOrder = 2
+      end
+    end
+    object tvGroupGoods: TTreeView
+      Left = 1
+      Height = 588
+      Top = 65
+      Width = 282
+      Align = alLeft
+      DefaultItemHeight = 28
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 1
+      OnChange = tvGroupGoodsChange
+      OnChanging = tvGroupGoodsChanging
+      Items.Data = {
+        F9FFFFFF020001000000FFFFFFFF01000000FFFFFFFFFFFFFFFF000000000000
+        0000000F000000D0ADD0BBD0B5D0BCD0B5D0BDD18230
+      }
+    end
+    object Splitter1: TSplitter
+      Left = 283
+      Height = 588
+      Top = 65
+      Width = 5
+    end
+    object sgGoods: TStringGrid
+      Left = 288
+      Height = 588
+      Top = 65
+      Width = 330
+      Align = alClient
+      ColCount = 8
+      Columns = <      
+        item
+          Title.Caption = 'ПЛУ'
+          Width = 75
+        end      
+        item
+          Title.Caption = 'Наименование'
+          Width = 200
+        end      
+        item
+          Title.Caption = 'Вид'
+          Width = 75
+        end      
+        item
+          Title.Caption = 'Остаток'
+          Width = 50
+        end      
+        item
+          Title.Caption = 'Цена'
+          Width = 50
+        end      
+        item
+          Title.Caption = 'Алкоголь'
+          Width = 100
+        end      
+        item
+          Title.Caption = 'Title'
+          Visible = False
+        end>
+      DefaultColWidth = 24
+      DefaultRowHeight = 32
+      Font.Height = -19
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+      ParentFont = False
+      TabOrder = 3
+      TitleFont.Height = -19
+      OnSetEditText = sgGoodsSetEditText
+    end
+  end
+  object pnFunction: TPanel
+    Left = 0
+    Height = 654
+    Top = 64
+    Width = 224
+    Align = alLeft
+    ClientHeight = 654
+    ClientWidth = 224
+    TabOrder = 2
+    object BitBtn4: TBitBtn
+      Left = 2
+      Height = 64
+      Top = 1
+      Width = 222
+      Caption = 'Номенклатура'
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 0
+    end
+    object BitBtn5: TBitBtn
+      Left = 1
+      Height = 64
+      Top = 64
+      Width = 223
+      Caption = 'Ценики и этикетки'
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 1
+    end
+    object BitBtn6: TBitBtn
+      Left = 2
+      Height = 64
+      Top = 128
+      Width = 222
+      Caption = 'Отчеты'
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Bevel1: TBevel
+      Left = 2
+      Height = 15
+      Top = 192
+      Width = 222
+    end
+    object BitBtn7: TBitBtn
+      Left = 2
+      Height = 64
+      Top = 208
+      Width = 222
+      Caption = 'Персонал'
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 3
+    end
+  end
+end
