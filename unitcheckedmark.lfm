@@ -1,0 +1,108 @@
+object FormCheckedMark: TFormCheckedMark
+  Left = 381
+  Height = 240
+  Top = 367
+  Width = 848
+  Caption = 'FormCheckedMark'
+  ClientHeight = 240
+  ClientWidth = 848
+  Position = poDesktopCenter
+  LCLVersion = '1.4.4.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 172
+    Top = 34
+    Width = 848
+    Align = alClient
+    ColCount = 9
+    Columns = <    
+      item
+        Title.Caption = 'docid'
+        Visible = False
+      end    
+      item
+        Title.Caption = 'Номер документа'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Дата документа'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Позиция'
+        Width = 50
+      end    
+      item
+        Title.Caption = 'Количество'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Закупочная цена'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Дата розлива'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Title'
+        Visible = False
+      end>
+    DefaultColWidth = 18
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 848
+    Align = alTop
+    ClientHeight = 34
+    ClientWidth = 848
+    TabOrder = 1
+    object StaticText1: TStaticText
+      Left = 9
+      Height = 23
+      Top = 8
+      Width = 95
+      Caption = 'Акцизная марка'
+      TabOrder = 0
+    end
+    object Edit1: TEdit
+      Left = 104
+      Height = 23
+      Top = 8
+      Width = 360
+      OnChange = Edit1Change
+      OnKeyPress = Edit1KeyPress
+      TabOrder = 1
+    end
+    object StaticText2: TStaticText
+      Left = 471
+      Height = 23
+      Top = 8
+      Width = 369
+      TabOrder = 2
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 206
+    Width = 848
+    Align = alBottom
+    ButtonHeight = 32
+    Caption = 'ToolBar1'
+    TabOrder = 2
+    object BitBtn1: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 119
+      Caption = 'Найти'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+  end
+end

@@ -1,0 +1,70 @@
+object FormDocDelete: TFormDocDelete
+  Left = 456
+  Height = 335
+  Top = 240
+  Width = 364
+  Caption = 'Удалить помеченные документы'
+  ClientHeight = 335
+  ClientWidth = 364
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.4.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 295
+    Top = 0
+    Width = 364
+    Align = alClient
+    ClientHeight = 295
+    ClientWidth = 364
+    TabOrder = 0
+    object CheckListBox1: TCheckListBox
+      Left = 1
+      Height = 293
+      Top = 1
+      Width = 362
+      Align = alClient
+      ItemHeight = 0
+      TabOrder = 0
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 40
+    Top = 295
+    Width = 364
+    Align = alBottom
+    ClientHeight = 40
+    ClientWidth = 364
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 280
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = 'Удалить'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 7
+      Height = 30
+      Top = 9
+      Width = 89
+      Caption = 'Пометить все'
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+    object BitBtn3: TBitBtn
+      Left = 104
+      Height = 30
+      Top = 8
+      Width = 88
+      Caption = 'Снять все'
+      OnClick = BitBtn3Click
+      TabOrder = 2
+    end
+  end
+end

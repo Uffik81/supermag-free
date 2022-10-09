@@ -1,0 +1,121 @@
+object FormCashReport: TFormCashReport
+  Left = 499
+  Height = 383
+  Top = 299
+  Width = 818
+  Caption = 'Управление журналом продаж в розницу'
+  ClientHeight = 383
+  ClientWidth = 818
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.0.8.0'
+  object Panel2: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 818
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 818
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 8
+      Height = 34
+      Top = 8
+      Width = 99
+      Caption = 'Период'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 112
+      Height = 34
+      Top = 8
+      Width = 144
+      Caption = 'Найти по марке чек'
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 333
+    Top = 50
+    Width = 818
+    Align = alClient
+    ColCount = 12
+    Columns = <    
+      item
+        Title.Caption = 'Номер чека'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Дата чека'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Время записи'
+        Width = 90
+      end    
+      item
+        Title.Caption = 'Тип операции'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Наименование'
+        Width = 170
+      end    
+      item
+        Title.Caption = 'Штрихкод'
+        Width = 120
+      end    
+      item
+        Title.Caption = 'Марка или Ссылка'
+        Width = 200
+      end    
+      item
+        Title.Caption = 'Цена'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Количество'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Код по ИМНС'
+      end    
+      item
+        Title.Caption = 'Алкоголь'
+      end>
+    DefaultColWidth = 19
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+    PopupMenu = PopupMenu1
+    TabOrder = 1
+    OnDrawCell = StringGrid1DrawCell
+    OnSelectCell = StringGrid1SelectCell
+  end
+  object PopupMenu1: TPopupMenu
+    left = 330
+    top = 201
+    object miDelete: TMenuItem
+      Caption = 'Удалить из журнала продаж'
+      OnClick = miDeleteClick
+    end
+    object MenuItem1: TMenuItem
+      Caption = 'Администрирование'
+      object miReturnEgais: TMenuItem
+        Caption = 'Вернуть из ЕГАИС'
+        OnClick = miReturnEgaisClick
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Повторно провести в ЕГАИС'
+        OnClick = MenuItem2Click
+      end
+    end
+  end
+end

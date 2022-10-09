@@ -1,0 +1,589 @@
+object FormBuyTTH: TFormBuyTTH
+  Left = 564
+  Height = 502
+  Top = 53
+  Width = 773
+  Caption = 'Поступление'
+  ClientHeight = 502
+  ClientWidth = 773
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '2.0.8.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 468
+    Top = 0
+    Width = 773
+    ActivePage = TabSheet2
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Основное'
+      ClientHeight = 440
+      ClientWidth = 765
+      object GroupBox3: TGroupBox
+        Left = 0
+        Height = 136
+        Top = 0
+        Width = 765
+        Align = alTop
+        Caption = 'Поставщик'
+        ClientHeight = 116
+        ClientWidth = 761
+        TabOrder = 0
+        object StaticText3: TStaticText
+          Left = 15
+          Height = 17
+          Top = 6
+          Width = 89
+          Caption = 'Наименование:'
+          TabOrder = 0
+        end
+        object stNameFirmIn: TStaticText
+          Left = 112
+          Height = 22
+          Top = 0
+          Width = 640
+          BorderStyle = sbsSunken
+          TabOrder = 1
+        end
+        object edINN: TEdit
+          Left = 111
+          Height = 23
+          Top = 27
+          Width = 145
+          ReadOnly = True
+          TabOrder = 2
+        end
+        object StaticText9: TStaticText
+          Left = 63
+          Height = 17
+          Top = 33
+          Width = 41
+          Caption = 'ИНН'
+          TabOrder = 3
+        end
+        object StaticText10: TStaticText
+          Left = 263
+          Height = 17
+          Top = 32
+          Width = 41
+          Caption = 'КПП'
+          TabOrder = 4
+        end
+        object edKPP: TEdit
+          Left = 314
+          Height = 23
+          Top = 27
+          Width = 152
+          ReadOnly = True
+          TabOrder = 5
+        end
+        object edEGAIS: TEdit
+          Left = 584
+          Height = 23
+          Top = 27
+          Width = 168
+          ReadOnly = True
+          TabOrder = 6
+        end
+        object StaticText11: TStaticText
+          Left = 496
+          Height = 17
+          Top = 32
+          Width = 85
+          Caption = 'Код по ЕГАИС'
+          TabOrder = 7
+        end
+        object StaticText12: TStaticText
+          Left = 16
+          Height = 48
+          Top = 60
+          Width = 88
+          Caption = 'Адрес'
+          TabOrder = 8
+        end
+        object mmAddress: TMemo
+          Left = 111
+          Height = 52
+          Top = 60
+          Width = 641
+          ReadOnly = True
+          TabOrder = 9
+        end
+      end
+      object GroupBox4: TGroupBox
+        Left = 0
+        Height = 162
+        Top = 136
+        Width = 765
+        Align = alClient
+        Caption = 'Получатель'
+        ClientHeight = 142
+        ClientWidth = 761
+        TabOrder = 1
+        object StaticText6: TStaticText
+          Left = 15
+          Height = 40
+          Top = 64
+          Width = 73
+          Caption = 'Адрес получателя'
+          TabOrder = 0
+        end
+        object stClientAddress: TStaticText
+          Left = 96
+          Height = 40
+          Top = 64
+          Width = 705
+          BorderStyle = sbsSunken
+          TabOrder = 1
+        end
+      end
+      object GroupBox5: TGroupBox
+        Left = 0
+        Height = 142
+        Top = 298
+        Width = 765
+        Align = alBottom
+        Caption = 'Транспортное средство'
+        ClientHeight = 122
+        ClientWidth = 761
+        TabOrder = 2
+        object StaticText4: TStaticText
+          Left = 8
+          Height = 17
+          Top = 46
+          Width = 65
+          Caption = 'Отгрузка'
+          TabOrder = 0
+        end
+        object stUpLoadPoint: TStaticText
+          Left = 83
+          Height = 42
+          Top = 48
+          Width = 737
+          BorderStyle = sbsSunken
+          TabOrder = 1
+        end
+        object StaticText8: TStaticText
+          Left = 9
+          Height = 17
+          Top = 0
+          Width = 65
+          Caption = 'Погрузка'
+          TabOrder = 2
+        end
+        object stLoadPoint: TStaticText
+          Left = 83
+          Height = 40
+          Top = 0
+          Width = 737
+          BorderStyle = sbsSunken
+          TabOrder = 3
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Товар'
+      ClientHeight = 440
+      ClientWidth = 765
+      object ToolBar1: TToolBar
+        Left = 0
+        Height = 40
+        Top = 0
+        Width = 765
+        ButtonHeight = 32
+        ButtonWidth = 23
+        Caption = 'ToolBar1'
+        TabOrder = 0
+        object StaticText1: TStaticText
+          Left = 1
+          Height = 38
+          Top = 2
+          Width = 418
+          Align = alClient
+          Alignment = taCenter
+          TabOrder = 0
+        end
+        object StaticText2: TStaticText
+          Left = 419
+          Height = 38
+          Top = 2
+          Width = 346
+          Align = alRight
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 1
+        end
+      end
+      object ListView1: TListView
+        Left = 0
+        Height = 348
+        Top = 40
+        Width = 765
+        Align = alClient
+        Columns = <        
+          item
+            Caption = 'Номер'
+            Width = 75
+          end        
+          item
+            Caption = 'Наименование'
+            Width = 200
+          end        
+          item
+            Alignment = taRightJustify
+            Caption = 'Количество'
+            Width = 75
+          end        
+          item
+            Alignment = taRightJustify
+            Caption = 'По факту'
+            Width = 75
+          end        
+          item
+            Alignment = taRightJustify
+            Caption = 'Цена'
+            Width = 75
+          end        
+          item
+            Alignment = taRightJustify
+            Caption = 'Сумма'
+            Width = 75
+          end        
+          item
+            Alignment = taRightJustify
+            Caption = 'Сумма по факту'
+            Width = 120
+          end        
+          item
+            Caption = 'Справка А'
+            Visible = False
+            Width = 120
+          end        
+          item
+            Caption = 'Справка Б'
+            Visible = False
+            Width = 120
+          end>
+        GridLines = True
+        PopupMenu = PopupMenu1
+        ReadOnly = True
+        RowSelect = True
+        TabOrder = 1
+        ViewStyle = vsReport
+        OnAdvancedCustomDrawSubItem = ListView1AdvancedCustomDrawSubItem
+        OnClick = ListView1Click
+        OnDblClick = ListView1DblClick
+        OnKeyPress = ListView1KeyPress
+        OnMouseEnter = ListView1MouseEnter
+        OnSelectItem = ListView1SelectItem
+      end
+      object Panel2: TPanel
+        Left = 0
+        Height = 52
+        Top = 388
+        Width = 765
+        Align = alBottom
+        ClientHeight = 52
+        ClientWidth = 765
+        TabOrder = 2
+        object GroupBox1: TGroupBox
+          Left = 620
+          Height = 50
+          Top = 1
+          Width = 144
+          Align = alRight
+          Caption = 'Сумма по факту:'
+          ClientHeight = 30
+          ClientWidth = 140
+          TabOrder = 0
+          object stSummaFact: TStaticText
+            Left = 8
+            Height = 17
+            Top = 0
+            Width = 121
+            TabOrder = 0
+          end
+        end
+        object GroupBox2: TGroupBox
+          Left = 483
+          Height = 50
+          Top = 1
+          Width = 137
+          Align = alRight
+          Caption = 'Сумма документа:'
+          ClientHeight = 30
+          ClientWidth = 133
+          TabOrder = 1
+          object stSumma: TStaticText
+            Left = 11
+            Height = 17
+            Top = 0
+            Width = 117
+            TabOrder = 0
+          end
+        end
+        object Panel4: TPanel
+          Left = 1
+          Height = 50
+          Top = 1
+          Width = 482
+          Align = alClient
+          BevelOuter = bvNone
+          ClientHeight = 50
+          ClientWidth = 482
+          TabOrder = 2
+          object stFormB: TStaticText
+            Left = 304
+            Height = 17
+            Top = 26
+            Width = 128
+            TabOrder = 0
+          end
+          object StaticText7: TStaticText
+            Left = 240
+            Height = 17
+            Top = 26
+            Width = 65
+            Caption = 'Справка Б'
+            TabOrder = 1
+          end
+          object stFormA: TStaticText
+            Left = 81
+            Height = 17
+            Top = 26
+            Width = 135
+            TabOrder = 2
+          end
+          object StaticText5: TStaticText
+            Left = 9
+            Height = 17
+            Top = 26
+            Width = 65
+            Caption = 'Справка А:'
+            TabOrder = 3
+          end
+          object stTovar: TStaticText
+            Left = 0
+            Height = 17
+            Top = 0
+            Width = 482
+            Align = alTop
+            Font.CharSet = RUSSIAN_CHARSET
+            Font.Height = -13
+            Font.Name = 'MS Sans Serif'
+            Font.Pitch = fpVariable
+            Font.Quality = fqDraft
+            ParentFont = False
+            TabOrder = 4
+          end
+        end
+      end
+      object Edit1: TEdit
+        Left = 360
+        Height = 23
+        Top = 216
+        Width = 80
+        OnKeyPress = Edit1KeyPress
+        TabOrder = 3
+        Text = 'Edit1'
+        Visible = False
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Акцизные марки (v.3)'
+      ClientHeight = 440
+      ClientWidth = 765
+      object Panel1: TPanel
+        Left = 0
+        Height = 34
+        Top = 0
+        Width = 765
+        Align = alTop
+        ClientHeight = 34
+        ClientWidth = 765
+        TabOrder = 0
+        object BitBtn6: TBitBtn
+          Left = 5
+          Height = 30
+          Top = 2
+          Width = 75
+          Caption = 'Найти АМ'
+          OnClick = BitBtn6Click
+          TabOrder = 0
+        end
+      end
+      object StringGrid1: TStringGrid
+        Left = 0
+        Height = 406
+        Top = 34
+        Width = 765
+        Align = alClient
+        ColCount = 7
+        Columns = <        
+          item
+            ReadOnly = True
+            Title.Caption = 'Код товара'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Наименование'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'Справка А'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Справка Б'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Упаковка (палетто)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Акцизная марка'
+            Width = 350
+          end>
+        DefaultColWidth = 24
+        RowCount = 1
+        TabOrder = 1
+        OnDrawCell = StringGrid1DrawCell
+      end
+    end
+  end
+  object ToolBar2: TToolBar
+    Left = 0
+    Height = 34
+    Top = 468
+    Width = 773
+    Align = alBottom
+    ButtonHeight = 32
+    ButtonWidth = 23
+    Caption = 'ToolBar2'
+    TabOrder = 1
+    object BitBtn2: TBitBtn
+      Left = 645
+      Height = 32
+      Top = 2
+      Width = 128
+      Align = alRight
+      Caption = 'Отправить в ЕГАИС'
+      OnClick = BitBtn2Click
+      TabOrder = 0
+    end
+    object BitBtn1: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 95
+      Caption = 'Записать'
+      Glyph.Data = {
+        F6060000424DF606000000000000360000002800000018000000180000000100
+        180000000000C006000064000000640000000000000000000000AF611CAC5A17
+        AC5A17AF611CB26E2DB06B2AB06B2AB06B2AB06B2AB06B2AB06B2AB06B2AB06B
+        2AB06B2AB06B2AB06B2AB06B2AB06B2AB06B2AB26E2DAF611CAC5A17AC5A17AC
+        5A17AF611CEEC86DE49A157F8495DCE0E4D6D9DED6D9DED6D9DED6D9DED6D9DE
+        D6D9DED6D9DED6D9DED6D9DED6D9DED6D9DED6D9DED6D9DED6D9DEDCE0E47F84
+        95E59C1CDE9A22AC5A17BC7228ECC979E49A15908F9CDEDEDCDBDAD8DDDCDBDE
+        DEDCDEDEDCE0DFDDE1E0DFE1E0DFE2E1DFE3E2E1E3E2E1E5E3E2E5E3E2E5E3E2
+        E1E0DFE0DFDD908F9CE59C1CE0A028B6681CBE772FEECD80E59C1C9594A1E5E4
+        E3AFA4A69A898E91818786767E7C717673666C6D5E6563565E5C4E5554474D4D
+        41484639423B31385F555BE9E9E89594A1E59E25E2A231BB6C21BE772FEFCF85
+        E59E259999A5E5E6E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8
+        E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E6E7E8E69999A5E7A22BE4A738BB
+        6C21C47D33F0D18CE7A22B9F9DAAECEAE9DCDADAD9D8D7DAD6D7D8D7D6D8D5D6
+        D7D4D4D7D4D4D4D2D1D4D2D1D3D1D0D3D1D0D2D0D0D0CDCED4D2D1EDECEB9F9D
+        AAE7A732E5AB3EBE7026C47D33F1D392E7A732A4A2AFF0F0EFB3A9AB97878B8F
+        7F8486767E7D6F7373666C6D5E655F555B5C4E5554474D4D41484639423B3138
+        5F555BF4F5F3A4A2AFE9AB39E6AD48C07327C78335F1D392E9AB39A8A7B4F1F1
+        F0F1F1F0F4F5F3F6F6F5F7F8F6F8F9F8F8F9F8F9FBF8FAFBFAFBFDFAFDFEFCFE
+        FEFDFEFEFDFEFEFDF8F9F8F2F2F1A8A7B4EBAE3EE8B34BC37729C98539F2D598
+        EBAE3EACAAB8F6F6F5F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7
+        F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7F8F7F7ACAAB8ECB244EAB650C6
+        7B2CCC8B3BF3D79DECB244B2AFBCF9FBF8C7C0C2B3A9ABAFA4A6A79D9FA0999B
+        9B9194928B8E8F858B898185847A8080737B7C717673666C928B8EFDFEFCB2AF
+        BCEEB549EBBA56C87D2ECC8B3BF4D8A0EEB549B6B7C2FAF9F9F6F6F5FAF9F9FA
+        F9F9FAFAFAFBFBFBFCFBFBFCFBFBFCFCFCFEFDFDFEFDFDFEFDFDFEFEFDFEFEFD
+        FBFBFBFAFAFAB6B7C2EEB74FECBB5CCA8531D09040F3DAA5EEBA50A6A6B5FFFF
+        FFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFEFFFFFE
+        FFFFFEFFFFFEFFFFFEFFFFFFFFFFA6A6B5EFBC56EEBF62CE8934D29442F6DDAB
+        F0BF5CB8926991796B977B67977B65977B65977B65977B65977B65977B65977B
+        65977B65977B65977B65977B65977B65977B6791796BB89269F0C163F0C268CE
+        8934D49644F6DDABEEBF62F2C367FAC864A58973B8A28AB6A088B6A088B6A088
+        B6A088B6A088B6A088B6A088B6A088B6A088B6A088B8A28AA58973FAC864F2C3
+        67EFC068F0C56CD28F37D69A47F7E0AFEFC367F0C56CF6C867A29EABD8D8D9D4
+        D3D5D4D3D5D4D3D5D4D3D5D4D3D5D4D3D5D5D4D5D7D6D7D7D7D8D7D7D8D8D9DA
+        A29EABF6C867F0C56CF0C56CF2C970D4933AD99D49F7E1B3F0C56CF0C771F7CA
+        6BAEABB5DBD9D9D8D6D5D8D6D5D8D6D5D8D6D5D8D6D5D8D6D5DBD9D9BAB7BABA
+        B8BCBAB7BAD3D1D0AEABB5F7CA6BF0C771F0C771F1CA75D8973CDBA04CF8E4B5
+        F2C970F1CA75F7CC6FB2AFBCE0DFDDDDDCDBDDDCDBDDDCDBDDDCDBDDDCDBDDDC
+        DBE5E6E6654F3DA48257A57F51958D93B8B5BFF7CC6FF1CA75F1CA75F2CD79DA
+        9B3FE0A950FAE5B9F1CA75F2CD79F7CE73B8B5BFE5E3E2E1E0DFE1E0DFE1E0DF
+        E1E0DFE1E0DFE1E0DFE7E9EBA38052FFDA82FED57A908F9CC1BEC7F7CE73F2CD
+        79F2CD79F4D27DDC9F42E0A950FAE5B9F2CD79F4CE7DF9D077BCB9C4E7E8E6E5
+        E4E3E5E4E3E5E4E3E5E4E3E5E4E3E5E4E3EBECF09F7E54FBD580FED57A96949C
+        C3C0CBF9D077F4CE7DF4CE7DF5D282DFA144E4AB51FBE7BCF4D27DF5D282F9D3
+        7BC1BEC7EDECEBE9E9E8E9E9E8E9E9E8E9E9E8E9E9E8E9E9E8EFF2F5A48257FF
+        DA82FFDA829996A0C9C5D0F9D37BF5D282F5D282F8D98CE0A243E4AF54F9E8BE
+        F4D27DF5D584F9D57DC8C5CDF0F0EFEDEDECEDEDECEDEDECEDEDECEDEDECEDED
+        ECF5F7F983694ADCB871DAB36A9D9AA1CCCAD4F9D57DF5D584F8D98CE8B555E2
+        AD5CE6B359FCEED2F6D98DF5D480F9D57DCBC8D0F4F5F3F1F1F0F1F1F0F1F1F0
+        F1F1F0F1F1F0F1F1F0F7F8F69D9AA1A09EA59D9AA1D4D3D5CECBD3F9D57DF8D9
+        8CE8B555E4AB51000000E6AD48FBEDCCFCEED2FBE9C0FFEBBDDBDEECFBFFFFF9
+        FDFFF9FDFFF9FDFFF9FDFFF9FDFFF9FDFFFBFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        DBDEECFFEDC5ECBE66E6AD52000000000000E5A942E7B14CECBB5CECBB5CECBB
+        5CE7BB69E7BB69EABE6BEABE6BEABE6BEABE6BEABE6BEABE6BEABE6BEABE6BEA
+        BE6BEABE6BE7BB69E2AD5CEAB853EAB65D000000000000000000
+      }
+      OnClick = BitBtn1Click
+      TabOrder = 1
+    end
+    object BitBtn3: TBitBtn
+      Left = 96
+      Height = 32
+      Top = 2
+      Width = 96
+      Caption = 'Отмена'
+      OnClick = BitBtn3Click
+      TabOrder = 2
+    end
+    object BitBtn4: TBitBtn
+      Left = 192
+      Height = 32
+      Top = 2
+      Width = 96
+      Caption = 'Печать'
+      OnClick = BitBtn4Click
+      TabOrder = 3
+    end
+    object BitBtn5: TBitBtn
+      Left = 288
+      Height = 32
+      Top = 2
+      Width = 119
+      Caption = 'Запрос Справок А'
+      OnClick = BitBtn5Click
+      TabOrder = 4
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    left = 544
+    top = 192
+    object MenuItem1: TMenuItem
+      Caption = 'Редактировать Справку А'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Запрос Справки А'
+      OnClick = MenuItem2Click
+    end
+  end
+end
