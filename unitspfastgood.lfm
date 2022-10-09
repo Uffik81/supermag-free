@@ -1,0 +1,43 @@
+object Formspfastgood: TFormspfastgood
+  Left = -1207
+  Height = 284
+  Top = 547
+  Width = 571
+  BorderStyle = bsSingle
+  Caption = 'Formspfastgood'
+  ClientHeight = 284
+  ClientWidth = 571
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.0.8.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 284
+    Top = 0
+    Width = 571
+    Align = alClient
+    Columns = <    
+      item
+        Title.Caption = 'Товар ПЛУ'
+        Width = 100
+      end    
+      item
+        Title.Caption = 'Товар'
+        Width = 250
+      end    
+      item
+        Title.Caption = 'Цена'
+        Width = 100
+      end    
+      item
+        Title.Caption = 'Title'
+        Visible = False
+      end>
+    DefaultColWidth = 22
+    RowCount = 9
+    TabOrder = 0
+    OnDblClick = StringGrid1DblClick
+  end
+end

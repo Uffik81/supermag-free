@@ -1,0 +1,179 @@
+object FormShopToTransfer: TFormShopToTransfer
+  Left = 609
+  Height = 452
+  Top = 218
+  Width = 711
+  Caption = 'Перемещение из торгового зала в основной склад'
+  ClientHeight = 452
+  ClientWidth = 711
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '2.0.8.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 711
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 711
+    TabOrder = 0
+    OnClick = Panel1Click
+    object edNumDoc: TEdit
+      Left = 584
+      Height = 23
+      Top = 8
+      Width = 120
+      TabOrder = 0
+    end
+    object dpDateDoc: TDateTimePicker
+      Left = 392
+      Height = 23
+      Top = 8
+      Width = 79
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = -53780
+      TabOrder = 1
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 42807
+      Time = 0.570910601854848
+      UseDefaultSeparators = True
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+    end
+    object StaticText1: TStaticText
+      Left = 16
+      Height = 17
+      Top = 16
+      Width = 113
+      Caption = 'Итого в документе:'
+      TabOrder = 2
+    end
+    object stQuantityAll: TStaticText
+      Left = 136
+      Height = 17
+      Top = 16
+      Width = 65
+      Caption = '0'
+      TabOrder = 3
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 418
+    Width = 711
+    Align = alBottom
+    ButtonHeight = 32
+    ButtonWidth = 23
+    Caption = 'ToolBar1'
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 504
+      Height = 32
+      Top = 2
+      Width = 207
+      Align = alRight
+      Caption = 'Сохранить и Переместить'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object bbSave: TBitBtn
+      Left = 392
+      Height = 32
+      Top = 2
+      Width = 112
+      Align = alRight
+      Caption = 'Сохранить'
+      OnClick = bbSaveClick
+      TabOrder = 1
+    end
+    object bbRefreshDate: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 103
+      Caption = 'Заполнить дату'
+      OnClick = bbRefreshDateClick
+      TabOrder = 2
+    end
+    object BitBtn2: TBitBtn
+      Left = 104
+      Height = 32
+      Top = 2
+      Width = 91
+      Caption = 'Добавить из справочника'
+      OnClick = BitBtn2Click
+      TabOrder = 3
+    end
+    object BitBtn3: TBitBtn
+      Left = 195
+      Height = 32
+      Top = 2
+      Width = 125
+      Caption = 'Добавить из торг. зала'
+      OnClick = BitBtn3Click
+      TabOrder = 4
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 368
+    Top = 50
+    Width = 711
+    Align = alClient
+    ColCount = 8
+    ColumnClickSorts = True
+    Columns = <    
+      item
+        ReadOnly = True
+        Title.Caption = 'Код ЕГАИС'
+        Width = 120
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Наименование товара'
+        Width = 220
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Справка Б'
+        Width = 75
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Дата розлива'
+        Width = 75
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Количество на складе'
+        Width = 75
+      end    
+      item
+        Title.Alignment = taRightJustify
+        Title.Caption = 'Количество Переместить'
+        Width = 65
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Справка А'
+        Visible = False
+      end>
+    DefaultColWidth = 18
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goSmoothScroll]
+    RowCount = 1
+    TabOrder = 2
+  end
+end

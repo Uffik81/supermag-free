@@ -1,0 +1,55 @@
+object FormShowStatus: TFormShowStatus
+  Left = 499
+  Height = 103
+  Top = 335
+  Width = 381
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Ожидайте'
+  ClientHeight = 103
+  ClientWidth = 381
+  Color = clGray
+  FormStyle = fsSystemStayOnTop
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.4.4.0'
+  object Panel1: TPanel
+    Left = 20
+    Height = 56
+    Top = 8
+    Width = 340
+    BorderStyle = bsSingle
+    Caption = 'Идет печать документа'
+    Color = clSilver
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ProgressBar1: TProgressBar
+    Left = 20
+    Height = 20
+    Top = 72
+    Width = 340
+    TabOrder = 1
+  end
+  object Bevel1: TBevel
+    Left = 2
+    Height = 99
+    Top = 2
+    Width = 377
+    Align = alClient
+    BorderSpacing.Left = 1
+    BorderSpacing.Top = 1
+    BorderSpacing.Right = 1
+    BorderSpacing.Bottom = 1
+    BorderSpacing.Around = 1
+    BorderSpacing.InnerBorder = 1
+    Style = bsRaised
+  end
+end

@@ -1,0 +1,205 @@
+object FormSpProduct: TFormSpProduct
+  Left = 299
+  Height = 459
+  Top = 269
+  Width = 951
+  ActiveControl = StringGrid1
+  Caption = 'Справочник товара'
+  ClientHeight = 459
+  ClientWidth = 951
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.4.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 951
+    Align = alTop
+    ClientHeight = 34
+    ClientWidth = 951
+    TabOrder = 0
+    object Edit1: TEdit
+      Left = 8
+      Height = 23
+      Top = 8
+      Width = 256
+      OnChange = Edit1Change
+      TabOrder = 0
+    end
+    object ToggleBox1: TToggleBox
+      Left = 272
+      Height = 23
+      Top = 8
+      Width = 90
+      Caption = 'Фильтр'
+      OnChange = ToggleBox1Change
+      TabOrder = 1
+    end
+    object tbQuantity: TToggleBox
+      Left = 616
+      Height = 23
+      Top = 8
+      Width = 136
+      Caption = 'Только с остатком'
+      TabOrder = 2
+      Visible = False
+    end
+    object BitBtn2: TBitBtn
+      Left = 369
+      Height = 23
+      Top = 8
+      Width = 239
+      Caption = 'Найти по акцизной марке или штрихкоду'
+      OnClick = tbClearingChange
+      TabOrder = 3
+    end
+    object bbRefreshBC: TBitBtn
+      Left = 760
+      Height = 23
+      Top = 8
+      Width = 136
+      Caption = 'Получитьштрихкоды'
+      OnClick = bbRefreshBCClick
+      TabOrder = 4
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 44
+    Top = 415
+    Width = 951
+    Align = alBottom
+    ClientHeight = 44
+    ClientWidth = 951
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 8
+      Height = 30
+      Top = 8
+      Width = 75
+      Caption = 'Выбрать'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 381
+    Top = 34
+    Width = 951
+    Align = alClient
+    Caption = 'Panel3'
+    ClientHeight = 381
+    ClientWidth = 951
+    TabOrder = 2
+    object TreeView1: TTreeView
+      Left = 1
+      Height = 379
+      Top = 1
+      Width = 175
+      Align = alLeft
+      AutoExpand = True
+      DefaultItemHeight = 18
+      ExpandSignType = tvestPlusMinus
+      ReadOnly = True
+      RowSelect = True
+      TabOrder = 0
+      OnChange = TreeView1Change
+      Options = [tvoAutoExpand, tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoRowSelect, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+      Items.Data = {
+        F9FFFFFF020001000000FFFFFFFF0100000001000000FFFFFFFF000000000000
+        00000013000000D092D0B5D181D18C20D182D0BED0B2D0B0D180
+      }
+    end
+    object Splitter1: TSplitter
+      Left = 176
+      Height = 379
+      Top = 1
+      Width = 5
+    end
+    object StringGrid1: TStringGrid
+      Left = 181
+      Height = 379
+      Top = 1
+      Width = 769
+      Align = alClient
+      ColCount = 10
+      ColumnClickSorts = True
+      Columns = <      
+        item
+          ReadOnly = True
+          Title.Caption = 'КодЕГАИС'
+          Width = 120
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Наименование'
+          Width = 320
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Производитель'
+          Width = 75
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Объем'
+          Width = 75
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Алкоголь'
+          Width = 75
+        end      
+        item
+          Title.Caption = 'ШК EAN13'
+          Width = 120
+        end      
+        item
+          Title.Caption = 'Цена прод.'
+          Width = 75
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Остаток'
+          Width = 75
+        end      
+        item
+          Title.Caption = 'Остаток торг. зал'
+        end>
+      DefaultColWidth = 15
+      DefaultRowHeight = 19
+      Flat = True
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goDrawFocusSelected, goColSizing, goEditing, goSmoothScroll]
+      PopupMenu = PopupMenu1
+      TabOrder = 2
+      OnEditingDone = StringGrid1EditingDone
+      OnSelectEditor = StringGrid1SelectEditor
+      OnSelection = StringGrid1Selection
+      OnSetEditText = StringGrid1SetEditText
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    left = 464
+    top = 176
+    object MenuItem1: TMenuItem
+      Caption = 'Товар для кассы'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Удалить товар из кассы'
+      OnClick = MenuItem3Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Свойства алкогольного товара'
+      OnClick = MenuItem2Click
+    end
+  end
+end
