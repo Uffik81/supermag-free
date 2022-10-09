@@ -1,0 +1,154 @@
+object FormTransferToShop: TFormTransferToShop
+  Left = 489
+  Height = 426
+  Top = 290
+  Width = 551
+  ClientHeight = 426
+  ClientWidth = 551
+  KeyPreview = True
+  OnKeyDown = FormKeyDown
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.0.8.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 44
+    Top = 382
+    Width = 551
+    Align = alBottom
+    ClientHeight = 44
+    ClientWidth = 551
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 120
+      Height = 30
+      Top = 8
+      Width = 104
+      Caption = 'Переместить'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 8
+      Height = 30
+      Top = 8
+      Width = 108
+      Caption = 'Сохранить'
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 551
+    ButtonHeight = 34
+    ButtonWidth = 34
+    Caption = 'ToolBar1'
+    TabOrder = 1
+    object StaticText1: TStaticText
+      Left = 1
+      Height = 34
+      Top = 2
+      Width = 79
+      Caption = 'Номер документа:'
+      TabOrder = 0
+    end
+    object edNumDoc: TEdit
+      Left = 80
+      Height = 23
+      Top = 2
+      Width = 96
+      TabOrder = 1
+    end
+    object StaticText2: TStaticText
+      Left = 176
+      Height = 34
+      Top = 2
+      Width = 97
+      Caption = 'Дата документа:'
+      TabOrder = 2
+    end
+    object dpDateDoc: TDateTimePicker
+      Left = 273
+      Height = 23
+      Top = 2
+      Width = 79
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = -53780
+      TabOrder = 3
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 42644
+      Time = 0.968319803243503
+      UseDefaultSeparators = True
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 316
+    Top = 66
+    Width = 551
+    Align = alClient
+    ColCount = 6
+    Columns = <    
+      item
+        ReadOnly = True
+        Title.Caption = 'Наименование'
+        Width = 200
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'AlcCode'
+        Visible = False
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Форма 2 (Б)'
+        Width = 120
+      end    
+      item
+        Title.Caption = 'Количество'
+        Width = 75
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Дата розлива'
+        Width = 75
+      end>
+    DefaultColWidth = 18
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goSmoothScroll]
+    TabOrder = 2
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 26
+    Top = 40
+    Width = 551
+    Align = alTop
+    BevelInner = bvSpace
+    BevelOuter = bvLowered
+    ClientHeight = 26
+    ClientWidth = 551
+    TabOrder = 3
+    object BitBtn3: TBitBtn
+      Left = 2
+      Height = 22
+      Top = 2
+      Width = 38
+      Align = alLeft
+      Caption = '-'
+      OnClick = BitBtn3Click
+      TabOrder = 0
+    end
+  end
+end

@@ -1,0 +1,27 @@
+object FormUpdateTransfer: TFormUpdateTransfer
+  Left = 806
+  Height = 144
+  Top = 310
+  Width = 370
+  BorderIcons = [biSystemMenu]
+  Caption = 'Обновление остатков торгового зала'
+  ClientHeight = 144
+  ClientWidth = 370
+  Position = poDesktopCenter
+  LCLVersion = '2.0.8.0'
+  object StaticText1: TStaticText
+    Left = 51
+    Height = 81
+    Top = 25
+    Width = 273
+    Caption = 'Ожидаем ответ из ЕГАИС!'
+    TabOrder = 0
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 30000
+    OnTimer = Timer1Timer
+    left = 240
+    top = 16
+  end
+end
