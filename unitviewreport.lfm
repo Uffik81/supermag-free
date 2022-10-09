@@ -1,0 +1,107 @@
+object FormViewReport: TFormViewReport
+  Left = -799
+  Height = 370
+  Top = 220
+  Width = 543
+  Caption = 'Просмотр'
+  ClientHeight = 370
+  ClientWidth = 543
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '2.0.8.0'
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 347
+    Width = 543
+    Panels = <>
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 38
+    Top = 0
+    Width = 543
+    ButtonHeight = 32
+    ButtonWidth = 23
+    Caption = 'ToolBar1'
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 95
+      Caption = 'Печать'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 96
+      Height = 32
+      Top = 2
+      Width = 120
+      Caption = 'Быстрая печать'
+      TabOrder = 1
+    end
+    object BitBtn3: TBitBtn
+      Left = 216
+      Height = 32
+      Top = 2
+      Width = 136
+      Caption = 'Настройка Принтера'
+      OnClick = BitBtn3Click
+      TabOrder = 2
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 309
+    Top = 38
+    Width = 543
+    HorzScrollBar.Page = 1
+    VertScrollBar.Page = 1
+    Align = alClient
+    ClientHeight = 305
+    ClientWidth = 539
+    TabOrder = 2
+    object frPreview1: TfrPreview
+      Left = 0
+      Height = 305
+      Top = 0
+      Width = 539
+      Align = alClient
+      BevelOuter = bvLowered
+      Caption = 'Просмотр'
+      TabOrder = 0
+      ScrollBars = ssBoth
+    end
+  end
+  object PrintDialog1: TPrintDialog
+    left = 148
+    top = 98
+  end
+  object PrinterSetupDialog1: TPrinterSetupDialog
+    left = 272
+    top = 98
+  end
+  object frReport1: TfrReport
+    Dataset = frUserDataset1
+    InitialZoom = pzDefault
+    Options = []
+    Preview = frPreview1
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    Title = 'Отчет'
+    OnGetValue = frReport1GetValue
+    OnEnterRect = frReport1EnterRect
+    OnBeginColumn = frReport1BeginColumn
+    left = 188
+    top = 211
+  end
+  object frUserDataset1: TfrUserDataset
+    OnCheckEOF = frUserDataset1CheckEOF
+    OnFirst = frUserDataset1First
+    OnNext = frUserDataset1Next
+    left = 54
+    top = 162
+  end
+end
