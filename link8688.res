@@ -1,0 +1,973 @@
+SEARCH_DIR(".\attab\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\addons\cairoexport\lib\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\addons\pdfexport\lib\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\sqldb\lib\i386-win32\win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\printers\lib\i386-win32\win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\")
+SEARCH_DIR(".\python_laz\PythonForLazarus\python4lazarus\lib\i386-win32\")
+SEARCH_DIR("D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\lazcontrols\lib\i386-win32\win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\cairocanvas\lib\i386-win32\win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\datetimectrls\lib\i386-win32\win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\freetype\lib\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\codetools\units\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\lazarus\packager\units\i386-win32\")
+SEARCH_DIR(".\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\httpd22\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\zorba\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\zlib\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-jedi\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\winceunits\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\webidl\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\vcl-compat\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\utils-pas2js\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\unzip\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\tplylib\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\tcl\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\symbolic\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\sqlite\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\sdl\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-unicode\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-objpas\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-generics\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-extra\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-console\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\rsvg\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\regexpr\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\pxlib\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\ptc\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\postgres\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\pcap\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\pastojs\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\oracle\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\openssl\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\opengles\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\opengl\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\opencl\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\openal\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\oggvorbis\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\odbc\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\odata\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\nvapi\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\numlib\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\mysql\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\mad\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\lua\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libxml2\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libvlc\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libusb\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libtar\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libsee\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libpng\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libmicrohttpd\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libgd\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libffi\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libenet\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\libcurl\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\jni\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\imagemagick\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\ibase\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\httpd24\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\hermes\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\hash\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\gtk2\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\gtk1\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\graph\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\googleapi\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\gnutls\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\gmp\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\gdbint\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fv\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fppkg\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fpmkunit\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fpindexer\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fpgtk\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fftw\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-web\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-stl\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-sound\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-sdo\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-res\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-report\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-registry\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-process\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-pdf\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-passrc\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-net\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-json\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-js\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-fpcunit\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-extra\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\fastcgi\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\dblib\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\chm\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\cdrom\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\cairo\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\bzip2\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\aspell\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\a52\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\units\i386-win32\")
+SEARCH_DIR("D:\soft\fpcupdeluxe\fpc\bin\i386-win32\")
+INPUT(
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\sysinitpas.o
+D:\src\supermag-fpc\src\lib\i386-win32\supermag.o
+D:\src\supermag-fpc\src\lib\i386-win32\supermag.or
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\system.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\lnfodwrf.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\exeinfo.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\strings.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\windows.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\objpas.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\fpintres.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\interfaces.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\forms.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitstart.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitrealttn.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitselitem.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitjurnale.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitoptions.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitbuytth.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinsertinn.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitfilter.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinvent.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitostatok.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitticket.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitselecttov.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitactwriteoff.o
+D:\soft\fpcupdeluxe\lazarus\components\datetimectrls\lib\i386-win32\win32\datetimectrls.o
+D:\soft\fpcupdeluxe\lazarus\components\printers\lib\i386-win32\win32\printer4lazarus.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\pack_powerpdf.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\laz_fpspreadsheet.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitaddformb.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinfo.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitselectprod.o
+D:\src\supermag-fpc\src\lib\i386-win32\uniteditforma.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitviewreport.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinv2.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitspproducer.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitspproduct.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitrepoborot.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitreport.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitwaybillact.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitsetpasswordadmin.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitaddoptions.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitloginadmin.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitresenddoc.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitsupportutm.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitdocdelete.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitviewoborot.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitreportclient.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\addons\pdfexport\lib\i386-win32\lazreportpdfexport.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitreturnttn.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitspkass.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitlogging.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitframework.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitsetpdf417.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitpdf417.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinputprice.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitrepoborotap.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitexportdecalc.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitcashreport.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitreportoborot.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitaddbarcode.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitselectproduct.o
+D:\src\supermag-fpc\src\lib\i386-win32\unittransfercash.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitedititem.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinputsumm.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitsetalcdate.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitactchargeonshop.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitshoprest.o
+D:\src\supermag-fpc\src\lib\i386-win32\unittransfertoshop.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitactwriteoffshop.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitexportform12.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitsendnumber.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitalcitem.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitspgoods.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitprintpdf417.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitquerypdf417.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinventshop.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitshowstatus.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitregclient.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitunlockscreen.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitreportsalesgoods.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitexportform5.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitcomment.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitcheckedmark.o
+D:\src\supermag-fpc\src\lib\i386-win32\uniteditproducer.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitcommon.o
+D:\src\supermag-fpc\src\lib\i386-win32\unituserloginv2.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitsendemails.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitsalesbeerts.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitjurnalets.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinputstring.o
+D:\src\supermag-fpc\src\lib\i386-win32\uniteditgroup.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitnews.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitselgroup.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitspusers.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitspfastgood.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitdevices.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitextreport.o
+D:\src\supermag-fpc\src\lib\i386-win32\uniteditformcheck.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitprintticket.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitvisualfindgoods.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitvisualselectgoods.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitloginuserv3.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitvisualselecttable.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinputsummv2.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitinputquantity.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitactwriteoffts.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitactwritebeer.o
+D:\src\supermag-fpc\src\lib\i386-win32\frameworkmodules.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitvikisetting.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitshowmessage.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitwaybillv2.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitshoptotransfer.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitupdatetransfer.o
+D:\src\supermag-fpc\src\lib\i386-win32\udiscountcard.o
+D:\src\supermag-fpc\src\lib\i386-win32\uspdiscountcards.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitaddformbv2.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitcigar.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitcashfilter.o
+D:\src\supermag-fpc\src\lib\i386-win32\univiewcheck.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitjurnalealcforms.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitjurnaleinwaybills.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazutf8.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\interfacebase.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\fpcadds.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\classes.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\sysutils.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-objpas\strutils.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\rtlconsts.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\types.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\typinfo.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\sysconst.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\windirs.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\math.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\gettext.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpimage.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lclproc.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lcltype.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lmessages.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lclplatformdef.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\intfgraphics.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\themes.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\integerlist.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazutilities.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazloggerbase.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\graphtype.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\graphmath.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\laz_avl_tree.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazfileutils.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazmethodlist.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\laztracer.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lclstrconsts.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazutilsstrconsts.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\shlobj.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\activex.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\shellapi.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\commctrl.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-objpas\variants.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\ctypes.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-objpas\varutils.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazclasses.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\messages.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpreadbmp.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpwritebmp.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\bmpcomn.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpreadpng.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpwritepng.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpreadtiff.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpwritetiff.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fptiffcmn.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lclversion.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\icnstypes.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpimgcmn.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\pngcomn.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\zstream.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\zbase.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\gzio.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\dos.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\hash\crc.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\zdeflate.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\zinflate.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\trees.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\adler.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\infblock.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\infutil.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\infcodes.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\inftrees.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\inffast.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazversion.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\graphics.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lclintf.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\contnrs.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpcanvas.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpreadpnm.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpwritepnm.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpreadjpeg.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpwritejpeg.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpreadgif.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lresources.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lclrescache.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsreferences.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\clipping.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jpeglib.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdapimin.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdatasrc.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdapistd.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jmorecfg.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdeferr.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jinclude.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jerror.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jmemmgr.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdmarker.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdinput.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcomapi.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jutils.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jmemnobs.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdmaster.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdcolor.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdsample.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdpostct.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jddctmgr.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdphuff.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdhuff.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdcoefct.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdmainct.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jquant1.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jquant2.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdmerge.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdct.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jidctfst.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jidctint.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jidctflt.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jidctred.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcapistd.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcapimin.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jdatadst.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcparam.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcinit.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcmarker.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcphuff.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jchuff.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcmaster.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jccolor.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcsample.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcprepct.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcdctmgr.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jccoefct.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jcmainct.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jfdctint.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jfdctfst.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\pasjpeg\jfdctflt.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazconfigstorage.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\dynqueue.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\avglvltree.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazdbglog.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\syncobjs.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazutf16.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\fileutil.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\utf8process.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazsysutils.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\maps.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\tmschema.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\fgl.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\masks.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-process\process.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-process\pipes.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32int.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\multimon.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\character.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\controls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\buttons.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\dialogs.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\stdctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\menus.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\comctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32def.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\spin.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\translations.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\unicodedata.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\unicodenumtable.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\imglist.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\propertystorage.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\actnlist.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lclclasses.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\uitypes.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fpimgcanv.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\fppixlcanv.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\pixtools.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-image\ellipses.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wslclclasses.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsimglist.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsproc.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsfactory.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\rttiutils.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsmenus.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazlogger.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazstringutils.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\custapp.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\customtimer.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\clipbrd.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\helpintfs.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\singleinstance.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\chm\fasthtmlparser.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-objpas\system.uitypes.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wscontrols.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsforms.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\imagelistcache.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\textstrings.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\extendedstrings.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsstdctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsbuttons.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\buttonpanel.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\extctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lcltaskdialog.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\popupnotifier.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsextctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsdialogs.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\toolwin.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wscomctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wstoolwin.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsspin.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-json\jsonscanner.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-json\jsonparser.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-json\fpjson.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lconvencoding.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\stringhashlist.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-json\jsonreader.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\codepagescommon.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\codepagesasian.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32proc.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsfactory.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wscontrols.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsbuttons.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsmenus.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsstdctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsdialogs.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32themes.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32extra.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lclmessageglue.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\calendar.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\extdlgs.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\checklst.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\grids.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\shellctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wscalendar.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\calcform.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsextdlgs.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wschecklst.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\htmldefs.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\maskedit.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\dynamicarray.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\laz2_xmlcfg.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lcsvutils.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\imm.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\lazfilecache.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\laz2_dom.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\laz2_xmlread.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\laz2_xmlwrite.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\laz2_xmlutils.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\uriparser.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsgrids.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wsshellctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wscalendar.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wschecklst.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wscomctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsextctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsextdlgs.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsforms.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsgrids.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsimglist.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsshellctrls.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\win32wsspin.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\uxtheme.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\commdlg.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\sqldb.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\mysql50conn.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\mysql\mysql50.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\dom.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\xmlread.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\db.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\bufdataset.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\sqlscript.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\sqltypes.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-objpas\fmtbcd.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\maskutils.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\dbconst.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\bufdataset_parser.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\dbf_prscore.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\dbf_prsdef.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-db\dbf_prssupp.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\mysql\mysql50dyn.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\dynlibs.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-objpas\dateutils.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\xmlutils.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\dtdmodel.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\xmlreader.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\xmltextreader.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\nb30.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-web\fphttpclient.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-net\ssockets.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-web\httpdefs.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\base64.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-extra\sockets.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-extra\winsock2.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-net\resolve.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-extra\winsock.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-web\httpprotocol.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-net\sslsockets.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-net\sslbase.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\openssl\opensslsockets.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\comobj.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-base\inifiles.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\zipper.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitsalesbeer.o
+D:\src\supermag-fpc\src\lib\i386-win32\fwcore.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\openssl\openssl.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\openssl\fpopenssl.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\comconst.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\ole2.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-registry\registry.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\iphtml.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_desgn.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lazhelphtml.o
+D:\src\supermag-fpc\src\lib\i386-win32\modulemercury.o
+D:\src\supermag-fpc\src\lib\i386-win32\attabs.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lclmemmanager.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\iphtmltablist.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\ipanim.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\graphutil.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\ipconst.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\ipstrms.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\iputils.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\iphtmlprop.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\ipmsg.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lazcanvas.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lazregions.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\iphtmlblocklayout.o
+D:\soft\fpcupdeluxe\lazarus\components\turbopower_ipro\units\i386-win32\win32\iphtmltablelayout.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\printers.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\objectinspector.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\propedits.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\graphpropedits.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_class.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_color.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_edit.o
+D:\soft\fpcupdeluxe\lazarus\components\lazcontrols\lib\i386-win32\win32\checkboxthemed.o
+D:\soft\fpcupdeluxe\lazarus\components\lazcontrols\lib\i386-win32\win32\treefilteredit.o
+D:\soft\fpcupdeluxe\lazarus\components\lazcontrols\lib\i386-win32\win32\listfilteredit.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\ideimagesintf.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\idehelpintf.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\objinspstrconsts.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\propeditutils.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\componenttreeview.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\oifavoriteproperties.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\componenteditors.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\changeparentdlg.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\editbtn.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\groupededit.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\calendarpopup.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\timepopup.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\lazhelpintf.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\texttools.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\valedit.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\filectrl.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\frmselectprops.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\stringspropeditdlg.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\keyvalpropeditdlg.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\collectionpropeditform.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\filefilterpropeditor.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\pagespropeditdlg.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\idewindowintf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\ideoptionsintf.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\lazideintf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\baseideintf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\compoptsintf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\projectintf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\ideexterntoolintf.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\ideopteditorintf.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\srceditorintf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\macrointf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\macrodefintf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\newitemintf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\projpackintf.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\buildstrconsts.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\editorsyntaxhighlighterdef.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\idecommands.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\formeditingintf.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\idedialogs.o
+D:\soft\fpcupdeluxe\lazarus\components\buildintf\units\i386-win32\lazmsgworker.o
+D:\soft\fpcupdeluxe\lazarus\components\lazutils\lib\i386-win32\compwriterpas.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\unitresources.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\lazstringgridedit.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\checklistboxeditordlg.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\checkgroupeditordlg.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\componentreg.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\arrow.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\industrialbase.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\graphicpropedit.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\stdactns.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\xmlwrite.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\fcl-xml\xmlconf.o
+D:\soft\fpcupdeluxe\lazarus\components\printers\lib\i386-win32\win32\osprinters.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_view.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_pars.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_intrp.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_dset.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_dbset.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_dbrel.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_const.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\dbctrls.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\winver.o
+D:\soft\fpcupdeluxe\lazarus\components\printers\lib\i386-win32\win32\winutilprn.o
+D:\soft\fpcupdeluxe\lazarus\components\printers\lib\i386-win32\win32\printersdlgs.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_prntr.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_srch.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_prdlg.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_previewtoolsabstract.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_dopt.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_pgopt.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_utils.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_dbcomponent.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_fmted.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_progr.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_hyphen.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\dbpropedits.o
+D:\soft\fpcupdeluxe\lazarus\packager\units\i386-win32\lazaruspackageintf.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\dbgrids.o
+D:\soft\fpcupdeluxe\lazarus\components\ideintf\units\i386-win32\win32\dbgridcolumnspropeditform.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_propedit.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedit.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synhighlighterpas.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\lazsynimmbase.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\lazsynimm.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedittypes.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditsearch.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditkeycmds.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmousecmds.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmiscprocs.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditpointclasses.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synbeautifier.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmarks.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmarkup.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmarkuphighall.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmarkupbracket.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmarkupwordgroup.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmarkupctrlmouselink.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmarkupspecialline.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmarkupselection.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmarkupspecialchar.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedittextbase.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\lazsynedittext.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedittextbuffer.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditlines.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedittexttrimmer.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedittexttabexpander.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedittextdoublewidthchars.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditfoldedview.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syngutterbase.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syngutter.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditmiscclasses.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedithighlighter.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\lazsyntextarea.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syntextdrawer.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedittextbidichars.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synguttercodefolding.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syngutterchanges.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syngutterlinenumber.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synguttermarks.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syngutterlineoverview.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditstrconst.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\lazsyneditmousecmdstypes.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\regexpr\regexpr.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synedithighlighterfoldbase.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_var.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_flds.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_expres.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_gedit.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_templ.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_newrp.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_dsopt.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_hilit.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_ev_ed.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_bnded.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_vbnd.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_btyp.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_grped.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_about.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_iflds.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_design_ins_filed.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_vared.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_funct_editor_unit.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_funct_editor_unit1.o
+D:\src\supermag-fpc\src\lib\i386-win32\moduledb.o
+D:\src\supermag-fpc\src\lib\i386-win32\httpsend.o
+D:\src\supermag-fpc\src\lib\i386-win32\ssl_openssl.o
+D:\src\supermag-fpc\src\lib\i386-win32\blcksock.o
+D:\src\supermag-fpc\src\lib\i386-win32\synautil.o
+D:\src\supermag-fpc\src\lib\i386-win32\synaip.o
+D:\src\supermag-fpc\src\lib\i386-win32\synacode.o
+D:\src\supermag-fpc\src\lib\i386-win32\synsock.o
+D:\src\supermag-fpc\src\lib\i386-win32\synafpc.o
+D:\src\supermag-fpc\src\lib\i386-win32\ssl_openssl_lib.o
+D:\src\supermag-fpc\src\lib\i386-win32\atcanvasprimitives.o
+D:\src\supermag-fpc\src\lib\i386-win32\attabs_picture.o
+D:\src\supermag-fpc\src\lib\i386-win32\atflatcontrols_separator.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitjurnalestocks.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitjurnaledoccash.o
+D:\src\supermag-fpc\src\lib\i386-win32\unithonestsign.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitjurnalereturnwaybill.o
+D:\soft\fpcupdeluxe\lazarus\components\datetimectrls\lib\i386-win32\win32\datetimepicker.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\colorbox.o
+D:\soft\fpcupdeluxe\lazarus\components\datetimectrls\lib\i386-win32\win32\calcontrolwrapper.o
+D:\soft\fpcupdeluxe\lazarus\components\datetimectrls\lib\i386-win32\win32\lclcalwrapper.o
+D:\src\supermag-fpc\src\lib\i386-win32\qrcode.o
+D:\src\supermag-fpc\src\lib\i386-win32\unitvikidevice.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\pairsplitter.o
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\wspairsplitter.o
+D:\src\supermag-fpc\src\lib\i386-win32\synaser.o
+D:\src\supermag-fpc\src\lib\i386-win32\pdf417lib.o
+D:\src\supermag-fpc\src\lib\i386-win32\pdf417libimp.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synmemo.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpspreadsheet.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\xlsbiff8.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsrpn.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpstypes.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsexprparser.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsclasses.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsnumformat.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpspagelayout.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsimages.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsconditionalformat.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsstrings.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsutils.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsreaderwriter.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsfunc.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\xlsconst.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpspatches.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpscurrency.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsheaderfooterparser.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpshtmlutils.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsstreams.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\xlscommon.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpolebasic.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpspalette.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\uvirtuallayer_ole.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\uvirtuallayer_types.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\uvirtuallayer.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\uvirtuallayer_ole_helpers.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\uvirtuallayer_ole_types.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\uvirtuallayer_stream.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\xlsescher.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\addons\pdfexport\lib\i386-win32\lr_e_pdf.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_barc.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_shape.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PdfDoc.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PdfTypes.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PdfFonts.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PRJpegImage.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PReport.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\lr_rrect.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\lib\i386-win32\barcode.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\paszlib.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\zcompres.o
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\paszlib\zuncompr.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PdfImages.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PdfJpegImage.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PdfImageLazTools.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PRAnnotation.o
+D:\src\supermag-fpc\src\lib\i386-win32\mimemess.o
+D:\src\supermag-fpc\src\lib\i386-win32\mimepart.o
+D:\src\supermag-fpc\src\lib\i386-win32\smtpsend.o
+D:\src\supermag-fpc\src\lib\i386-win32\synachar.o
+D:\src\supermag-fpc\src\lib\i386-win32\mimeinln.o
+D:\src\supermag-fpc\src\lib\i386-win32\synaicnv.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\synmacrorecorder.o
+D:\soft\fpcupdeluxe\lazarus\components\synedit\units\i386-win32\win32\syneditplugins.o
+.\python_laz\PythonForLazarus\python4lazarus\lib\i386-win32\PythonEngine.o
+.\python_laz\PythonForLazarus\python4lazarus\lib\i386-win32\MethodCallBack.o
+D:\soft\fpcupdeluxe\lazarus\components\datetimectrls\lib\i386-win32\win32\dbdatetimepicker.o
+D:\soft\fpcupdeluxe\lazarus\components\printers\lib\i386-win32\win32\printer4lazstrconst.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PdfJpCMap.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PdfJPFonts.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PdfGBFonts.o
+D:\src\supermag-fpc\powerpdf_0.9.16_20200814.tar\powerpdf_0.9.16_20200814\lib\i386-win32\PowerPdf.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsallformats.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpscell.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpssearch.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpscrypto.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\xlsbiff2.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\xlsbiff5.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\xlsxooxml.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\xlsxml.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsopendocument.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpscsv.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpshtml.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\wikitable.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpsxmlcommon.o
+D:\soft\fpcupdeluxe\ccr\fpspreadsheet\source\common\lib\i386-win32\fpscsvdocument.o
+D:\soft\fpcupdeluxe\lazarus\components\lazreport\source\addons\pdfexport\lib\i386-win32\lr_pdfexp_reg.o
+)
+GROUP(
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\libimpsysinitpas.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\libimpsystem.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\libimpwindows.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\libimpfpintres.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\libimpsysutils.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\libimpwindirs.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\libimpshlobj.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\libimpactivex.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\libimpshellapi.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\libimpcommctrl.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-objpas\libimpvarutils.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl\libimpdos.a
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\libimplclintf.a
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\libimpwin32int.a
+D:\soft\fpcupdeluxe\lazarus\lcl\units\i386-win32\win32\libimpwin32extra.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\libimpimm.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\libimpcommdlg.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\mysql\libimpmysql50.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\winunits-base\libimpnb30.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-extra\libimpwinsock2.a
+D:\soft\fpcupdeluxe\fpc\units\i386-win32\rtl-extra\libimpwinsock.a
+D:\soft\fpcupdeluxe\lazarus\components\printers\lib\i386-win32\win32\libimpwinutilprn.a
+)
+SEARCH_DIR("/usr/i686-pc-cygwin/lib"); SEARCH_DIR("/usr/lib"); SEARCH_DIR("/usr/lib/w32api");
+OUTPUT_FORMAT(pei-i386)
+ENTRY(_mainCRTStartup)
+SECTIONS
+{
+  . = SIZEOF_HEADERS;
+  . = ALIGN(__section_alignment__);
+  .text  __image_base__ + ( __section_alignment__ < 0x1000 ? . : __section_alignment__ ) :
+  {
+    __text_start__ = . ;
+    *(.init)
+    *(.text .stub .text.* .gnu.linkonce.t.*)
+    *(SORT(.text$*))
+    *(.glue_7t)
+    *(.glue_7)
+    . = ALIGN(8);
+     ___CTOR_LIST__ = .; __CTOR_LIST__ = . ;
+    LONG (-1);
+    *(.ctors); *(.ctor); *(SORT(.ctors.*));  LONG (0);
+     ___DTOR_LIST__ = .; __DTOR_LIST__ = . ;
+    LONG (-1);
+    *(.dtors); *(.dtor); *(SORT(.dtors.*));  LONG (0);
+     *(.fini)
+    PROVIDE (etext = .);
+    *(.gcc_except_table)
+  }
+  .data BLOCK(__section_alignment__) :
+  {
+    __data_start__ = . ;
+    *(.data .data.* .gnu.linkonce.d.* .fpc*)
+    *(.data2)
+    *(SORT(.data$*))
+    *(.jcr)
+    PROVIDE (__tls_index = .);
+    LONG (0);
+    __data_end__ = . ;
+    *(.data_cygwin_nocopy)
+  }
+  .rdata BLOCK(__section_alignment__) :
+  {
+    *(.rdata)
+    *(.rdata.*)
+    *(.rodata .rodata.* .gnu.linkonce.r.*)
+    *(SORT(.rdata$*))
+    *(.eh_frame)
+    ___RUNTIME_PSEUDO_RELOC_LIST__ = .;
+    __RUNTIME_PSEUDO_RELOC_LIST__ = .;
+    *(.rdata_runtime_pseudo_reloc)
+    ___RUNTIME_PSEUDO_RELOC_LIST_END__ = .;
+    __RUNTIME_PSEUDO_RELOC_LIST_END__ = .;
+  }
+  .pdata BLOCK(__section_alignment__) : { *(.pdata) }
+  .bss BLOCK(__section_alignment__) :
+  {
+    __bss_start__ = . ;
+    *(.bss .bss.* .gnu.linkonce.b.*)
+    *(SORT(.bss$*))
+    *(COMMON)
+    __bss_end__ = . ;
+  }
+  .edata BLOCK(__section_alignment__) : { *(.edata) }
+  .idata BLOCK(__section_alignment__) :
+  {
+    SORT(*)(.idata$2)
+    SORT(*)(.idata$3)
+    /* These zeroes mark the end of the import list.  */
+    LONG (0); LONG (0); LONG (0); LONG (0); LONG (0);
+    SORT(*)(.idata$4)
+    SORT(*)(.idata$5)
+    SORT(*)(.idata$6)
+    SORT(*)(.idata$7)
+  }
+  .CRT BLOCK(__section_alignment__) :
+  {
+    ___crt_xc_start__ = . ;
+    *(SORT(.CRT$XC*))  /* C initialization */
+    ___crt_xc_end__ = . ;
+    ___crt_xi_start__ = . ;
+    *(SORT(.CRT$XI*))  /* C++ initialization */
+    ___crt_xi_end__ = . ;
+    ___crt_xl_start__ = . ;
+    *(SORT(.CRT$XL*))  /* TLS callbacks */
+    /* ___crt_xl_end__ is defined in the TLS Directory support code */
+    PROVIDE (___crt_xl_end__ = .);
+    ___crt_xp_start__ = . ;
+    *(SORT(.CRT$XP*))  /* Pre-termination */
+    ___crt_xp_end__ = . ;
+    ___crt_xt_start__ = . ;
+    *(SORT(.CRT$XT*))  /* Termination */
+    ___crt_xt_end__ = . ;
+  }
+  .tls BLOCK(__section_alignment__) :
+  {
+    ___tls_start__ = . ;
+    *(.tls .tls.*)
+    *(.tls$)
+    *(SORT(.tls$*))
+    ___tls_end__ = . ;
+  }
+  .rsrc BLOCK(__section_alignment__) :
+  {
+    *(.rsrc)
+    *(SORT(.rsrc$*))
+  }
+  .reloc BLOCK(__section_alignment__) : { *(.reloc) }
+  .stab BLOCK(__section_alignment__) (NOLOAD) : { *(.stab) }
+  .stabstr BLOCK(__section_alignment__) (NOLOAD) : { *(.stabstr) }
+  .debug_aranges BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_aranges) }
+  .debug_pubnames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_pubnames) }
+  .debug_info BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_info) *(.gnu.linkonce.wi.*) }
+  .debug_abbrev BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_abbrev) }
+  .debug_line BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_line) }
+  .debug_frame BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_frame) }
+  .debug_str BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_str) }
+  .debug_loc BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_loc) }
+  .debug_macinfo BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_macinfo) }
+  .debug_weaknames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_weaknames) }
+  .debug_funcnames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_funcnames) }
+  .debug_typenames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_typenames) }
+  .debug_varnames BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_varnames) }
+  .debug_ranges BLOCK(__section_alignment__) (NOLOAD) : { *(.debug_ranges) }
+}
