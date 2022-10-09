@@ -1,0 +1,117 @@
+object FormSetPDF417: TFormSetPDF417
+  Left = 811
+  Height = 203
+  Top = 365
+  Width = 374
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Акцизная марка'
+  ClientHeight = 203
+  ClientWidth = 374
+  KeyPreview = True
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  OnKeyPress = FormKeyPress
+  OnKeyUp = FormKeyUp
+  Position = poScreenCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.8.4.0'
+  object stName: TStaticText
+    Left = 11
+    Height = 64
+    Top = 56
+    Width = 349
+    TabOrder = 0
+  end
+  object StaticText2: TStaticText
+    Left = 11
+    Height = 48
+    Top = 8
+    Width = 349
+    Alignment = taCenter
+    Caption = 'Отсканируйте акцизную марку'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+  object StaticText1: TStaticText
+    Left = 11
+    Height = 17
+    Top = 128
+    Width = 65
+    Caption = 'Штрихкод:'
+    TabOrder = 2
+  end
+  object StaticText3: TStaticText
+    Left = 11
+    Height = 17
+    Top = 144
+    Width = 65
+    Caption = 'Объем:'
+    TabOrder = 3
+  end
+  object StaticText4: TStaticText
+    Left = 194
+    Height = 17
+    Top = 144
+    Width = 65
+    Caption = 'Алкоголь:'
+    TabOrder = 4
+  end
+  object stBarcode: TStaticText
+    Left = 81
+    Height = 17
+    Top = 128
+    Width = 280
+    TabOrder = 5
+  end
+  object stDal: TStaticText
+    Left = 80
+    Height = 17
+    Top = 144
+    Width = 97
+    TabOrder = 6
+  end
+  object stAlcValue: TStaticText
+    Left = 264
+    Height = 17
+    Top = 144
+    Width = 97
+    TabOrder = 7
+  end
+  object StaticText5: TStaticText
+    Left = 11
+    Height = 25
+    Top = 168
+    Width = 113
+    Caption = 'Текущий остаток:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+  end
+  object stQual: TStaticText
+    Left = 128
+    Height = 25
+    Top = 168
+    Width = 65
+    Caption = '0'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 9
+  end
+end

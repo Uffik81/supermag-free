@@ -1,0 +1,55 @@
+object FormSendNumber: TFormSendNumber
+  Left = 520
+  Height = 102
+  Top = 282
+  Width = 283
+  BorderStyle = bsDialog
+  Caption = 'Введите число'
+  ClientHeight = 102
+  ClientWidth = 283
+  OnShow = FormShow
+  LCLVersion = '1.4.4.0'
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 68
+    Width = 283
+    Align = alBottom
+    ButtonHeight = 32
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 172
+      Height = 32
+      Top = 2
+      Width = 111
+      Align = alRight
+      Caption = 'Применить'
+      Default = True
+      ModalResult = 1
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 103
+      Caption = 'Отмена'
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+  end
+  object Edit1: TEdit
+    Left = 32
+    Height = 23
+    Top = 24
+    Width = 232
+    Alignment = taRightJustify
+    OnChange = Edit1Change
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 1
+    Text = '0'
+  end
+end

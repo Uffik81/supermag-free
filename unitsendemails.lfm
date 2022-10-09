@@ -1,0 +1,105 @@
+object FormSendEMails: TFormSendEMails
+  Left = 595
+  Height = 391
+  Top = 410
+  Width = 406
+  Caption = 'FormSendEMails'
+  ClientHeight = 391
+  ClientWidth = 406
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.4.4.0'
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 406
+    ButtonHeight = 32
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 95
+      Caption = 'Выделить все'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 96
+      Height = 32
+      Top = 2
+      Width = 120
+      Caption = 'Снять выделение'
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+  end
+  object ToolBar2: TToolBar
+    Left = 0
+    Height = 34
+    Top = 357
+    Width = 406
+    Align = alBottom
+    ButtonHeight = 32
+    TabOrder = 1
+    object BitBtn3: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 111
+      Align = alLeft
+      Caption = 'Закрыть'
+      TabOrder = 0
+    end
+    object BitBtn4: TBitBtn
+      Left = 280
+      Height = 32
+      Top = 2
+      Width = 126
+      Align = alRight
+      Caption = 'Отправить почту'
+      OnClick = BitBtn4Click
+      TabOrder = 1
+    end
+  end
+  object sgClients: TStringGrid
+    Left = 0
+    Height = 323
+    Top = 34
+    Width = 406
+    Align = alClient
+    ColCount = 6
+    ColumnClickSorts = True
+    Columns = <    
+      item
+        ButtonStyle = cbsCheckboxColumn
+        Title.Caption = '+'
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Код клиента'
+        Visible = False
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Клиент'
+        Width = 220
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'ИНН'
+      end    
+      item
+        Title.Caption = 'E-Mail'
+        Width = 120
+      end>
+    DefaultColWidth = 24
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goDblClickAutoSize, goSmoothScroll]
+    TabOrder = 2
+    OnGetCheckboxState = sgClientsGetCheckboxState
+    OnSetCheckboxState = sgClientsSetCheckboxState
+  end
+end

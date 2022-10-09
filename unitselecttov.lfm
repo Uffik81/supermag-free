@@ -1,0 +1,79 @@
+object FormSelectTov: TFormSelectTov
+  Left = 605
+  Height = 337
+  Top = 53
+  Width = 691
+  Caption = 'Выбрать товар'
+  ClientHeight = 337
+  ClientWidth = 691
+  OnShow = FormShow
+  LCLVersion = '2.0.8.0'
+  object ListView1: TListView
+    Left = 0
+    Height = 243
+    Top = 50
+    Width = 691
+    Align = alClient
+    Columns = <    
+      item
+        Caption = 'Алк Код'
+        Width = 150
+      end    
+      item
+        Caption = 'Наименование'
+        Width = 250
+      end    
+      item
+        Caption = 'Справка А'
+        Width = 75
+      end    
+      item
+        Caption = 'Справка Б'
+        Width = 75
+      end    
+      item
+        Caption = 'Количество'
+      end    
+      item
+        Caption = 'Дата розлива'
+        Width = 80
+      end>
+    GridLines = True
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 0
+    ViewStyle = vsReport
+    OnClick = ListView1Click
+    OnSelectItem = ListView1SelectItem
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 691
+    Align = alTop
+    TabOrder = 1
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 44
+    Top = 293
+    Width = 691
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 44
+    ClientWidth = 691
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 2
+    object BitBtn1: TBitBtn
+      Left = 8
+      Height = 32
+      Top = 6
+      Width = 115
+      Caption = 'Выбрать'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+  end
+end
