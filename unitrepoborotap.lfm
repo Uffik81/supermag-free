@@ -1,0 +1,107 @@
+object FormRepOborotAP: TFormRepOborotAP
+  Left = -1256
+  Height = 154
+  Top = 400
+  Width = 389
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Журнал о розничной продажи АП'
+  ClientHeight = 154
+  ClientWidth = 389
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.0.8.0'
+  object pnCommand: TPanel
+    Left = 0
+    Height = 44
+    Top = 110
+    Width = 389
+    Align = alBottom
+    ClientHeight = 44
+    ClientWidth = 389
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 256
+      Height = 30
+      Top = 8
+      Width = 123
+      Caption = 'Сформировать'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 8
+      Height = 30
+      Top = 8
+      Width = 128
+      Caption = 'Экспорт в XLS'
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+  end
+  object StaticText1: TStaticText
+    Left = 24
+    Height = 17
+    Top = 47
+    Width = 234
+    Caption = 'StaticText1'
+    TabOrder = 1
+  end
+  object BitBtn3: TBitBtn
+    Left = 278
+    Height = 30
+    Top = 40
+    Width = 75
+    Caption = 'Диапазон'
+    OnClick = BitBtn3Click
+    TabOrder = 2
+  end
+  object StaticText2: TStaticText
+    Left = 24
+    Height = 17
+    Top = 8
+    Width = 65
+    Caption = 'Период'
+    TabOrder = 3
+  end
+  object frReport1: TfrReport
+    Dataset = frUserDataset1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSource
+    OnGetValue = frReport1GetValue
+    OnBeginColumn = frReport1BeginColumn
+    left = 177
+    top = 83
+  end
+  object frUserDataset1: TfrUserDataset
+    OnCheckEOF = frUserDataset1CheckEOF
+    OnFirst = frUserDataset1First
+    OnNext = frUserDataset1Next
+    left = 227
+    top = 15
+  end
+  object SaveDialog1: TSaveDialog
+    left = 70
+    top = 64
+  end
+  object frUserDataset2: TfrUserDataset
+    OnCheckEOF = frUserDataset2CheckEOF
+    OnFirst = frUserDataset2First
+    OnNext = frUserDataset2Next
+    left = 140
+    top = 26
+  end
+  object frUserDataset3: TfrUserDataset
+    OnCheckEOF = frUserDataset3CheckEOF
+    OnFirst = frUserDataset3First
+    OnNext = frUserDataset3Next
+    left = 229
+    top = 74
+  end
+end

@@ -1,0 +1,32 @@
+object Formgetpdf417: TFormgetpdf417
+  Left = 811
+  Height = 42
+  Top = 293
+  Width = 569
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Указать акцизную марку или штрихкод'
+  ClientHeight = 42
+  ClientWidth = 569
+  Position = poDesktopCenter
+  LCLVersion = '1.4.4.0'
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 460
+    OnEnter = Edit1Enter
+    OnKeyPress = Edit1KeyPress
+    OnKeyUp = Edit1KeyUp
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 476
+    Height = 30
+    Top = 5
+    Width = 75
+    Caption = 'Найти'
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+end

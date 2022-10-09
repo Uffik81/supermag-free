@@ -1,0 +1,73 @@
+object FormPrintPDF417: TFormPrintPDF417
+  Left = 653
+  Height = 228
+  Top = 323
+  Width = 364
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Печать ШТРИХКОДА'
+  ClientHeight = 228
+  ClientWidth = 364
+  OnShow = FormShow
+  LCLVersion = '1.4.4.0'
+  object Image1: TImage
+    Left = 7
+    Height = 136
+    Top = 56
+    Width = 350
+  end
+  object StaticText1: TStaticText
+    Left = 9
+    Height = 17
+    Top = 15
+    Width = 65
+    Caption = 'ШТРИХКОД:'
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 80
+    Height = 23
+    Top = 9
+    Width = 277
+    TabOrder = 1
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 194
+    Width = 364
+    Align = alBottom
+    ButtonHeight = 32
+    Caption = 'ToolBar1'
+    TabOrder = 2
+    object BitBtn1: TBitBtn
+      Left = 253
+      Height = 32
+      Top = 2
+      Width = 111
+      Align = alRight
+      Caption = 'Печать'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 112
+      Align = alLeft
+      Caption = 'Сформировать'
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+  end
+  object frReport1: TfrReport
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    OnEnterRect = frReport1EnterRect
+    left = 208
+    top = 40
+  end
+end

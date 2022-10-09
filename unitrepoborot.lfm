@@ -1,0 +1,109 @@
+object FormRepOborot: TFormRepOborot
+  Left = 811
+  Height = 253
+  Top = 308
+  Width = 490
+  BorderIcons = [biSystemMenu]
+  Caption = 'Отчет об обороте товара'
+  ClientHeight = 253
+  ClientWidth = 490
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.4.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 44
+    Top = 209
+    Width = 490
+    Align = alBottom
+    ClientHeight = 44
+    ClientWidth = 490
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 8
+      Height = 30
+      Top = 8
+      Width = 112
+      Caption = 'Сформировать'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+  end
+  object Edit1: TEdit
+    Left = 7
+    Height = 23
+    Top = 24
+    Width = 377
+    TabOrder = 1
+  end
+  object BitBtn2: TBitBtn
+    Left = 384
+    Height = 23
+    Top = 24
+    Width = 19
+    Caption = '...'
+    OnClick = BitBtn2Click
+    TabOrder = 2
+  end
+  object ComboBox1: TComboBox
+    Left = 7
+    Height = 23
+    Top = 72
+    Width = 396
+    ItemHeight = 15
+    OnChange = ComboBox1Change
+    TabOrder = 3
+  end
+  object ComboBox2: TComboBox
+    Left = 7
+    Height = 23
+    Top = 136
+    Width = 396
+    ItemHeight = 15
+    TabOrder = 4
+  end
+  object StaticText1: TStaticText
+    Left = 7
+    Height = 17
+    Top = 104
+    Width = 89
+    Caption = 'Дата розлива:'
+    TabOrder = 5
+  end
+  object StaticText2: TStaticText
+    Left = 112
+    Height = 17
+    Top = 104
+    Width = 145
+    BorderStyle = sbsSingle
+    Caption = '0000-00-00'
+    TabOrder = 6
+  end
+  object StaticText3: TStaticText
+    Left = 7
+    Height = 17
+    Top = 169
+    Width = 103
+    Caption = 'Текущий остаток:'
+    TabOrder = 7
+  end
+  object StaticText4: TStaticText
+    Left = 112
+    Height = 17
+    Top = 168
+    Width = 145
+    BorderStyle = sbsSingle
+    Caption = '0.00'
+    TabOrder = 8
+  end
+  object StaticText5: TStaticText
+    Left = 9
+    Height = 17
+    Top = 2
+    Width = 119
+    Caption = 'Выберите товар:'
+    TabOrder = 9
+  end
+end

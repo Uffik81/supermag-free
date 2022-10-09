@@ -1,0 +1,172 @@
+object FormPrintTicket: TFormPrintTicket
+  Left = 822
+  Height = 432
+  Top = 287
+  Width = 584
+  Caption = 'Печать ценников и этикеток'
+  ClientHeight = 432
+  ClientWidth = 584
+  OnShow = FormShow
+  LCLVersion = '1.4.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 72
+    Top = 0
+    Width = 584
+    Align = alTop
+    ClientHeight = 72
+    ClientWidth = 584
+    TabOrder = 0
+    object ComboBox1: TComboBox
+      Left = 104
+      Height = 23
+      Top = 2
+      Width = 193
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'Этикетка'
+        'Ценник'
+        'Ценник весовой за 1 кг.'
+        'Ценник весовой за 100 гр.'
+      )
+      TabOrder = 0
+      Text = 'Этикетка'
+    end
+    object StaticText1: TStaticText
+      Left = 6
+      Height = 17
+      Top = 8
+      Width = 98
+      Caption = 'Тип этикетки'
+      TabOrder = 1
+    end
+    object DateTimePicker1: TDateTimePicker
+      Left = 368
+      Height = 23
+      Top = 2
+      Width = 79
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = -53780
+      TabOrder = 2
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 42964
+      Time = 0.559378518519225
+      UseDefaultSeparators = True
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+    end
+    object StaticText2: TStaticText
+      Left = 328
+      Height = 17
+      Top = 8
+      Width = 41
+      Caption = 'Дата:'
+      TabOrder = 3
+    end
+    object ToolBar1: TToolBar
+      Left = 1
+      Height = 26
+      Top = 45
+      Width = 582
+      Align = alBottom
+      Caption = 'ToolBar1'
+      TabOrder = 4
+      object BitBtn3: TBitBtn
+        Left = 488
+        Height = 24
+        Top = 2
+        Width = 94
+        Align = alRight
+        Caption = 'Печать'
+        OnClick = BitBtn3Click
+        TabOrder = 0
+      end
+      object BitBtn2: TBitBtn
+        Left = 96
+        Height = 24
+        Top = 2
+        Width = 104
+        Align = alLeft
+        Caption = 'Удалить'
+        OnClick = BitBtn2Click
+        TabOrder = 1
+      end
+      object BitBtn1: TBitBtn
+        Left = 1
+        Height = 24
+        Top = 2
+        Width = 95
+        Align = alLeft
+        Caption = 'Добавить'
+        OnClick = BitBtn1Click
+        TabOrder = 2
+      end
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 360
+    Top = 72
+    Width = 584
+    Align = alClient
+    ColCount = 6
+    Columns = <    
+      item
+        ReadOnly = True
+        Title.Caption = 'Код товара'
+        Width = 75
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Наименование'
+        Width = 220
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Штрихкод'
+        Width = 75
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Единица'
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Цена'
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Количество'
+        Visible = False
+      end>
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 1
+    TabOrder = 1
+  end
+  object frReport1: TfrReport
+    Dataset = frUserDataset1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    OnGetValue = frReport1GetValue
+    left = 288
+    top = 206
+  end
+  object frUserDataset1: TfrUserDataset
+    OnCheckEOF = frUserDataset1CheckEOF
+    OnFirst = frUserDataset1First
+    OnNext = frUserDataset1Next
+    left = 123
+    top = 136
+  end
+end

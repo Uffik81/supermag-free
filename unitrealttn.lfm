@@ -1,0 +1,255 @@
+object FormRealTTN: TFormRealTTN
+  Left = 521
+  Height = 530
+  Top = 286
+  Width = 716
+  Caption = 'Товарно-транспортная накладная'
+  ClientHeight = 530
+  ClientWidth = 716
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.4.4.0'
+  object ListView1: TListView
+    Left = 0
+    Height = 208
+    Top = 50
+    Width = 716
+    Align = alTop
+    Columns = <    
+      item
+        Caption = 'Номер'
+      end    
+      item
+        Caption = 'Номенклатура'
+        Width = 200
+      end    
+      item
+        Caption = 'Цена'
+        Width = 75
+      end    
+      item
+        Caption = 'Количество'
+        Width = 75
+      end    
+      item
+        Caption = 'Сумма'
+        Width = 100
+      end    
+      item
+        Caption = 'Штрихкоды'
+        Width = 200
+      end>
+    GridLines = True
+    PopupMenu = PopupMenu2
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 0
+    ViewStyle = vsReport
+  end
+  object ListView2: TListView
+    Left = 0
+    Height = 198
+    Top = 288
+    Width = 716
+    Align = alClient
+    Columns = <    
+      item
+        Caption = 'Номер'
+      end    
+      item
+        Caption = 'Номенклатура'
+        Width = 200
+      end    
+      item
+        Caption = 'Цена'
+        Width = 75
+      end    
+      item
+        Caption = 'Количество'
+        Width = 75
+      end    
+      item
+        Caption = 'Справка А'
+        Width = 150
+      end    
+      item
+        Caption = 'Справка Б'
+        Width = 150
+      end    
+      item
+        Visible = False
+        Width = 0
+      end    
+      item
+        Visible = False
+        Width = 0
+      end    
+      item
+        Visible = False
+        Width = 0
+      end    
+      item
+        Visible = False
+        Width = 0
+      end    
+      item
+        Caption = 'Дата розлива'
+        Width = 125
+      end>
+    GridLines = True
+    PopupMenu = PopupMenu1
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 1
+    ViewStyle = vsReport
+    OnKeyDown = ListView2KeyDown
+    OnKeyPress = ListView2KeyPress
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 716
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 716
+    TabOrder = 2
+    object Panel5: TPanel
+      Left = 456
+      Height = 48
+      Top = 1
+      Width = 259
+      Align = alRight
+      BorderStyle = bsSingle
+      ClientHeight = 44
+      ClientWidth = 255
+      TabOrder = 0
+      object StaticText1: TStaticText
+        Left = 0
+        Height = 17
+        Top = 1
+        Width = 81
+        Caption = 'Код Клиента:'
+        TabOrder = 0
+      end
+      object StaticText2: TStaticText
+        Left = 0
+        Height = 17
+        Top = 24
+        Width = 41
+        Caption = 'Адрес:'
+        TabOrder = 1
+      end
+      object stClientId: TStaticText
+        Left = 96
+        Height = 17
+        Top = 1
+        Width = 144
+        TabOrder = 2
+      end
+    end
+    object stNumDoc: TStaticText
+      Left = 1
+      Height = 48
+      Top = 1
+      Width = 455
+      Align = alClient
+      Alignment = taCenter
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 30
+    Top = 258
+    Width = 716
+    Align = alTop
+    Alignment = taLeftJustify
+    Caption = 'Выбранный товар'
+    TabOrder = 3
+  end
+  object Panel4: TPanel
+    Left = 0
+    Height = 44
+    Top = 486
+    Width = 716
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 44
+    ClientWidth = 716
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 4
+    object Panel3: TPanel
+      Left = 544
+      Height = 44
+      Top = 0
+      Width = 172
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 44
+      ClientWidth = 172
+      TabOrder = 0
+      object BitBtn1: TBitBtn
+        Left = 48
+        Height = 32
+        Top = 6
+        Width = 115
+        Caption = 'Провести'
+        OnClick = BitBtn1Click
+        TabOrder = 0
+      end
+    end
+    object BitBtn3: TBitBtn
+      Left = 76
+      Height = 32
+      Top = 6
+      Width = 84
+      Caption = 'Отмена'
+      TabOrder = 1
+    end
+    object BitBtn2: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 6
+      Width = 75
+      Caption = 'Сохранить'
+      OnClick = BitBtn2Click
+      TabOrder = 2
+    end
+    object BitBtn4: TBitBtn
+      Left = 162
+      Height = 32
+      Top = 6
+      Width = 150
+      Caption = 'Заполнить справки А и Б'
+      OnClick = BitBtn4Click
+      TabOrder = 3
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    left = 262
+    top = 404
+    object MenuItem1: TMenuItem
+      Caption = 'Изменить справку Б'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Оборот по Справке Б'
+      OnClick = MenuItem3Click
+    end
+  end
+  object PopupMenu2: TPopupMenu
+    left = 366
+    top = 181
+    object MenuItem2: TMenuItem
+      Caption = 'Выбрать позицию'
+      OnClick = MenuItem2Click
+    end
+  end
+end
