@@ -1,0 +1,120 @@
+object FormInfo: TFormInfo
+  Left = 795
+  Height = 405
+  Top = 305
+  Width = 617
+  Caption = 'О Программе'
+  ClientHeight = 405
+  ClientWidth = 617
+  OnShow = FormShow
+  LCLVersion = '2.0.8.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 96
+    Top = 0
+    Width = 617
+    Align = alTop
+    ClientHeight = 96
+    ClientWidth = 617
+    TabOrder = 0
+    object StaticText1: TStaticText
+      Left = 8
+      Height = 17
+      Top = 8
+      Width = 145
+      Caption = 'Текущая версия ПО:'
+      TabOrder = 0
+    end
+    object StaticText2: TStaticText
+      Left = 160
+      Height = 17
+      Top = 8
+      Width = 65
+      Caption = '1.0.0.2'
+      TabOrder = 1
+    end
+    object BitBtn1: TBitBtn
+      Left = 432
+      Height = 30
+      Top = 0
+      Width = 179
+      Caption = 'Продлить подписку'
+      OnClick = BitBtn1Click
+      TabOrder = 2
+    end
+    object BitBtn2: TBitBtn
+      Left = 432
+      Height = 30
+      Top = 32
+      Width = 179
+      Caption = 'Проверить обновление'
+      OnClick = BitBtn2Click
+      TabOrder = 3
+    end
+    object StaticText3: TStaticText
+      Left = 7
+      Height = 15
+      Top = 28
+      Width = 153
+      Caption = 'Текущая версия Отчетов'
+      TabOrder = 4
+    end
+    object StaticText4: TStaticText
+      Left = 160
+      Height = 17
+      Top = 28
+      Width = 65
+      Caption = '1.0.0.1'
+      TabOrder = 5
+    end
+    object StaticText5: TStaticText
+      Left = 7
+      Height = 17
+      Top = 51
+      Width = 145
+      Caption = 'Код клиента в РАР'
+      TabOrder = 6
+    end
+    object Edit1: TEdit
+      Left = 160
+      Height = 23
+      Top = 49
+      Width = 144
+      ReadOnly = True
+      TabOrder = 7
+    end
+    object BitBtn3: TBitBtn
+      Left = 432
+      Height = 30
+      Top = 64
+      Width = 179
+      Caption = 'Удаленный доступ'
+      OnClick = BitBtn3Click
+      TabOrder = 8
+    end
+    object StaticText6: TStaticText
+      Left = 7
+      Height = 17
+      Top = 74
+      Width = 145
+      Caption = 'Окончание лицензии:'
+      TabOrder = 9
+    end
+    object stLicDate: TStaticText
+      Left = 160
+      Height = 17
+      Top = 74
+      Width = 65
+      Caption = '0000-00-00'
+      TabOrder = 10
+    end
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 309
+    Top = 96
+    Width = 617
+    Align = alClient
+    TabOrder = 1
+  end
+end

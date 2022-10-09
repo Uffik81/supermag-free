@@ -1,0 +1,9 @@
+object FormHonestSign: TFormHonestSign
+  Left = 721
+  Height = 325
+  Top = 131
+  Width = 630
+  Caption = 'Честный знак'
+  OnClose = FormClose
+  LCLVersion = '2.0.8.0'
+end

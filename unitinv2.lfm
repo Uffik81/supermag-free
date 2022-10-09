@@ -1,0 +1,255 @@
+object FormInv2: TFormInv2
+  Left = 402
+  Height = 492
+  Top = 199
+  Width = 866
+  Caption = 'Инвентаризация'
+  ClientHeight = 492
+  ClientWidth = 866
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  LCLVersion = '1.4.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 64
+    Top = 0
+    Width = 866
+    Align = alTop
+    ClientHeight = 64
+    ClientWidth = 866
+    TabOrder = 0
+    object Panel5: TPanel
+      Left = 615
+      Height = 62
+      Top = 1
+      Width = 250
+      Align = alRight
+      ClientHeight = 62
+      ClientWidth = 250
+      TabOrder = 0
+      object dpDateDoc: TDateTimePicker
+        Left = 104
+        Height = 23
+        Top = 30
+        Width = 83
+        CenturyFrom = 1941
+        DateDisplayOrder = ddoYMD
+        MaxDate = 2958465
+        MinDate = -53780
+        TabOrder = 0
+        DateSeparator = '-'
+        TrailingSeparator = False
+        TextForNullDate = 'NULL'
+        LeadingZeros = True
+        Kind = dtkDate
+        TimeSeparator = ':'
+        TimeFormat = tf24
+        TimeDisplay = tdHMS
+        DateMode = dmComboBox
+        Date = 42629
+        Time = 0.00473217592661968
+        UseDefaultSeparators = False
+        HideDateTimeParts = []
+        MonthNames = 'Long'
+        OnEditingDone = dpDateDocEditingDone
+      end
+      object edNumDoc: TEdit
+        Left = 104
+        Height = 23
+        Top = 6
+        Width = 136
+        OnEditingDone = edNumDocEditingDone
+        TabOrder = 1
+      end
+      object StaticText1: TStaticText
+        Left = 15
+        Height = 17
+        Top = 12
+        Width = 65
+        Caption = 'Номер '
+        TabOrder = 2
+      end
+      object StaticText2: TStaticText
+        Left = 15
+        Height = 17
+        Top = 36
+        Width = 65
+        Caption = 'Дата'
+        TabOrder = 3
+      end
+    end
+    object BitBtn5: TBitBtn
+      Left = 1
+      Height = 30
+      Top = 0
+      Width = 112
+      Caption = 'Действия'
+      OnClick = BitBtn5Click
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 44
+    Top = 448
+    Width = 866
+    Align = alBottom
+    ClientHeight = 44
+    ClientWidth = 866
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 8
+      Height = 30
+      Top = 8
+      Width = 88
+      Caption = 'Сохранить'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object Panel4: TPanel
+      Left = 695
+      Height = 42
+      Top = 1
+      Width = 170
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 42
+      ClientWidth = 170
+      TabOrder = 1
+      object BitBtn2: TBitBtn
+        Left = 56
+        Height = 30
+        Top = 8
+        Width = 104
+        Caption = 'Применить'
+        TabOrder = 0
+      end
+    end
+    object BitBtn3: TBitBtn
+      Left = 96
+      Height = 30
+      Top = 8
+      Width = 103
+      Caption = 'Отмена'
+      TabOrder = 2
+    end
+    object BitBtn6: TBitBtn
+      Left = 320
+      Height = 30
+      Top = 8
+      Width = 120
+      Caption = 'Расчитать пустые'
+      OnClick = BitBtn6Click
+      TabOrder = 3
+    end
+    object BitBtn7: TBitBtn
+      Left = 592
+      Height = 30
+      Top = 8
+      Width = 96
+      Caption = 'Экспорт XLS'
+      OnClick = BitBtn7Click
+      TabOrder = 4
+    end
+    object BitBtn4: TBitBtn
+      Left = 200
+      Height = 30
+      Top = 8
+      Width = 120
+      Caption = 'Расчитать'
+      OnClick = BitBtn4Click
+      TabOrder = 5
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 384
+    Top = 64
+    Width = 866
+    Align = alClient
+    ClientHeight = 384
+    ClientWidth = 866
+    TabOrder = 2
+    object StringGrid1: TStringGrid
+      Left = 1
+      Height = 382
+      Top = 1
+      Width = 864
+      Align = alClient
+      ColCount = 9
+      Columns = <      
+        item
+          ReadOnly = True
+          Title.Caption = 'Товар'
+          Width = 300
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Марка пломба'
+          Width = 300
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Дата розлива'
+          Width = 75
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Код АП'
+          Width = 0
+          Visible = False
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Количество'
+          Width = 75
+        end      
+        item
+          Title.Caption = 'По факту'
+          Width = 100
+        end      
+        item
+          ReadOnly = True
+          Title.Caption = 'Разница'
+          Width = 100
+        end      
+        item
+          Title.Caption = 'Справка А'
+          Width = 75
+        end>
+      DefaultColWidth = 18
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goSmoothScroll]
+      TabOrder = 0
+      OnDrawCell = StringGrid1DrawCell
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    left = 199
+    top = 240
+    object miRestSub: TMenuItem
+      Caption = 'Заполнить остатки'
+      OnClick = miRestSubClick
+    end
+    object miNotRest: TMenuItem
+      Caption = 'Заполнить невнесенные остатки'
+      OnClick = miNotRestClick
+    end
+    object miChangeOnCash: TMenuItem
+      Caption = 'Оприходование в Розницу'
+      OnClick = miChangeOnCashClick
+    end
+    object miWritingOff: TMenuItem
+      Caption = 'Списание с Основного склада'
+      OnClick = miWritingOffClick
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    left = 433
+    top = 231
+  end
+end

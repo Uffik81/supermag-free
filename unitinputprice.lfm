@@ -1,0 +1,104 @@
+object FormInputPrice: TFormInputPrice
+  Left = 980
+  Height = 210
+  Top = 437
+  Width = 375
+  ActiveControl = Edit1
+  Caption = 'Введите цену товара'
+  ClientHeight = 210
+  ClientWidth = 375
+  KeyPreview = True
+  OnClose = FormClose
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.8.0'
+  object stName: TStaticText
+    Left = 8
+    Height = 51
+    Top = 48
+    Width = 354
+    Font.Height = -16
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object stBarcode: TStaticText
+    Left = 88
+    Height = 17
+    Top = 104
+    Width = 280
+    TabOrder = 1
+    Visible = False
+  end
+  object stDal: TStaticText
+    Left = 80
+    Height = 17
+    Top = 128
+    Width = 97
+    TabOrder = 2
+    Visible = False
+  end
+  object stAlcValue: TStaticText
+    Left = 265
+    Height = 17
+    Top = 128
+    Width = 97
+    TabOrder = 3
+    Visible = False
+  end
+  object stQual: TStaticText
+    Left = 8
+    Height = 17
+    Top = 112
+    Width = 65
+    Caption = '0'
+    TabOrder = 4
+    Visible = False
+  end
+  object StaticText2: TStaticText
+    Left = 13
+    Height = 41
+    Top = 7
+    Width = 349
+    Alignment = taCenter
+    Caption = 'Подтвердите цену товара'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Edit1: TEdit
+    Left = 104
+    Height = 30
+    Top = 136
+    Width = 152
+    Alignment = taRightJustify
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnKeyPress = Edit1KeyPress
+    ParentFont = False
+    TabOrder = 6
+    Text = '0.00'
+  end
+  object BitBtn1: TBitBtn
+    Left = 88
+    Height = 30
+    Top = 168
+    Width = 184
+    Caption = 'Подтвердить'
+    Font.Height = -16
+    Font.Style = [fsBold]
+    OnClick = BitBtn1Click
+    ParentFont = False
+    TabOrder = 7
+  end
+end

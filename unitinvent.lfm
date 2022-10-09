@@ -1,0 +1,279 @@
+object FormInvent: TFormInvent
+  Left = 409
+  Height = 548
+  Top = 191
+  Width = 668
+  Caption = 'Оприходование в ЕГАИС'
+  ClientHeight = 548
+  ClientWidth = 668
+  KeyPreview = True
+  OnClose = FormClose
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '1.4.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 168
+    Top = 0
+    Width = 668
+    Align = alTop
+    ClientHeight = 168
+    ClientWidth = 668
+    TabOrder = 0
+    object StaticText2: TStaticText
+      Left = 8
+      Height = 17
+      Top = 18
+      Width = 41
+      Caption = 'Товар:'
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Left = 632
+      Height = 25
+      Top = 16
+      Width = 19
+      Caption = '...'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+    object Edit1: TEdit
+      Left = 122
+      Height = 23
+      Hint = 'Номер ТТН или Номер ГТД'
+      Top = 80
+      Width = 136
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+    end
+    object Edit2: TEdit
+      Left = 360
+      Height = 23
+      Hint = 'Дата ТТН или Дата ГТД'
+      Top = 80
+      Width = 80
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+    end
+    object Edit3: TEdit
+      Left = 571
+      Height = 23
+      Hint = 'Дата розлива с бутылки'
+      Top = 80
+      Width = 80
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 4
+    end
+    object Label1: TLabel
+      Left = 8
+      Height = 15
+      Top = 88
+      Width = 96
+      Caption = 'Номер ТТН (ГТД)'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 264
+      Height = 15
+      Top = 88
+      Width = 80
+      Caption = 'Дата ТТН/ГТД:'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 448
+      Height = 15
+      Top = 88
+      Width = 111
+      Caption = 'Дата розлива/ввоза:'
+      ParentColor = False
+    end
+    object Memo1: TMemo
+      Left = 80
+      Height = 58
+      Hint = 'Наименование товара'
+      Top = 16
+      Width = 552
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 5
+    end
+    object Edit4: TEdit
+      Left = 122
+      Height = 23
+      Hint = 'Номер фиксации справки А для ТТН'#13#10'Номер фиксации справки Б для ГТД'
+      Top = 112
+      Width = 136
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 6
+      Text = '0'
+    end
+    object Edit5: TEdit
+      Left = 571
+      Height = 23
+      Hint = 'Дата фиксации'
+      Top = 112
+      Width = 80
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 7
+      Text = '2015-01-01'
+    end
+    object Label4: TLabel
+      Left = 8
+      Height = 15
+      Top = 120
+      Width = 99
+      Caption = 'Номер фиксации:'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 448
+      Height = 15
+      Top = 120
+      Width = 86
+      Caption = 'Дата фиксации:'
+      ParentColor = False
+    end
+    object Edit6: TEdit
+      Left = 360
+      Height = 23
+      Hint = 'Количество бутылок по справке А или справке Б'
+      Top = 112
+      Width = 80
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 8
+      Text = '0'
+    end
+    object Label6: TLabel
+      Left = 264
+      Height = 15
+      Top = 120
+      Width = 82
+      Caption = 'Кол в Справке:'
+      ParentColor = False
+    end
+    object StaticText1: TStaticText
+      Left = 122
+      Height = 17
+      Top = 144
+      Width = 238
+      TabOrder = 9
+    end
+    object StaticText3: TStaticText
+      Left = 8
+      Height = 17
+      Top = 32
+      Width = 64
+      TabOrder = 10
+    end
+    object Label7: TLabel
+      Left = 8
+      Height = 15
+      Top = 146
+      Width = 63
+      Caption = 'Код ЕГАИС:'
+      ParentColor = False
+    end
+    object Edit7: TEdit
+      Left = 571
+      Height = 23
+      Top = 140
+      Width = 80
+      TabOrder = 11
+      Text = '0'
+    end
+    object StaticText4: TStaticText
+      Left = 448
+      Height = 17
+      Top = 144
+      Width = 112
+      Caption = 'Кол-во по ПИВУ:'
+      TabOrder = 12
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 44
+    Top = 504
+    Width = 668
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 44
+    ClientWidth = 668
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 1
+    object BitBtn2: TBitBtn
+      Left = 112
+      Height = 32
+      Top = 6
+      Width = 104
+      Caption = 'Отмена'
+      TabOrder = 0
+    end
+    object BitBtn3: TBitBtn
+      Left = 8
+      Height = 32
+      Top = 6
+      Width = 104
+      Caption = 'Сохранить'
+      OnClick = BitBtn3Click
+      TabOrder = 1
+    end
+    object Panel3: TPanel
+      Left = 521
+      Height = 44
+      Top = 0
+      Width = 147
+      Align = alRight
+      BevelOuter = bvNone
+      ClientHeight = 44
+      ClientWidth = 147
+      Color = clWhite
+      ParentColor = False
+      TabOrder = 2
+      object BitBtn1: TBitBtn
+        Left = 16
+        Height = 32
+        Top = 6
+        Width = 123
+        Caption = 'Отправить в ЕГАИС'
+        OnClick = BitBtn1Click
+        TabOrder = 0
+      end
+    end
+  end
+  object ListView1: TListView
+    Left = 0
+    Height = 336
+    Hint = 'Список акцизных марок'
+    Top = 168
+    Width = 668
+    Align = alClient
+    Columns = <    
+      item
+        Caption = 'Номер'
+      end    
+      item
+        Caption = 'Марка пломба'
+        Width = 400
+      end    
+      item
+        Caption = 'Партия'
+        Width = 75
+      end    
+      item
+        Caption = 'Номер пломбы'
+        Width = 100
+      end>
+    TabOrder = 2
+    ViewStyle = vsReport
+  end
+end

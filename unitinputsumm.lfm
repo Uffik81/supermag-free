@@ -1,0 +1,105 @@
+object FormInputSumm: TFormInputSumm
+  Left = 643
+  Height = 304
+  Top = 277
+  Width = 319
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Ввод суммы'
+  ClientHeight = 304
+  ClientWidth = 319
+  OnShow = FormShow
+  Position = poScreenCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.2.0.4'
+  object edSumm: TEdit
+    Left = 56
+    Height = 39
+    Top = 56
+    Width = 214
+    Alignment = taRightJustify
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -27
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnKeyPress = edSummKeyPress
+    ParentFont = False
+    TabOrder = 0
+    Text = '0.00'
+  end
+  object bbEnter: TBitBtn
+    Left = 24
+    Height = 46
+    Top = 192
+    Width = 269
+    Caption = 'Оплата [Enter]'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = bbEnterClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object StaticText1: TStaticText
+    Left = 8
+    Height = 46
+    Top = 4
+    Width = 305
+    Alignment = taCenter
+    Caption = 'Введите наличные'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -29
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object bbEnter1: TBitBtn
+    Left = 24
+    Height = 46
+    Top = 248
+    Width = 269
+    Caption = 'Оплата по карте [+]'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = bbEnter1Click
+    ParentFont = False
+    TabOrder = 3
+  end
+  object ToggleBox1: TToggleBox
+    Left = 29
+    Height = 33
+    Top = 112
+    Width = 262
+    Caption = 'Не печатать чек'
+    Checked = True
+    Font.Height = -19
+    Font.Name = 'Courier New'
+    Font.Style = [fsBold]
+    ParentFont = False
+    State = cbChecked
+    TabOrder = 4
+  end
+  object ed_Email: TEdit
+    Left = 56
+    Height = 26
+    Top = 155
+    Width = 214
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    OnChange = ed_EmailChange
+    ParentFont = False
+    TabOrder = 5
+  end
+end
