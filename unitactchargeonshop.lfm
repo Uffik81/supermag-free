@@ -1,0 +1,170 @@
+object FormActChargeOnShop: TFormActChargeOnShop
+  Left = 327
+  Height = 454
+  Top = 270
+  Width = 564
+  ClientHeight = 454
+  ClientWidth = 564
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '2.0.8.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 322
+    Top = 92
+    Width = 564
+    Align = alClient
+    Columns = <    
+      item
+        ReadOnly = True
+        Title.Caption = 'Наименование'
+        Width = 300
+      end    
+      item
+        ReadOnly = True
+        Title.Caption = 'Код АП'
+        Visible = False
+      end    
+      item
+        Title.Caption = 'Количество'
+        Width = 75
+      end    
+      item
+        Title.Caption = 'Дата розлива'
+        Width = 75
+      end>
+    DefaultColWidth = 18
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goSmoothScroll]
+    TabOrder = 0
+    OnKeyUp = StringGrid1KeyUp
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 66
+    Top = 0
+    Width = 564
+    Align = alTop
+    ClientHeight = 66
+    ClientWidth = 564
+    TabOrder = 1
+    object edNumDoc: TEdit
+      Left = 95
+      Height = 23
+      Top = 8
+      Width = 104
+      TabOrder = 0
+    end
+    object dpDateDoc: TDateTimePicker
+      Left = 95
+      Height = 23
+      Top = 37
+      Width = 83
+      CenturyFrom = 1941
+      DateDisplayOrder = ddoYMD
+      MaxDate = 2958465
+      MinDate = -53780
+      TabOrder = 1
+      DateSeparator = '-'
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeSeparator = ':'
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 42633
+      Time = 0.0629917129626847
+      UseDefaultSeparators = False
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+    end
+    object StaticText1: TStaticText
+      Left = 7
+      Height = 17
+      Top = 14
+      Width = 65
+      Caption = 'Номер'
+      TabOrder = 2
+    end
+    object StaticText2: TStaticText
+      Left = 7
+      Height = 17
+      Top = 43
+      Width = 65
+      Caption = 'Дата'
+      TabOrder = 3
+    end
+    object StaticText3: TStaticText
+      Left = 217
+      Height = 17
+      Top = 9
+      Width = 167
+      Caption = 'Поставщик'
+      TabOrder = 4
+    end
+    object Edit1: TEdit
+      Left = 217
+      Height = 23
+      Top = 31
+      Width = 231
+      TabOrder = 5
+    end
+    object Button1: TButton
+      Left = 448
+      Height = 23
+      Top = 31
+      Width = 16
+      Caption = '...'
+      OnClick = Button1Click
+      TabOrder = 6
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 40
+    Top = 414
+    Width = 564
+    Align = alBottom
+    ClientHeight = 40
+    ClientWidth = 564
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 2
+    object bbSave: TBitBtn
+      Left = 7
+      Height = 30
+      Top = 8
+      Width = 97
+      Caption = 'Сохранить'
+      OnClick = bbSaveClick
+      TabOrder = 0
+    end
+    object bbSubmit: TBitBtn
+      Left = 104
+      Height = 30
+      Top = 8
+      Width = 104
+      Caption = 'Провести'
+      OnClick = bbSubmitClick
+      TabOrder = 1
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 66
+    Width = 564
+    Caption = 'ToolBar1'
+    TabOrder = 3
+    object BitBtn1: TBitBtn
+      Left = 1
+      Height = 22
+      Top = 2
+      Width = 75
+      Caption = 'Добавить'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+  end
+end

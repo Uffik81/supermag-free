@@ -1,0 +1,61 @@
+object FormDiscountCard: TFormDiscountCard
+  Left = 362
+  Height = 159
+  Top = 238
+  Width = 370
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Скидка'
+  ClientHeight = 159
+  ClientWidth = 370
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.8.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 104
+    Top = 8
+    Width = 369
+    ClientHeight = 104
+    ClientWidth = 369
+    TabOrder = 0
+    object Edit1: TEdit
+      Left = 48
+      Height = 33
+      Top = 64
+      Width = 232
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 0
+    end
+    object StaticText1: TStaticText
+      Left = 4
+      Height = 45
+      Top = 11
+      Width = 356
+      Alignment = taCenter
+      Caption = 'Отсканируйте карту клиента'
+      Font.Height = -19
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object BitBtn1: TBitBtn
+    Left = 0
+    Height = 44
+    Top = 115
+    Width = 192
+    Caption = 'Принять'
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+  object BitBtn2: TBitBtn
+    Left = 192
+    Height = 44
+    Top = 115
+    Width = 178
+    Caption = 'Отмена'
+    OnClick = BitBtn2Click
+    TabOrder = 2
+  end
+end

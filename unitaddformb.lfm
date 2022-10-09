@@ -1,0 +1,165 @@
+object FormAddFormB: TFormAddFormB
+  Left = 417
+  Height = 244
+  Top = 303
+  Width = 433
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Выбрать Номенклатуру/Справку Б'
+  ClientHeight = 244
+  ClientWidth = 433
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  LCLVersion = '1.4.4.0'
+  object ComboBox1: TComboBox
+    Left = 96
+    Height = 23
+    Top = 16
+    Width = 320
+    ItemHeight = 15
+    OnChange = ComboBox1Change
+    OnChangeBounds = ComboBox1ChangeBounds
+    OnGetItems = ComboBox1GetItems
+    OnSelect = ComboBox1Select
+    TabOrder = 0
+  end
+  object ComboBox2: TComboBox
+    Left = 96
+    Height = 23
+    Top = 48
+    Width = 320
+    ItemHeight = 15
+    OnChange = ComboBox2Change
+    TabOrder = 1
+  end
+  object StaticText1: TStaticText
+    Left = 96
+    Height = 23
+    Top = 80
+    Width = 190
+    BorderStyle = sbsSingle
+    TabOrder = 2
+  end
+  object StaticText2: TStaticText
+    Left = 96
+    Height = 23
+    Top = 112
+    Width = 102
+    BidiMode = bdRightToLeft
+    BorderStyle = sbsSingle
+    Caption = '0'
+    ParentBidiMode = False
+    TabOrder = 3
+  end
+  object Edit1: TEdit
+    Left = 96
+    Height = 23
+    Top = 144
+    Width = 102
+    TabOrder = 4
+    Text = '0'
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 24
+    Width = 84
+    Caption = 'Номенклатура:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 56
+    Width = 56
+    Caption = 'Справка Б'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 82
+    Width = 57
+    Caption = 'Спарвка А'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 10
+    Height = 15
+    Top = 120
+    Width = 47
+    Caption = 'Остаток:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 10
+    Height = 15
+    Top = 152
+    Width = 55
+    Caption = 'Добавить:'
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 44
+    Top = 200
+    Width = 433
+    Align = alBottom
+    ClientHeight = 44
+    ClientWidth = 433
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 5
+    object BitBtn1: TBitBtn
+      Left = 344
+      Height = 32
+      Top = 6
+      Width = 75
+      Caption = 'Добавить'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 8
+      Height = 32
+      Top = 6
+      Width = 75
+      Caption = 'Отмена'
+      TabOrder = 1
+    end
+  end
+  object StaticText3: TStaticText
+    Left = 224
+    Height = 17
+    Top = 118
+    Width = 88
+    Caption = 'Дата розлива:'
+    TabOrder = 6
+  end
+  object StCrDate: TStaticText
+    Left = 320
+    Height = 23
+    Top = 112
+    Width = 96
+    BorderStyle = sbsSingle
+    TabOrder = 7
+  end
+  object stAlcCode: TStaticText
+    Left = 96
+    Height = 23
+    Top = 170
+    Width = 321
+    BorderStyle = sbsSingle
+    TabOrder = 8
+  end
+  object StaticText4: TStaticText
+    Left = 10
+    Height = 17
+    Top = 176
+    Width = 65
+    Caption = 'Код ЕГАИС:'
+    TabOrder = 9
+  end
+end
