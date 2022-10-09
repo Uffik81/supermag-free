@@ -1,0 +1,427 @@
+object FormEditItem: TFormEditItem
+  Left = -1235
+  Height = 457
+  Top = 397
+  Width = 455
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Редактировать товар'
+  ClientHeight = 457
+  ClientWidth = 455
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.0.8.0'
+  object StaticText1: TStaticText
+    Left = 8
+    Height = 17
+    Top = 88
+    Width = 121
+    Caption = 'Полн. наименование:'
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 240
+    Top = 184
+    Width = 442
+    ActivePage = TabSheet3
+    TabIndex = 2
+    TabOrder = 6
+    object TabSheet1: TTabSheet
+      Caption = 'Штрихкоды'
+      ClientHeight = 212
+      ClientWidth = 434
+      object StringGrid1: TStringGrid
+        Left = 0
+        Height = 204
+        Top = 8
+        Width = 400
+        ColCount = 2
+        Columns = <        
+          item
+            Title.Caption = 'Штрихкод'
+            Width = 175
+          end        
+          item
+            Title.Caption = 'Цена'
+            Width = 0
+            Visible = False
+          end>
+        DefaultColWidth = 16
+        FixedCols = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSizing, goEditing, goSmoothScroll]
+        RowCount = 1
+        TabOrder = 0
+        OnChangeBounds = edPrintChange
+        OnKeyPress = StringGrid1KeyPress
+      end
+      object BitBtn2: TBitBtn
+        Left = 408
+        Height = 24
+        Top = 8
+        Width = 24
+        Caption = '+'
+        OnChangeBounds = edPrintChange
+        OnClick = BitBtn2Click
+        TabOrder = 1
+      end
+      object BitBtn3: TBitBtn
+        Left = 408
+        Height = 24
+        Top = 32
+        Width = 24
+        Caption = '-'
+        OnChangeBounds = edPrintChange
+        OnClick = BitBtn3Click
+        TabOrder = 2
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Алкогольный товар'
+      ClientHeight = 212
+      ClientWidth = 434
+      object cbAlcProduct: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 8
+        Width = 130
+        Caption = 'Алкогольный товар'
+        OnChange = edPrintChangeBounds
+        TabOrder = 0
+      end
+      object BitBtn4: TBitBtn
+        Left = 144
+        Height = 24
+        Top = 8
+        Width = 72
+        Caption = 'Выбрать'
+        OnClick = BitBtn4Click
+        TabOrder = 1
+      end
+      object SGAlcCode: TStringGrid
+        Left = 7
+        Height = 168
+        Top = 40
+        Width = 425
+        ColCount = 3
+        Columns = <        
+          item
+            Title.Caption = 'Код продукта'
+            Width = 80
+          end        
+          item
+            Title.Caption = 'Наименование'
+            Width = 200
+          end        
+          item
+            Title.Caption = 'Остаток в ЕГАИСЕ'
+            Width = 85
+          end>
+        FixedCols = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+        TabOrder = 2
+        OnDblClick = SGAlcCodeDblClick
+      end
+      object BitBtn8: TBitBtn
+        Left = 224
+        Height = 24
+        Top = 8
+        Width = 75
+        Caption = 'Добавить'
+        TabOrder = 3
+      end
+      object BitBtn9: TBitBtn
+        Left = 304
+        Height = 24
+        Top = 8
+        Width = 75
+        Caption = 'Удалить'
+        TabOrder = 4
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Подакцизный товар'
+      ClientHeight = 212
+      ClientWidth = 434
+      object cbTypeGood: TComboBox
+        Left = 144
+        Height = 23
+        Top = 15
+        Width = 276
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'Нет'
+          'Алкоголь'
+          'Табак'
+          'Шуба'
+          'Обувь'
+          'Лекарство'
+          'Фотоаппараты и лампы-вспышки'
+          'Шины и покрышки'
+          'Товары легкой промышленности'
+          'Духи и туалетная вода'
+          'Молочная продукция'
+          'Кресла-коляски'
+          'Велосипеды'
+          'Упакованная вода'
+          'Пиво и пивные напитки'
+        )
+        TabOrder = 0
+        Text = 'Нет'
+      end
+      object StaticText7: TStaticText
+        Left = 6
+        Height = 17
+        Top = 18
+        Width = 129
+        Caption = 'Вид акцизного товара:'
+        TabOrder = 1
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 431
+    Width = 455
+    Align = alBottom
+    ButtonHeight = 24
+    ButtonWidth = 23
+    Indent = 3
+    TabOrder = 7
+    object BitBtn1: TBitBtn
+      Left = 271
+      Height = 24
+      Top = 2
+      Width = 96
+      Align = alRight
+      Caption = 'Сохранить'
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00BA6833C5C38458FFD38B68FFE18F70FFDC8D
+        6CFFDA8B6DFFD78A6EFFCD8B6CFFAB6D44FFA65F2EFFFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00C68355FFEFCEBAFFDDFFFFFF87EEC7FFA2F4
+        D7FFA2F6D7FF8CEEC7FFE0FFFFFFDDA285FFAB6A3EFFFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00BA6833ACC38458DEC37F51FFEFB69AFFEAF3E8FF51BF84FF6FC9
+        98FF71C999FF54BF84FFE4F4E9FFDD9C7BFFAA693AFFFFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00C68355DEEFCEBADEC48154FFEAB697FFF3F3EAFFEDF1E6FFEFF1
+        E6FFEFF0E6FFEDF1E5FFF3F5EDFFD59C79FFB07044FFFFFFFF00FFFFFF00BA68
+        339BC38458C9C58053F8EEB296F8C98B61FFE6B592FFE2A781FFE1A781FFDEA3
+        7DFFDCA17BFFDB9F79FFD99E77FFD49A73FFBB7E57FFFFFFFF00FFFFFF00C683
+        55C9EFCEBAC9C78E66F8E0BC9CF8CA8D65FFEAB899FFDDA57EFFDDA680FFDBA3
+        7CFFD9A07AFFD9A079FFD89F78FFD89E78FFBF845DFFFFFFFF00FFFFFF00C37F
+        51C9EFB69AC9CC966FF8D6B691F8C8885DFFEFBFA1FFFDFCFAFFFEFCFBFFFEFD
+        FDFFFEFDFCFFFDFBFAFFFDFCFBFFDDA885FFC17F53FFFFFFFF00FFFFFF00C481
+        54C9EAB697C9CE9873F8EABEA1F8C7865BFFEFC09EFFFFFFFFFFCC936EFFFFFF
+        FFFFFFFFFFFFFFFBF7FFFFF8F1FFE4AF8CFFC78A61FFFFFFFF00FFFFFF00C98B
+        61C9E6B592C9CB8B61F8EEBC9EF8CC8D65FFF3CDB0FFFFFFFFFFE3C7B3FFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFEABFA1FFC98960FFFFFFFF00FFFFFF00CA8D
+        65C9EAB899C9C9895FF8EDBD9BF8D4976EFFD49E7BFFD09871FFD6A482FFCD8E
+        68FFCD9069FFD09A75FFD19973FFC88B62FFAD5A2036FFFFFF00FFFFFF00C888
+        5DC9EFBFA1C9D19975F8F4D2B8F8FFFFFFF8E6CDBBF8FFFFFEF8FFFFFFF8FBF6
+        F2F8F8F1EDF8EABFA1DEC98960DEFFFFFF00FFFFFF00FFFFFF00FFFFFF00C786
+        5BC9EFC09EC9D9A27DF8D39D7AF8D5A380F8DAAE8FF8D29A77F8D29B77F8D29C
+        77F8D09771F8C88B62DEAD5A202FFFFFFF00FFFFFF00FFFFFF00FFFFFF00CC8D
+        65C9F3CDB0C9FFFFFFC9E3C7B3C9FFFFFFC9FFFFFFC9FFFFFFC9FFFFFFC9EABF
+        A1C9C98960C9FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00D497
+        6EC9D49E7BC9D09871C9D6A482C9CD8E68C9CD9069C9D09A75C9D19973C9C88B
+        62C9AD5A202BFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+      }
+      OnClick = BitBtn1Click
+      OnKeyPress = BitBtn1KeyPress
+      ParentBidiMode = False
+      TabOrder = 0
+    end
+    object BitBtn6: TBitBtn
+      Left = 367
+      Height = 24
+      Top = 2
+      Width = 88
+      Align = alRight
+      Caption = 'Закрыть'
+      OnClick = BitBtn6Click
+      OnKeyPress = BitBtn6KeyPress
+      TabOrder = 1
+    end
+  end
+  object StaticText2: TStaticText
+    Left = 264
+    Height = 23
+    Top = 8
+    Width = 97
+    Caption = 'Код товара (PLU):'
+    TabOrder = 8
+  end
+  object edPLU: TEdit
+    Left = 368
+    Height = 23
+    Top = 8
+    Width = 80
+    OnChangeBounds = edPrintChange
+    TabOrder = 9
+    Text = '0'
+  end
+  object BitBtn5: TBitBtn
+    Left = 400
+    Height = 24
+    Top = 32
+    Width = 24
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      20000000000000040000640000006400000000000000000000002C86D8702D88
+      D8A62D87D8EA2D88D8F72D88D8F72D88D8F72D88D8F72D88D8F72D88D8F72D88
+      D8F72D88D8F72D87D8F72D88D8F12C86D893FFFFFF00FFFFFF00338ED9E6DCF0
+      FAF0A7DDF4FD9EDBF4FF96DAF3FF8ED8F3FF86D7F3FF7FD4F2FF79D3F2FF72D2
+      F1FF6CD0F1FF69CFF1FFC2EAF8FE338ED9F0FFFFFF00FFFFFF003594DAF7EFFA
+      FEFFA1E9F9FF91E5F8FF81E1F7FF72DEF6FF63DAF5FF54D7F4FF47D3F3FF39D0
+      F2FF2ECDF1FF26CBF0FFCAF2FBFF3594DAF7FFFFFF00FFFFFF00369ADAF8F2FA
+      FDFFB3EDFAFFA4E9F9FF95E6F8FF85E2F7FF81E1F7FF7AE0F7FF6FDDF6FF62DA
+      F5FF54D6F3FF47D3F2FFE8F9FDFF3594DAFFFFFFFF00FFFFFF0036A1DAF9F6FC
+      FEFFC8F2FCFFB9EFFBFFACECFAFF8CE4F8FF8AE3F8FF82E1F7FF79DFF7FF6DDD
+      F6FF61DAF5FF57D7F4FFE7F8FDFF3594DAFFFFFFFF00FFFFFF0037A6DAFAFEFF
+      FFFFF8FDFFFFF6FDFFFFF5FCFFFFE8FAFEFFAFECFAFF8EE4F8FF87E3F8FF7DE0
+      F7FF72DDF6FF68DBF5FFE9F9FDFF3594DAFFFFFFFF00FFFFFF0035ABDAFAE8F6
+      FBFF7EC5EAFF5BAEE3FF51A8E1FF60AFE4FFEBFAFDFFECFAFEFFE5F5FCFFE5F6
+      FCFFE4F5FCFFE4F5FCFFFEFFFFFF3594DAFFFFFFFF00FFFFFF0036AADAF2F1FA
+      FDFF94DEF5FF93DCF4FF81D5F2FF60C0E9FF4FAEE1FF3594DAFF3594DAFF3594
+      DAFF3594DAFF3594DAFF3594DAFF3594DAFF151311D9040403C535AFDAF0F7FC
+      FEFF8EE4F8FF91DEF5FF9FE0F5FFACE1F6FFEFFBFEFF635B54FFA79A8DFF7067
+      5EFF44403BFFA3AAACFF5C554EFF968A7FFF665E56FF161413F936B3DAF8FDFE
+      FEFFFEFFFFFFFEFEFFFFFDFEFFFFFEFFFFFFEAF7FBFF71685FFFC1B6ABFF7970
+      66FF4A5454FE5C95A6F96E665DFFBDB1A5FF7E746AFF201D1BE934B4D9D05EC2
+      E1FA60C3E2FA60C3E2FA60C3E2FA5FC3E2FA3CB6DBDD756C63F9C4B9AFFFA79A
+      8DFF474540B41A353C38635B55F1BBAFA4FFA6988BFF272421CAFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00665E56EF696158FF564F
+      48FF322F2CDD1514137D34302DF046423CFF3D3833FF0A0908DBFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF003E3934855B544DFFB0A0
+      90FF695D51FF867465FF63584EFFAA9888FF5A514AFF16131184FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0095897D1D665E56F38578
+      6FFF483F39FC8B7D71E8564A40FF928374FF4F4740FF1C1B181AFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00756C630F988C808F9C8F
+      83FF453F3AED655D5553544D47FF8A7F74F13B3732812B272406FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0092877B12756C
+      63F8685F57E89C8F83536C635BF9453F3AC9FFFFFF00FFFFFF00
+    }
+    OnClick = BitBtn5Click
+    TabOrder = 10
+  end
+  object StaticText5: TStaticText
+    Left = 8
+    Height = 17
+    Top = 35
+    Width = 105
+    Caption = 'Группа:'
+    TabOrder = 11
+  end
+  object StaticText3: TStaticText
+    Left = 8
+    Height = 23
+    Top = 64
+    Width = 113
+    Caption = 'Наименование:'
+    TabOrder = 12
+  end
+  object edPrint: TEdit
+    Left = 136
+    Height = 23
+    Top = 64
+    Width = 312
+    OnChange = edPrintChange
+    OnChangeBounds = edPrintChangeBounds
+    OnExit = edPrintExit
+    OnKeyPress = edPrintKeyPress
+    TabOrder = 1
+  end
+  object StaticText4: TStaticText
+    Left = 8
+    Height = 23
+    Top = 120
+    Width = 128
+    Caption = 'Текущая цена:'
+    TabOrder = 13
+  end
+  object Edit3: TEdit
+    Left = 136
+    Height = 23
+    Top = 120
+    Width = 80
+    OnChange = edPrintChange
+    OnKeyPress = Edit3KeyPress
+    TabOrder = 3
+    Text = '0.00'
+  end
+  object cbFreePrice: TCheckBox
+    Left = 232
+    Height = 19
+    Top = 120
+    Width = 164
+    Caption = 'Разрешить изменить цену'
+    OnChange = edPrintChange
+    TabOrder = 4
+  end
+  object cbVesovoi: TCheckBox
+    Left = 232
+    Height = 19
+    Top = 152
+    Width = 100
+    Caption = 'Весовой товар'
+    OnChange = edPrintChange
+    TabOrder = 5
+  end
+  object edName: TEdit
+    Left = 136
+    Height = 23
+    Top = 88
+    Width = 312
+    OnChange = edPrintChange
+    OnChangeBounds = edNameChangeBounds
+    OnEnter = edNameEnter
+    OnKeyPress = edNameKeyPress
+    TabOrder = 2
+  end
+  object edGroup: TEdit
+    Left = 136
+    Height = 23
+    Top = 33
+    Width = 264
+    Enabled = False
+    OnChange = edGroupChange
+    ReadOnly = True
+    TabOrder = 14
+  end
+  object BitBtn7: TBitBtn
+    Left = 424
+    Height = 24
+    Top = 32
+    Width = 24
+    Caption = 'X'
+    OnClick = BitBtn7Click
+    TabOrder = 15
+  end
+  object edSection: TEdit
+    Left = 136
+    Height = 23
+    Top = 148
+    Width = 80
+    OnChange = edPrintChange
+    OnKeyPress = Edit3KeyPress
+    TabOrder = 16
+  end
+  object StaticText6: TStaticText
+    Left = 8
+    Height = 23
+    Top = 148
+    Width = 128
+    Caption = 'Номер отдела ККМ:'
+    TabOrder = 17
+  end
+end

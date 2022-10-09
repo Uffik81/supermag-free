@@ -1,0 +1,469 @@
+object FormExportForm12: TFormExportForm12
+  Left = 477
+  Height = 431
+  Top = 53
+  Width = 947
+  Caption = 'Форма 8'
+  ClientHeight = 431
+  ClientWidth = 947
+  DefaultMonitor = dmDesktop
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.8.0'
+  object Panel2: TPanel
+    Left = 0
+    Height = 44
+    Top = 387
+    Width = 947
+    Align = alBottom
+    ClientHeight = 44
+    ClientWidth = 947
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 8
+      Height = 30
+      Top = 8
+      Width = 160
+      Caption = 'Сформировать форму 8'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 353
+    Top = 34
+    Width = 947
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'Поступления'
+      ClientHeight = 325
+      ClientWidth = 939
+      object StringGrid1: TStringGrid
+        Left = 0
+        Height = 325
+        Top = 0
+        Width = 939
+        Align = alClient
+        ColCount = 15
+        Columns = <        
+          item
+            Title.Caption = 'Код ИМНС'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'КодПроизв'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Производитель'
+            Width = 220
+          end        
+          item
+            Title.Caption = 'ИНН Произв'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'КПП произв'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'КодПост'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Проставщик'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'ИНН Пост'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'КПП Пост'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'НомерДок'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'ДатаДок'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'ДАЛ'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Title'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Выгружен'
+            Visible = False
+          end>
+        DefaultColWidth = 18
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goSmoothScroll]
+        RowCount = 1
+        TabOrder = 0
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Оборот'
+      ClientHeight = 325
+      ClientWidth = 939
+      object StringGrid2: TStringGrid
+        Left = 0
+        Height = 325
+        Top = 0
+        Width = 939
+        Align = alClient
+        ColCount = 20
+        Columns = <        
+          item
+            Title.Caption = 'Код ИМНС'
+            Width = 45
+          end        
+          item
+            Title.Caption = 'Импортер'
+            Visible = False
+          end        
+          item
+            ReadOnly = True
+            Title.Caption = 'КодЕГАИС'
+          end        
+          item
+            Title.Caption = 'Производитель'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'ИНН'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'КПП'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'Остаток на Начало (П100000000006)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Производитель (П100000000007)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Оптовый (П100000000008)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Импортер (П100000000009)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Перемещение (П100000000010)'
+          end        
+          item
+            Title.Caption = 'Возврат (П100000000011)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Причие поступления (П100000000012)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Всего (П100000000014)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Розничная продажа (П100000000015)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Прочий расход (П100000000016)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Возврат (П100000000017)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Всего (П100000000019)'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Конечный остаток (П100000000020)'
+            Width = 75
+          end>
+        DefaultColWidth = 22
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goSmoothScroll]
+        PopupMenu = PopupMenu1
+        TabOrder = 0
+        OnDrawCell = StringGrid2DrawCell
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Поставщики'
+      ClientHeight = 325
+      ClientWidth = 939
+      object StringGrid3: TStringGrid
+        Left = 0
+        Height = 325
+        Top = 0
+        Width = 939
+        Align = alClient
+        ColCount = 10
+        Columns = <        
+          item
+            Title.Caption = 'Код по ЕГАИС'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'Наименование'
+            Width = 220
+          end        
+          item
+            Title.Caption = 'ИНН'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'КПП'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'Дата выдачи'
+          end        
+          item
+            Title.Caption = 'Дата окончания'
+          end        
+          item
+            Title.Caption = 'Серия Лиц'
+          end        
+          item
+            Title.Caption = 'Номер Лиц'
+          end        
+          item
+            Title.Caption = 'Кем выдан'
+          end>
+        DefaultColWidth = 22
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+        TabOrder = 0
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Производители/Импортеры'
+      ClientHeight = 325
+      ClientWidth = 939
+      object StringGrid4: TStringGrid
+        Left = 0
+        Height = 325
+        Top = 0
+        Width = 939
+        Align = alClient
+        Columns = <        
+          item
+            Title.Caption = 'Код по ЕГАИС'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'Наименование'
+            Width = 220
+          end        
+          item
+            Title.Caption = 'ИНН'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'КПП'
+            Width = 120
+          end>
+        DefaultColWidth = 22
+        TabOrder = 0
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 947
+    ButtonHeight = 30
+    ButtonWidth = 23
+    Caption = 'ToolBar1'
+    TabOrder = 1
+    object BitBtn2: TBitBtn
+      Left = 168
+      Height = 30
+      Top = 2
+      Width = 80
+      Caption = 'Заполнить'
+      OnClick = BitBtn2Click
+      TabOrder = 0
+    end
+    object BitBtn3: TBitBtn
+      Left = 361
+      Height = 30
+      Top = 2
+      Width = 120
+      Caption = 'Печать - часть 1'
+      OnClick = BitBtn3Click
+      TabOrder = 1
+    end
+    object BitBtn4: TBitBtn
+      Left = 481
+      Height = 30
+      Top = 2
+      Width = 144
+      Caption = 'Сформировать в Excel'
+      OnClick = BitBtn4Click
+      TabOrder = 2
+    end
+    object BitBtn7: TBitBtn
+      Left = 1
+      Height = 30
+      Hint = 'Фильтр по дате'
+      Top = 2
+      Width = 36
+      Glyph.Data = {
+        F6060000424DF606000000000000360000002800000018000000180000000100
+        180000000000C006000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000009C501CA85C18A45814A85C18A85C18A85C1CA45814A4
+        5814A45814A85C1CA85C18A45814A45814A85C1CA85C1CA45814A85C18A85C18
+        A45C1CA85C18A45814A85C18A85C1C9C501CAC601CDCA04CE8C094E8C094DCA0
+        4CD48818E4B888E8C094E4BC88D48818E0AC68E8C094E8C498D89028D89028E8
+        C498E8C094E0AC68D48818E0AC68E8C094E4B888D8901CAE6220A85C18ECC89C
+        FFFFFFFFFFFFE8C49CD08414FFFFFFFFFFFFFFFFFFD08410F4E4D8FFFFFFFFFF
+        FFDCA458DCA058FFFFFFFFFFFFF4E4D8D48814F4E4D8FFFFFFFFFFFFD48C1CAC
+        6020B06420E8C8A0FFFFFFFFFFFFE8C4A0D48C1CFFFFFFFFFFFFFFFFFFD4881C
+        F4E4DCFFFFFFFFFFFFDCA45CE0A860FFFFFFFFFFFFF4E4D8D48C1CF4E4DCFFFF
+        FFFFFFFFD89028B06420B06820DCA03CE8C89CE8C49CDCA858DC9830E8C090E8
+        C49CE0B070DC9830DEA656E8C49CE8C89CDCA03CD89C3CE8C89CE8C49CE4B478
+        DC9830E4B478E8C49CE4BC90DC9C34B06824B46820E4B064ECC89CECC89CE0A8
+        60DC9C38E8C094E8C49CE8C094DC9C38E4B47CECC89CE8C8A0E0A454DCA044E8
+        C8A0ECC89CE4B47CDC9C38E4BC88E8C49CECCCA4E0A03CB06824B46820F0D4AC
+        FFFFFFFFFFFFECD0A8DC9C38FFFFFFFFFFFFFFFFFFDC9C34F4E4DCFFFFFFFFFF
+        FFE4B470E4B470FFFFFFFFFFFFF8E8DCDC9C38F8E8DCFFFFFFFFFFFFE0A444B8
+        7430C07C3CF4DCC4FFFFFFFFFFFFF0D0ACE0A03CFFFFFFFFFFFFFFFFFFDCA03C
+        F8E8E0FFFFFFFFFFFFE8B878E8B878FFFFFFFFFFFFF8E8E0E0A03CF8E8DCFFFF
+        FFFFFFFFECC07CC07C40C0803CECC484F0D8BCF0D8BCECC488E4B05CF0D0ACEC
+        CCA8E8C084E0A848E8B86CF0D0A8F0D0ACE4AE54E0A848ECC89CF0D4B4E8C084
+        E8B86CF0D0ACF0D8BCF0D4B8ECC080C08040C28040F4D4A0F8ECE0F8F0E4F0D4
+        ACECC080F8E8E0F8F0E4F8E4D0E8BC74F0D4A8F8E8DCF8E8DCECC488ECC894F8
+        F0E8F8F0E4F0D4B8ECC080F4E0C8F8ECE0F8E8DCECC484C48440C48040F8E4D0
+        FFFFFFFFFFFFF4E0CCECC080FFFFFFFFFFFFFFFFFFECC080F8F0E8FFFFFFFFFF
+        FFF0D0A8F0D0A8FFFFFFFFFFFFF8F0E8ECC080F8F0E8FFFFFFFFFFFFF0C888C4
+        8440C48440F8E8D4FFFFFFFFFFFFF4E0CCECC484FFFFFFFFFFFFFFFFFFECC484
+        F8F0ECFFFFFFFFFFFFF0D4A8F4D4ACFFFFFFFFFFFFF8F0ECECC484F8F0ECFFFF
+        FFFFFFFFF0CC90C88844C88844F8D8A4F8DCB4F8E0B8F8D8A4F4D098F4D4A8F4
+        D8B0F4D4A8F0CC90F0D0A0F4D8B0F4D8B0F0CC90F0CC90F4D8B0F4D8B0F0D0A0
+        F4D098FCE0B4FCE2B6F8E0B8F4D49CC88844CC8C44F8DCA8BC78409040089C4C
+        1CE4B880F4D29CF4D09CF4D098F4D29CF4D29CF4D098F4D098F4D098F4D098F4
+        D09CF4D098F4D49CE4B8809C501C904008BC7840F8DCA8CC8C44CC8C44FCE2AE
+        A05210D88C18C27616C2844CF8D8A4F4D49CF4D49CF4D49CF4D49CF4D49CF4D4
+        9CF4D49CF4D29CF4D49CF4D49CF8D8A4C48450C27616D88C18A05010FCE2AECC
+        8C44D09452FEECC8B06422DC9E3ACC842CCE9864FCE2B6F8DEB0F8DCB0F8DEB0
+        F8DCB0F8DEB0F8DEB0F8DEB0F8DEB0F8DCAEF8DCB0FCE2B6D09A68CC862ADC9E
+        3AAE6220FEEEC8D09452C47E2CDCAC76C68640E4AE54D69440D29E6ADEB280DE
+        B27EDEAE7CDEB27EDCB07CDEB07CDEB07CDEB07CDEB07CDEB07CDCB07CE0B280
+        D4A06AD69840E6AE54C28040DCAC76C47E2C000000000000C47E30EEC26CDCA6
+        56B4681800000000000000000000000000000000000000000000000000000000
+        0000000000000000B66C1ADEA656EEC26CC27C2E000000000000000000000000
+        CC8A3CF6D284E6B666B66E1E0000000000000000000000000000000000000000
+        00000000000000000000000000000000BA7220E6B666F6D284CC883800000000
+        0000000000000000D0903AE8BA6CDEAA58BE7424000000000000000000000000
+        000000000000000000000000000000000000000000000000C47C26DEAA58E8BA
+        6CCC8A3800000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      OnClick = BitBtn7Click
+      ParentShowHint = False
+      ShowHint = True
+      Spacing = 0
+      TabOrder = 3
+    end
+    object BitBtn5: TBitBtn
+      Left = 37
+      Height = 30
+      Top = 2
+      Width = 131
+      Caption = 'Загрузить из файла'
+      OnClick = BitBtn5Click
+      TabOrder = 4
+    end
+    object bbControle: TBitBtn
+      Left = 248
+      Height = 30
+      Top = 2
+      Width = 113
+      Caption = 'Обновить'
+      OnClick = bbControleClick
+      TabOrder = 5
+    end
+  end
+  object sdd1: TSelectDirectoryDialog
+    left = 164
+    top = 164
+  end
+  object frReport1: TfrReport
+    Dataset = frUserDataset1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    OnGetValue = frReport1GetValue
+    left = 387
+    top = 195
+  end
+  object frUserDataset1: TfrUserDataset
+    OnCheckEOF = frUserDataset1CheckEOF
+    OnFirst = frUserDataset1First
+    OnNext = frUserDataset1Next
+    left = 272
+    top = 174
+  end
+  object odForm12: TOpenDialog
+    Title = 'Открыть Форму 12'
+    Filter = '*.xml'
+    left = 477
+    top = 205
+  end
+  object ppImportForms12_8: TPopupMenu
+    left = 347
+    top = 113
+    object MenuItem1: TMenuItem
+      Caption = 'Загрузить форму 8'
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Загрузить форму 12'
+      OnClick = MenuItem2Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Импортировать начальные остатки из формы 12'
+      OnClick = MenuItem3Click
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Импортировать начальные остатки из Формы 8 (Пиво)'
+      OnClick = MenuItem5Click
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    left = 277
+    top = 258
+    object MenuItem4: TMenuItem
+      Caption = 'Удалить строку'
+      OnClick = MenuItem4Click
+    end
+  end
+end

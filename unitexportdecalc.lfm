@@ -1,0 +1,100 @@
+object FormExportDecAlc: TFormExportDecAlc
+  Left = 888
+  Height = 240
+  Top = 439
+  Width = 410
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Выгрузка для Декларант Алко'
+  ClientHeight = 240
+  ClientWidth = 410
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.0.8.0'
+  object StaticText1: TStaticText
+    Left = 136
+    Height = 17
+    Top = 24
+    Width = 252
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 8
+    Height = 30
+    Top = 16
+    Width = 112
+    Caption = 'Период'
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+  object BitBtn4: TBitBtn
+    Left = 8
+    Height = 30
+    Top = 88
+    Width = 224
+    Caption = 'Форма 8 (Пиво)'
+    OnClick = BitBtn4Click
+    TabOrder = 2
+  end
+  object BitBtn5: TBitBtn
+    Left = 8
+    Height = 30
+    Top = 56
+    Width = 224
+    Caption = 'Форма 11 (Алкоголь)'
+    OnClick = BitBtn5Click
+    TabOrder = 3
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 206
+    Width = 410
+    Align = alBottom
+    ButtonHeight = 32
+    ButtonWidth = 23
+    Caption = 'ToolBar1'
+    TabOrder = 4
+    object BitBtn2: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 99
+      Caption = 'Справочники'
+      OnClick = BitBtn2Click
+      TabOrder = 0
+    end
+    object BitBtn3: TBitBtn
+      Left = 100
+      Height = 32
+      Top = 2
+      Width = 115
+      Caption = 'Поступления'
+      OnClick = BitBtn3Click
+      TabOrder = 1
+    end
+  end
+  object BitBtn6: TBitBtn
+    Left = 8
+    Height = 30
+    Top = 120
+    Width = 224
+    Caption = 'Формы для оптового поставщика'
+    OnClick = BitBtn6Click
+    TabOrder = 5
+  end
+  object cbTransferToShop: TCheckBox
+    Left = 9
+    Height = 19
+    Top = 169
+    Width = 313
+    Caption = 'Перемещение между подразделениями как продажа'
+    Checked = True
+    State = cbChecked
+    TabOrder = 6
+  end
+  object sdd1: TSelectDirectoryDialog
+    left = 200
+    top = 8
+  end
+end

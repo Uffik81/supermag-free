@@ -1,0 +1,439 @@
+object FormEditProducer: TFormEditProducer
+  Left = 459
+  Height = 334
+  Top = 260
+  Width = 551
+  Caption = 'Карточка клиента'
+  ClientHeight = 334
+  ClientWidth = 551
+  OnClose = FormClose
+  OnHide = FormHide
+  OnShow = FormShow
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.4.4.0'
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 300
+    Width = 551
+    Align = alBottom
+    ButtonHeight = 32
+    Caption = 'ToolBar1'
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 95
+      Caption = 'Закрыть'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 336
+      Height = 32
+      Top = 2
+      Width = 215
+      Align = alRight
+      Caption = 'Сохранить (только адрес и лицензию)'
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 264
+    Top = 36
+    Width = 551
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    OnChange = PageControl1Change
+    object TabSheet1: TTabSheet
+      Caption = 'Основное'
+      ClientHeight = 236
+      ClientWidth = 543
+      object edName: TEdit
+        Left = 102
+        Height = 23
+        Top = 8
+        Width = 434
+        TabOrder = 0
+      end
+      object edFullName: TEdit
+        Left = 102
+        Height = 23
+        Top = 32
+        Width = 434
+        ReadOnly = True
+        TabOrder = 1
+      end
+      object edINN: TEdit
+        Left = 102
+        Height = 23
+        Top = 56
+        Width = 144
+        TabOrder = 2
+      end
+      object edKPP: TEdit
+        Left = 264
+        Height = 23
+        Top = 56
+        Width = 150
+        ReadOnly = True
+        TabOrder = 3
+      end
+      object StaticText1: TStaticText
+        Left = 251
+        Height = 17
+        Top = 60
+        Width = 13
+        Caption = '\'
+        TabOrder = 4
+      end
+      object mmDescription: TMemo
+        Left = 5
+        Height = 90
+        Top = 112
+        Width = 527
+        MaxLength = 255
+        ReadOnly = True
+        TabOrder = 5
+      end
+      object StaticText3: TStaticText
+        Left = 5
+        Height = 23
+        Top = 8
+        Width = 91
+        Caption = 'Наименование'
+        TabOrder = 6
+      end
+      object StaticText4: TStaticText
+        Left = 5
+        Height = 22
+        Top = 56
+        Width = 91
+        Caption = 'ИНН/КПП'
+        TabOrder = 7
+      end
+      object cbProducerOpt: TComboBox
+        Left = 128
+        Height = 23
+        Top = 208
+        Width = 408
+        ItemHeight = 15
+        Items.Strings = (
+          ''
+          '01 - Производство, хранение и поставки произведенного этилового спирта, в том числе денатурата'
+          '02 - Производство, хранение и поставки произведенной алкогольной и спиртосодержащей пищевой продукции'
+          '03 - Закупка, хранение и поставки алкогольной и спиртосодержащей продукции'
+          '04 - Производство, хранение и поставки спиртосодержащей непищевой продукции'
+          '05 - Хранение этилового спирта, алкогольной и спиртосодержащей пищевой продукции'
+          '06 – Розничная продажа алкогольной продукции'
+        )
+        OnChange = cbProducerOptChange
+        TabOrder = 8
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Лицензии'
+      ClientHeight = 236
+      ClientWidth = 543
+      object Panel2: TPanel
+        Left = 0
+        Height = 236
+        Top = 0
+        Width = 543
+        Align = alClient
+        ClientHeight = 236
+        ClientWidth = 543
+        TabOrder = 0
+        object StringGrid1: TStringGrid
+          Left = 1
+          Height = 208
+          Top = 27
+          Width = 541
+          Align = alClient
+          ColCount = 7
+          Columns = <          
+            item
+              Title.Caption = 'Код ИМНС'
+            end          
+            item
+              Title.Caption = 'Дата выдачи'
+              Width = 75
+            end          
+            item
+              Title.Caption = 'Дата окончания'
+              Width = 75
+            end          
+            item
+              Title.Caption = 'Серия'
+              Width = 75
+            end          
+            item
+              Title.Caption = 'Номер лицензии'
+              Width = 75
+            end          
+            item
+              Title.Caption = 'Кем выдан'
+              Width = 200
+            end>
+          DefaultColWidth = 18
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goSmoothScroll]
+          TabOrder = 0
+        end
+        object ToolBar2: TToolBar
+          Left = 1
+          Height = 26
+          Top = 1
+          Width = 541
+          Caption = 'ToolBar2'
+          TabOrder = 1
+          object BitBtn3: TBitBtn
+            Left = 1
+            Height = 22
+            Top = 2
+            Width = 75
+            Caption = 'Добавить'
+            OnClick = BitBtn3Click
+            TabOrder = 0
+          end
+          object BitBtn4: TBitBtn
+            Left = 76
+            Height = 22
+            Top = 2
+            Width = 75
+            Caption = 'Удалить'
+            OnClick = BitBtn4Click
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Адрес по ИМНС'
+      ClientHeight = 236
+      ClientWidth = 543
+      object edCountry: TEdit
+        Left = 102
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 0
+      end
+      object edZIP: TEdit
+        Left = 343
+        Height = 23
+        Top = 0
+        Width = 175
+        TabOrder = 1
+        Text = 'edZIP'
+      end
+      object edRegion: TEdit
+        Left = 102
+        Height = 23
+        Top = 32
+        Width = 80
+        TabOrder = 2
+        Text = 'edRegion'
+      end
+      object edArea: TEdit
+        Left = 102
+        Height = 23
+        Top = 64
+        Width = 256
+        TabOrder = 3
+        Text = 'edArea'
+      end
+      object edSity: TEdit
+        Left = 102
+        Height = 23
+        Top = 96
+        Width = 256
+        TabOrder = 4
+        Text = 'edSity'
+      end
+      object edlocality: TEdit
+        Left = 102
+        Height = 23
+        Top = 128
+        Width = 256
+        TabOrder = 5
+        Text = 'edlocality'
+      end
+      object edStreet: TEdit
+        Left = 102
+        Height = 23
+        Top = 160
+        Width = 202
+        TabOrder = 6
+        Text = 'edStreet'
+      end
+      object edHome: TEdit
+        Left = 360
+        Height = 23
+        Top = 160
+        Width = 62
+        TabOrder = 7
+        Text = 'edHome'
+      end
+      object edHomeCorpus: TEdit
+        Left = 496
+        Height = 23
+        Top = 160
+        Width = 40
+        TabOrder = 8
+        Text = 'edHomeCorpus'
+      end
+      object edLitter: TEdit
+        Left = 102
+        Height = 23
+        Top = 192
+        Width = 320
+        TabOrder = 9
+        Text = 'edLitter'
+      end
+      object StaticText5: TStaticText
+        Left = 0
+        Height = 25
+        Top = 0
+        Width = 96
+        Caption = 'Код страны:'
+        TabOrder = 10
+      end
+      object StaticText6: TStaticText
+        Left = 0
+        Height = 25
+        Top = 32
+        Width = 96
+        Caption = 'Код региона:'
+        TabOrder = 11
+      end
+      object StaticText7: TStaticText
+        Left = 193
+        Height = 25
+        Top = 0
+        Width = 135
+        Caption = 'Почтовый индекс'
+        TabOrder = 12
+      end
+      object StaticText8: TStaticText
+        Left = 0
+        Height = 24
+        Top = 64
+        Width = 96
+        Caption = 'Район:'
+        TabOrder = 13
+      end
+      object StaticText9: TStaticText
+        Left = 0
+        Height = 25
+        Top = 96
+        Width = 97
+        Caption = 'Город:'
+        TabOrder = 14
+      end
+      object StaticText10: TStaticText
+        Left = 0
+        Height = 24
+        Top = 128
+        Width = 96
+        Caption = 'Насел.Пункт'
+        TabOrder = 15
+      end
+      object StaticText11: TStaticText
+        Left = 0
+        Height = 24
+        Top = 160
+        Width = 97
+        Caption = 'Улица'
+        TabOrder = 16
+      end
+      object StaticText12: TStaticText
+        Left = 309
+        Height = 25
+        Top = 160
+        Width = 49
+        Caption = 'Дом:'
+        TabOrder = 17
+      end
+      object StaticText13: TStaticText
+        Left = 427
+        Height = 25
+        Top = 160
+        Width = 61
+        Caption = 'Корпус'
+        TabOrder = 18
+      end
+      object StaticText14: TStaticText
+        Left = 0
+        Height = 25
+        Top = 192
+        Width = 97
+        Caption = 'Литер'
+        TabOrder = 19
+      end
+      object edRoom: TEdit
+        Left = 496
+        Height = 23
+        Top = 192
+        Width = 40
+        TabOrder = 20
+        Text = 'edRoom'
+      end
+      object StaticText15: TStaticText
+        Left = 427
+        Height = 24
+        Top = 192
+        Width = 65
+        Caption = 'Квартира'
+        TabOrder = 21
+      end
+      object StaticText16: TStaticText
+        Left = 193
+        Height = 17
+        Top = 38
+        Width = 129
+        Caption = 'Электронная почта'
+        TabOrder = 22
+      end
+      object edemail: TEdit
+        Left = 343
+        Height = 23
+        Top = 32
+        Width = 174
+        TabOrder = 23
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 36
+    Top = 0
+    Width = 551
+    Align = alTop
+    ClientHeight = 36
+    ClientWidth = 551
+    TabOrder = 2
+    object edClientRegId: TEdit
+      Left = 416
+      Height = 23
+      Top = 8
+      Width = 130
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object StaticText2: TStaticText
+      Left = 289
+      Height = 22
+      Top = 9
+      Width = 121
+      Alignment = taRightJustify
+      Caption = 'Код ЕГАИС'
+      TabOrder = 1
+    end
+  end
+end

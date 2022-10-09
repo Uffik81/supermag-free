@@ -1,0 +1,191 @@
+object FormExportForm12: TFormExportForm12
+  Left = 506
+  Height = 431
+  Top = 293
+  Width = 947
+  Caption = 'Форма 11,12'
+  ClientHeight = 431
+  ClientWidth = 947
+  LCLVersion = '1.4.4.0'
+  object Panel2: TPanel
+    Left = 0
+    Height = 44
+    Top = 387
+    Width = 947
+    Align = alBottom
+    ClientHeight = 44
+    ClientWidth = 947
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 8
+      Height = 30
+      Top = 8
+      Width = 128
+      Caption = 'Сформировать'
+      TabOrder = 0
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 947
+    ButtonHeight = 30
+    Caption = 'ToolBar1'
+    TabOrder = 1
+    object BitBtn2: TBitBtn
+      Left = 1
+      Height = 30
+      Top = 2
+      Width = 127
+      Caption = 'Перезаполнить'
+      OnClick = BitBtn2Click
+      TabOrder = 0
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 353
+    Top = 34
+    Width = 947
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'Поступления'
+      ClientHeight = 325
+      ClientWidth = 939
+      object StringGrid1: TStringGrid
+        Left = 0
+        Height = 325
+        Top = 0
+        Width = 939
+        Align = alClient
+        ColCount = 14
+        Columns = <        
+          item
+            Title.Caption = 'Код прод'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'Наименование'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'КодПроизв'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Производитель'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'ИНН Произв'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'КПП произв'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'КодПост'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'Проставщик'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'ИНН Пост'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'КПП Пост'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'НомерДок'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'ДатаДок'
+            Width = 100
+          end        
+          item
+            Title.Caption = 'ДАЛ'
+            Width = 75
+          end>
+        DefaultColWidth = 18
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+        RowCount = 1
+        TabOrder = 0
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Оборот'
+      ClientHeight = 325
+      ClientWidth = 939
+      object StringGrid2: TStringGrid
+        Left = 0
+        Height = 325
+        Top = 0
+        Width = 939
+        Align = alClient
+        TabOrder = 0
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Поставщики (лицензии)'
+      ClientHeight = 325
+      ClientWidth = 939
+      object StringGrid3: TStringGrid
+        Left = 0
+        Height = 325
+        Top = 0
+        Width = 939
+        Align = alClient
+        ColCount = 10
+        Columns = <        
+          item
+            Title.Caption = 'Наименование'
+            Width = 250
+          end        
+          item
+            Title.Caption = 'ИНН'
+            Width = 90
+          end        
+          item
+            Title.Caption = 'КПП'
+            Width = 90
+          end        
+          item
+            Title.Caption = 'Адрес'
+            Width = 90
+          end        
+          item
+            Title.Caption = 'Дата выдачи'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Дата Окончания'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Серия'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Номер'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Выдал'
+            Width = 250
+          end>
+        DefaultColWidth = 18
+        TabOrder = 0
+      end
+    end
+  end
+end

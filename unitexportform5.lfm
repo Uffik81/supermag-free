@@ -1,0 +1,621 @@
+object FormExportForm5: TFormExportForm5
+  Left = 256
+  Height = 345
+  Top = 322
+  Width = 976
+  Caption = 'ФСРАР:Выгрузка декларации для оптовых организаций'
+  ClientHeight = 345
+  ClientWidth = 976
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.4.4.0'
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 976
+    ButtonHeight = 32
+    Caption = 'ToolBar1'
+    TabOrder = 0
+    object bbFormRefresh: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 115
+      Caption = '(1) Обновить'
+      OnClick = bbFormRefreshClick
+      TabOrder = 0
+    end
+    object bbOldForm5: TBitBtn
+      Left = 116
+      Height = 32
+      Top = 2
+      Width = 124
+      Caption = '(2) Старая форма 5'
+      OnClick = bbOldForm5Click
+      TabOrder = 1
+    end
+    object bbEmailClients: TBitBtn
+      Left = 240
+      Height = 32
+      Top = 2
+      Width = 144
+      Caption = '(3) Рассылка клиентам'
+      OnClick = bbEmailClientsClick
+      TabOrder = 2
+    end
+  end
+  object ToolBar2: TToolBar
+    Left = 0
+    Height = 34
+    Top = 311
+    Width = 976
+    Align = alBottom
+    ButtonHeight = 32
+    Caption = 'ToolBar2'
+    TabOrder = 1
+    object BitBtn2: TBitBtn
+      Left = 1
+      Height = 32
+      Top = 2
+      Width = 143
+      Caption = 'Выгрузить форму 6'
+      OnClick = BitBtn2Click
+      TabOrder = 0
+    end
+    object BitBtn3: TBitBtn
+      Left = 144
+      Height = 32
+      Top = 2
+      Width = 176
+      Caption = 'Выгрузить форму 7'
+      OnClick = BitBtn3Click
+      TabOrder = 1
+    end
+    object BitBtn4: TBitBtn
+      Left = 320
+      Height = 32
+      Top = 2
+      Width = 152
+      Caption = 'Выгрузить форму 5'
+      OnClick = BitBtn4Click
+      TabOrder = 2
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 277
+    Top = 34
+    Width = 976
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 3
+    TabOrder = 2
+    object TabSheet2: TTabSheet
+      Caption = 'Справочник производителей'
+      ClientHeight = 249
+      ClientWidth = 968
+      object sgProducer: TStringGrid
+        Left = 0
+        Height = 249
+        Top = 0
+        Width = 968
+        Align = alClient
+        ColCount = 6
+        ColumnClickSorts = True
+        Columns = <        
+          item
+            Title.Caption = 'КодЕГАИС'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Наименование'
+            Width = 220
+          end        
+          item
+            Title.Caption = 'ИНН'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'КПП'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Импортеры'
+          end>
+        DefaultColWidth = 32
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+        TabOrder = 0
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Справочник покупателей'
+      ClientHeight = 251
+      ClientWidth = 968
+      object sgClients: TStringGrid
+        Left = 0
+        Height = 251
+        Top = 0
+        Width = 968
+        Align = alClient
+        ColCount = 17
+        ColumnClickSorts = True
+        Columns = <        
+          item
+            Title.Caption = 'КодЕГАИС'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Наименование'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'ИНН'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'КПП'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Адрес'
+            Width = 120
+          end        
+          item
+            Title.Caption = 'Дата выдачи'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Дата окончания'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Серия'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Номер'
+            Width = 75
+          end        
+          item
+            Title.Caption = 'Выдал'
+            Width = 220
+          end        
+          item
+            Title.Caption = 'Адрес поставки'
+            Width = 220
+          end        
+          item
+            Title.Caption = 'Поставщик'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Номер в отчете'
+            Visible = False
+          end        
+          item
+            Title.Caption = 'Регион'
+          end        
+          item
+            Title.Caption = 'ИМНС Лицензии'
+          end        
+          item
+            Title.Caption = 'E-MAIL'
+          end>
+        DefaultColWidth = 32
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+        TabOrder = 0
+        OnDblClick = sgClientsDblClick
+        OnDrawCell = sgClientsDrawCell
+      end
+    end
+    object TabSheet10: TTabSheet
+      Caption = 'Справочник лицензий'
+      ClientHeight = 251
+      ClientWidth = 968
+      Enabled = False
+      object sgLicensing: TStringGrid
+        Left = 0
+        Height = 251
+        Top = 0
+        Width = 968
+        Align = alClient
+        TabOrder = 0
+        Visible = False
+      end
+    end
+    object TabSheet1: TTabSheet
+      Caption = 'Форма 5'
+      ClientHeight = 249
+      ClientWidth = 968
+      object sgForm5: TStringGrid
+        Left = 0
+        Height = 249
+        Top = 0
+        Width = 968
+        Align = alClient
+        ColCount = 20
+        ColumnClickSorts = True
+        Columns = <        
+          item
+            Title.Caption = '(2) Код вида продукции'
+            Width = 50
+          end        
+          item
+            Title.Caption = 'КодЕГАИС'
+            Visible = False
+          end        
+          item
+            Title.Caption = '(3) Наименование производителя импортера'
+            Width = 175
+          end        
+          item
+            Title.Caption = '(4) ИНН производителя'
+            Width = 75
+          end        
+          item
+            Title.Caption = '(5) КПП производителя'
+            Width = 75
+          end        
+          item
+            Title.Caption = '(6) Начальный остаток'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(7) Производитель'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(8) Оптовый'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(9) Импортер'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(11) Возврат поступление'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(12) Прочее'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(13) Перемещение'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(15) Оптовой торговли'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(16) Розничной торговли'
+          end        
+          item
+            Title.Caption = '(17) На экспорт'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(19) Прочее'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(20) Возврат поставщику'
+          end        
+          item
+            Title.Caption = '(21) Перемещение'
+            Width = 60
+          end        
+          item
+            Title.Caption = '(23) Конечный остаток'
+            Width = 60
+          end>
+        DefaultColWidth = 18
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+        TabOrder = 0
+        OnDrawCell = sgForm5DrawCell
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Форма 6'
+      ClientHeight = 251
+      ClientWidth = 968
+      object PageControl2: TPageControl
+        Left = 0
+        Height = 251
+        Top = 0
+        Width = 968
+        ActivePage = TabSheet6
+        Align = alClient
+        TabIndex = 0
+        TabOrder = 0
+        OnChange = PageControl2Change
+        object TabSheet6: TTabSheet
+          Caption = 'Реализация покупателю'
+          ClientHeight = 225
+          ClientWidth = 960
+          object sgSales6: TStringGrid
+            Left = 0
+            Height = 225
+            Top = 0
+            Width = 960
+            Align = alClient
+            ColCount = 13
+            Columns = <            
+              item
+                Title.Caption = 'Код ИМНС'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КодПроизводителя'
+                Visible = False
+              end            
+              item
+                Title.Caption = 'Наименовние'
+                Width = 175
+              end            
+              item
+                Title.Caption = 'ИНН'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КПП'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КодКлиента'
+                Visible = False
+              end            
+              item
+                Title.Caption = 'Клиент'
+                Width = 175
+              end            
+              item
+                Title.Caption = 'ИНН'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КПП'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'Номер Док'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'Дата Док'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'ДАЛ'
+                Width = 65
+              end>
+            DefaultColWidth = 18
+            Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+            TabOrder = 0
+            OnDblClick = sgSales6DblClick
+          end
+        end
+        object TabSheet7: TTabSheet
+          Caption = 'Возврат поставщику'
+          ClientHeight = 225
+          ClientWidth = 1090
+          object sgSales6ret: TStringGrid
+            Left = 0
+            Height = 225
+            Top = 0
+            Width = 1090
+            Align = alClient
+            ColCount = 13
+            Columns = <            
+              item
+                Title.Caption = 'Код ИМНС'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КодПроизводителя'
+                Visible = False
+              end            
+              item
+                Title.Caption = 'Наименовние'
+                Width = 175
+              end            
+              item
+                Title.Caption = 'ИНН'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КПП'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КодКлиента'
+                Visible = False
+              end            
+              item
+                Title.Caption = 'Клиент'
+                Width = 175
+              end            
+              item
+                Title.Caption = 'ИНН'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КПП'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'Номер Док'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'Дата Док'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'ДАЛ'
+                Width = 65
+              end>
+            DefaultColWidth = 18
+            Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+            TabOrder = 0
+          end
+        end
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Форма 7'
+      ClientHeight = 251
+      ClientWidth = 968
+      object PageControl3: TPageControl
+        Left = 0
+        Height = 251
+        Top = 0
+        Width = 968
+        ActivePage = TabSheet9
+        Align = alClient
+        TabIndex = 1
+        TabOrder = 0
+        object TabSheet8: TTabSheet
+          Caption = 'Поступления'
+          ClientHeight = 221
+          ClientWidth = 1090
+          object sgBuy7: TStringGrid
+            Left = 0
+            Height = 221
+            Top = 0
+            Width = 1090
+            Align = alClient
+            ColCount = 13
+            Columns = <            
+              item
+                Title.Caption = 'Код ИМНС'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КодПроизводителя'
+                Visible = False
+              end            
+              item
+                Title.Caption = 'Наименовние'
+                Width = 175
+              end            
+              item
+                Title.Caption = 'ИНН'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КПП'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КодКлиента'
+                Visible = False
+              end            
+              item
+                Title.Caption = 'Клиент'
+                Width = 175
+              end            
+              item
+                Title.Caption = 'ИНН'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КПП'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'Номер Док'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'Дата Док'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'ДАЛ'
+                Width = 65
+              end>
+            DefaultColWidth = 18
+            Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+            TabOrder = 0
+          end
+        end
+        object TabSheet9: TTabSheet
+          Caption = 'Возвраты покупателей'
+          ClientHeight = 225
+          ClientWidth = 960
+          object sgBuy7ret: TStringGrid
+            Left = 0
+            Height = 225
+            Top = 0
+            Width = 960
+            Align = alClient
+            ColCount = 13
+            Columns = <            
+              item
+                Title.Caption = 'Код ИМНС'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КодПроизводителя'
+                Visible = False
+              end            
+              item
+                Title.Caption = 'Наименовние'
+                Width = 175
+              end            
+              item
+                Title.Caption = 'ИНН'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КПП'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КодКлиента'
+                Visible = False
+              end            
+              item
+                Title.Caption = 'Клиент'
+                Width = 175
+              end            
+              item
+                Title.Caption = 'ИНН'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'КПП'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'Номер Док'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'Дата Док'
+                Width = 65
+              end            
+              item
+                Title.Caption = 'ДАЛ'
+                Width = 65
+              end>
+            DefaultColWidth = 18
+            Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+  object sdd1: TSelectDirectoryDialog
+    left = 167
+    top = 158
+  end
+  object OpenDialog1: TOpenDialog
+    left = 361
+    top = 193
+  end
+end
