@@ -1,0 +1,98 @@
+object FormSelectProduct: TFormSelectProduct
+  Left = 480
+  Height = 423
+  Top = 267
+  Width = 598
+  Caption = 'Выбрать товар'
+  ClientHeight = 423
+  ClientWidth = 598
+  OnShow = FormShow
+  Position = poScreenCenter
+  ShowInTaskBar = stAlways
+  LCLVersion = '2.0.8.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 598
+    Align = alTop
+    ClientHeight = 50
+    ClientWidth = 598
+    TabOrder = 0
+    object Panel3: TPanel
+      Left = 464
+      Height = 48
+      Top = 1
+      Width = 133
+      Align = alRight
+      ClientHeight = 48
+      ClientWidth = 133
+      TabOrder = 0
+      object BitBtn2: TBitBtn
+        Left = 24
+        Height = 30
+        Top = 8
+        Width = 91
+        Caption = 'Найти'
+        OnClick = BitBtn2Click
+        TabOrder = 0
+      end
+    end
+    object Edit1: TEdit
+      Left = 16
+      Height = 23
+      Top = 15
+      Width = 290
+      OnKeyPress = Edit1KeyPress
+      TabOrder = 1
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 44
+    Top = 379
+    Width = 598
+    Align = alBottom
+    ClientHeight = 44
+    ClientWidth = 598
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 20
+      Height = 30
+      Top = 7
+      Width = 108
+      Caption = 'Выбрать'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+  end
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 329
+    Top = 50
+    Width = 598
+    Align = alClient
+    ColCount = 4
+    Columns = <    
+      item
+        Title.Caption = 'Title'
+        Visible = False
+      end    
+      item
+        Title.Caption = 'Наименование'
+        Width = 500
+      end    
+      item
+        Title.Caption = 'Цена'
+        Width = 75
+      end>
+    DefaultColWidth = 16
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+    TabOrder = 2
+    OnKeyPress = StringGrid1KeyPress
+    OnResize = StringGrid1Resize
+    OnSelection = StringGrid1Selection
+  end
+end

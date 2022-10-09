@@ -1,0 +1,60 @@
+object FormResendDoc: TFormResendDoc
+  Left = 312
+  Height = 114
+  Top = 171
+  Width = 297
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Повторный запрос'
+  ClientHeight = 114
+  ClientWidth = 297
+  LCLVersion = '1.4.4.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 42
+    Top = 72
+    Width = 297
+    Align = alBottom
+    ClientHeight = 42
+    ClientWidth = 297
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 200
+      Height = 30
+      Top = 8
+      Width = 91
+      Caption = 'Отмена'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 96
+      Height = 30
+      Top = 8
+      Width = 99
+      Caption = 'Отправить'
+      OnClick = BitBtn2Click
+      TabOrder = 1
+    end
+  end
+  object LabeledEdit1: TLabeledEdit
+    Left = 8
+    Height = 23
+    Top = 40
+    Width = 256
+    EditLabel.AnchorSideLeft.Control = LabeledEdit1
+    EditLabel.AnchorSideRight.Control = LabeledEdit1
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = LabeledEdit1
+    EditLabel.Left = 8
+    EditLabel.Height = 15
+    EditLabel.Top = 22
+    EditLabel.Width = 256
+    EditLabel.Caption = 'Введите номер ТТН:'
+    EditLabel.ParentColor = False
+    TabOrder = 1
+    Text = 'TTN-'
+  end
+end
